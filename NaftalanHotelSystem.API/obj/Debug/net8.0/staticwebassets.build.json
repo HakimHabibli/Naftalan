@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "oqQOa1Fk4XeAe40hPTiw3U1/EQrbBg9xorKT9AuEtOw=",
+  "Source": "NaftalanHotelSystem.API",
+  "BasePath": "_content/NaftalanHotelSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

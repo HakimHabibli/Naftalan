@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "NaftalanHotelSystem.Application/1.0.0": {
+        "runtime": {
+          "NaftalanHotelSystem.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NaftalanHotelSystem.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
