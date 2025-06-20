@@ -9,8 +9,7 @@ public static class ServiceRegistration
 {
     public static void AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("Default")));
+       
 
         
     }

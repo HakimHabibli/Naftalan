@@ -1,4 +1,9 @@
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using NaftalanHotelSystem.Persistence;
+using NaftalanHotelSystem.Persistence.DataAccessLayer;
+
 namespace NaftalanHotelSystem.API
 {
     public class Program
@@ -14,8 +19,11 @@ namespace NaftalanHotelSystem.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+           builder.Services.AddDbContext<AppDbContext>(options =>
+                   options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
-            builder.Services.AddPersistenceServices();
+
+            builder.Services.AddPersistenceServices(builder.Configuration);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

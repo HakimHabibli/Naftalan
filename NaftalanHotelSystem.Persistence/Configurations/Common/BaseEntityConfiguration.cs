@@ -48,7 +48,7 @@ public class RoomEquipmentEntityConfiguration : IEntityTypeConfiguration<RoomEqu
 {
     public void Configure(EntityTypeBuilder<RoomEquipment> builder)
     {
-     
+        builder.HasKey(r => new { r.RoomId, r.EquipmentId });
 
         builder.HasOne(re => re.Room)
                .WithMany(r => r.Equipments)
