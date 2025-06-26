@@ -21,6 +21,7 @@ public class NotificationService: INotificationService
         message.To.Add(MailboxAddress.Parse(toEmail));
         message.Subject = subject;
 
+        //TODO:MessageBody Html + Css yazılacaq
         message.Body = new BodyBuilder { HtmlBody = body }.ToMessageBody();
 
         using var client = new SmtpClient();

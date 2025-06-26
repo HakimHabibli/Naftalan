@@ -13,4 +13,11 @@ public interface IEquipmentService
     public Task DeleteEquipmentAsync(int id);
     public Task UpdateEquipmentAsync(int id,EquipmentUpdateDto equipment);
 }
-
+public interface IPackageService
+{
+    Task<List<PackageDto>> GetAllPackageAsync();
+    Task<PackageDto> GetPackageByIdAsync(int id,Language? language = Language.Az);
+    Task CreatePackageAsync(PackageCreateDto dto);
+    Task UpdatePackageAsync(int id, PackageCreateDto dto);
+    Task DeletePackageAsync(int id);
+}

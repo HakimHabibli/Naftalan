@@ -61,6 +61,59 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.ToTable("EquipmentTranslations");
                 });
 
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Package", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<short>("DurationDay")
+                        .HasColumnType("smallint");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<string>("RoomType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Packages");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.PackageTranslation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PackageId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PackageId");
+
+                    b.ToTable("PackageTranslations");
+                });
+
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Room", b =>
                 {
                     b.Property<int>("Id")
@@ -183,6 +236,21 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.ToTable("TreatmentMethodTranslations");
                 });
 
+            modelBuilder.Entity("PackageTreatmentMethod", b =>
+                {
+                    b.Property<int>("PackagesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TreatmentMethodsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PackagesId", "TreatmentMethodsId");
+
+                    b.HasIndex("TreatmentMethodsId");
+
+                    b.ToTable("PackageTreatmentMethod");
+                });
+
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.EquipmentTranslation", b =>
                 {
                     b.HasOne("NaftalanHotelSystem.Domain.Entites.Equipment", "Equipment")
@@ -192,6 +260,17 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("Equipment");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.PackageTranslation", b =>
+                {
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.Package", "Packages")
+                        .WithMany("PackageTranslations")
+                        .HasForeignKey("PackageId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Packages");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.RoomEquipment", b =>
@@ -235,11 +314,31 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.Navigation("TreatmentMethod");
                 });
 
+            modelBuilder.Entity("PackageTreatmentMethod", b =>
+                {
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.Package", null)
+                        .WithMany()
+                        .HasForeignKey("PackagesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.TreatmentMethod", null)
+                        .WithMany()
+                        .HasForeignKey("TreatmentMethodsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Equipment", b =>
                 {
                     b.Navigation("EquipmentTranslations");
 
                     b.Navigation("RoomEquipments");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Package", b =>
+                {
+                    b.Navigation("PackageTranslations");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Room", b =>

@@ -5,6 +5,7 @@ namespace NaftalanHotelSystem.Domain.Entites;
 
 public class TreatmentMethod:BaseEntity
 {
+    public List<Package> Packages { get; set; }
     public List<TreatmentMethodTranslation> Translations { get; set; }  
 }
 public class TreatmentMethodTranslation:BaseEntity

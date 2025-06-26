@@ -12,8 +12,11 @@ public interface IUnitOfWork
     IReadRepository<Equipment> EquipmentReadRepository { get;  }
    
     IReadRepository<TreatmentMethod>TreatmentMethodReadRepository {get;}
-    
     IWriteRepository<TreatmentMethod> TreatmentMethodWriteRepository { get;}
+
+    IReadRepository<Package> PackageReadRepository { get;}
+    IWriteRepository<Package> PackageWriteRepository { get;}
+
     /*
      IReadRepository< >  .ReadRepository {get;}
      IWriteRepository< >  .WriteRepository {get;}
