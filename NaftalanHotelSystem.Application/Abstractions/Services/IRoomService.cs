@@ -6,7 +6,7 @@ namespace NaftalanHotelSystem.Application.Abstractions.Services;
 public interface IRoomService
 {
 
-    public Task<List<RoomCreateDto>> GetAllRoomsAsync();
+    public Task<List<RoomGetDto>> GetAllRoomsAsync();
 
     public Task<RoomCreateDto> GetRoomByIdAsync(int id);
 

@@ -84,7 +84,7 @@ public class EquipmentService : IEquipmentService
         equipment.EquipmentTranslations = dto.Translations.Select(t => new EquipmentTranslation
         {
             Name = t.Name,
-            Language = t.Languages
+            Language = t.Language,
         }).ToList();
 
          _unitOfWork.EquipmentWriteRepository.Update(equipment);

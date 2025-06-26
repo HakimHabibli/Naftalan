@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NaftalanHotelSystem.Application.Abstractions.Repositories;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Application.DataTransferObject;
@@ -57,15 +56,16 @@ public class RoomService : IRoomService
     }
 
 
-    public async Task<List<RoomCreateDto>> GetAllRoomsAsync()
+    public async Task<List<RoomGetDto>> GetAllRoomsAsync()
     {
         var rooms = await _unitOfWork.RoomReadRepository.Table
             .Include(r => r.RoomTranslations)
             .Include(e => e.Equipments)
             .ToListAsync();
 
-        var result = rooms.Select(room => new RoomCreateDto
+        var result = rooms.Select(room => new RoomGetDto
         {
+            Id = room.Id,
             Category = room.Category,
             Area = room.Area,
             Price = room.Price,
