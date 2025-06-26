@@ -11,6 +11,6 @@ public interface IEquipmentService
     public Task<EquipmentDto> GetEquipmentByIdAsync(int id, Language? language = Language.Az);
     public Task CreateAsync(EquipmentCreateDto dto);
     public Task DeleteEquipmentAsync(int id);
-    public Task UpdateEquipmentAsync(EquipmentUpdateDto equipment);
+    public Task UpdateEquipmentAsync(int id,EquipmentUpdateDto equipment);
 }
 

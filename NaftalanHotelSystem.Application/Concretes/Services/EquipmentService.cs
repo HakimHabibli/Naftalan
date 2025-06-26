@@ -75,16 +75,16 @@ public class EquipmentService : IEquipmentService
         await _unitOfWork.SaveChangesAsync();
     }
 
-    public async Task UpdateEquipmentAsync(EquipmentUpdateDto dto)
+    public async Task UpdateEquipmentAsync(int id,EquipmentUpdateDto dto)
     {
        
         var equipment = await _unitOfWork.EquipmentWriteRepository.Table.
-            Include(e => e.EquipmentTranslations).FirstOrDefaultAsync(e => e.Id == dto.Id);
+            Include(e => e.EquipmentTranslations).FirstOrDefaultAsync(e => e.Id == id);
 
         equipment.EquipmentTranslations = dto.Translations.Select(t => new EquipmentTranslation
         {
             Name = t.Name,
-            Language = t.Language
+            Language = t.Languages
         }).ToList();
 
          _unitOfWork.EquipmentWriteRepository.Update(equipment);

@@ -14,7 +14,6 @@ public class EquipmentCreateDto
 }
 public class EquipmentUpdateDto
 {
-    public int Id { get; set; }
     public List<EquipmentTranslationCreateDto> Translations { get; set; }
 }
 

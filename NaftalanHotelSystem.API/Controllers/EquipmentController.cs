@@ -49,12 +49,12 @@ public class EquipmentController : ControllerBase
 
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Update( [FromBody] EquipmentUpdateDto dto)
+    public async Task<IActionResult> Update( int id,[FromBody] EquipmentUpdateDto dto)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        await _equipmentService.UpdateEquipmentAsync(dto);
+        await _equipmentService.UpdateEquipmentAsync(id,dto);
         return NoContent();
     }
 
