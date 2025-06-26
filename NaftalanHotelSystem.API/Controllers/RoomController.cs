@@ -24,7 +24,7 @@ public class RoomController : ControllerBase
             return BadRequest(ModelState);
 
         await _roomService.CreateRoomAsync(dto);
-        return Ok("Room successfully created.");
+        return Ok();
     }
 
    

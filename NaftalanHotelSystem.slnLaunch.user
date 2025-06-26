@@ -3,23 +3,7 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "NaftalanHotelSystem.Infrastructure\\NaftalanHotelSystem.Infrastructure.csproj",
-        "Action": "Start"
-      },
-      {
         "Path": "NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj",
         "Action": "Start"
       }
     ]

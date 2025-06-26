@@ -20,24 +20,24 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] TrearmentMethodCreateDto dto)
+        public async Task<IActionResult> Create([FromBody] TreatmentMethodCreateDto dto)
         {
             await _treatmentService.CreateTreatmentMethodAsync(dto);
-            return Ok("Treatment method successfully created.");
+            return Ok();
         }
 
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] TrearmentMethodWriteDto dto)
         {
             await _treatmentService.UpdateTrearmentMethodAsync(dto);
-            return Ok("Treatment method successfully updated.");
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             await _treatmentService.DeleteTreatmentMethodAsync(id);
-            return Ok("Treatment method successfully deleted.");
+            return NoContent();
         }
 
         [HttpGet]
@@ -52,7 +52,7 @@ namespace NaftalanHotelSystem.API.Controllers
         {
             var result = await _treatmentService.GetTreatmentMethodByIdAsync(id, language);
             if (result == null)
-                return NotFound("Treatment method not found.");
+                return NotFound();
 
             return Ok(result);
         }

@@ -198,7 +198,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "NaftalanHotelSystem.Application.DataTransferObject.TrearmentMethodCreateDto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.TreatmentMethodCreateDto",
         "IsRequired": true
       }
     ],

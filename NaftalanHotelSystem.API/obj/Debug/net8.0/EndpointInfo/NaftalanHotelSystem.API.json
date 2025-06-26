@@ -305,17 +305,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TrearmentMethodCreateDto"
+                "$ref": "#/components/schemas/TreatmentMethodCreateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TrearmentMethodCreateDto"
+                "$ref": "#/components/schemas/TreatmentMethodCreateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TrearmentMethodCreateDto"
+                "$ref": "#/components/schemas/TreatmentMethodCreateDto"
               }
             }
           }
@@ -534,9 +534,13 @@
         },
         "additionalProperties": false
       },
-      "TrearmentMethodCreateDto": {
+      "TrearmentMethodWriteDto": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "treatmentMethodTranslationDtos": {
             "type": "array",
             "items": {
@@ -547,13 +551,9 @@
         },
         "additionalProperties": false
       },
-      "TrearmentMethodWriteDto": {
+      "TreatmentMethodCreateDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "treatmentMethodTranslationDtos": {
             "type": "array",
             "items": {

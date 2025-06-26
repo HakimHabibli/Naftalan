@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NaftalanHotelSystem.Application.Abstractions.Repositories;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Application.DataTransferObject;
@@ -17,7 +16,7 @@ public class TreatmentMethodService : ITreatmentMethodService
         _unitOfWork = unitOfWork;
     }
 
-    public async Task CreateTreatmentMethodAsync(TrearmentMethodCreateDto dto)
+    public async Task CreateTreatmentMethodAsync(TreatmentMethodCreateDto dto)
     {
         var treatment = new TreatmentMethod
         {
