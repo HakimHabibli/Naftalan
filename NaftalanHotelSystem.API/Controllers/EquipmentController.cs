@@ -30,6 +30,7 @@ public class EquipmentController : ControllerBase
     public async Task<IActionResult> GetById(int id,Language? language)
     {
         var equipment = await _equipmentService.GetEquipmentByIdAsync(id,language);
+
         if (equipment == null)
             return NotFound();
         
@@ -49,7 +50,7 @@ public class EquipmentController : ControllerBase
 
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Update( int id,[FromBody] EquipmentUpdateDto dto)
+    public async Task<IActionResult> Update(int id,[FromBody] EquipmentUpdateDto dto)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);

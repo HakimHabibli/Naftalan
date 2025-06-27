@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System.Runtime.Intrinsics.Wasm;
+using Microsoft.Extensions.DependencyInjection;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Application.Concretes.Services;
@@ -13,6 +14,7 @@ public static class ServiceRegistration
         services.AddScoped<IRoomService, RoomService>();
         services.AddScoped<IEquipmentService, EquipmentService>();
         services.AddScoped<ITreatmentMethodService, TreatmentMethodService>();
+        services.AddScoped<IPackageService, PackageService>();
 
     }
 }

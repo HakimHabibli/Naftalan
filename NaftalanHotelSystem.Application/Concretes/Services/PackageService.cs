@@ -22,6 +22,7 @@ public class PackageService : IPackageService
         var packages = await _unitOfWork.PackageReadRepository.Table
             .Include(p => p.PackageTranslations)
             .Include(p => p.TreatmentMethods)
+                .ThenInclude(tm => tm.Translations)
             .ToListAsync();
 
         var result = packages.Select(p => new PackageDto
@@ -33,13 +34,17 @@ public class PackageService : IPackageService
             RoomType = p.RoomType,
             PackageTranslations = p.PackageTranslations.Select(t => new PackageTranslationDto
             {
-                Description = t.Description
+                Description = t.Description,
+                Language = t.Language 
             }).ToList(),
-            TreatmentMethods = p.TreatmentMethods.Select(tm => new TreatmentMethodDto
+            TreatmentMethods = p.TreatmentMethods
+            .SelectMany(tm => tm.Translations.Select(tr => new TreatmentMethodDto
             {
                 Id = tm.Id,
-                Name = tm.Translations.FirstOrDefault()?.Name // varsa göstər
-            }).ToList()
+                Name = tr.Name,
+                Description = tr.Description,
+                Language = tr.Language
+            })).ToList()
         }).ToList();
 
         return result;
@@ -56,9 +61,24 @@ public class PackageService : IPackageService
         if (package == null)
             return null;
 
-        var translation = language == null
+        var packageTranslation = language == null
             ? package.PackageTranslations.FirstOrDefault()
             : package.PackageTranslations.FirstOrDefault(t => t.Language == language);
+
+        var treatmentMethods = package.TreatmentMethods.Select(tm =>
+        {
+            var tmTranslation = language == null
+                ? tm.Translations.FirstOrDefault()
+                : tm.Translations.FirstOrDefault(t => t.Language == language);
+
+            return new TreatmentMethodDto
+            {
+                Id = tm.Id,
+                Name = tmTranslation?.Name ?? string.Empty,
+                Description = tmTranslation?.Description ?? string.Empty,
+                Language = tmTranslation?.Language ?? Language.Az
+            };
+        }).ToList();
 
         return new PackageDto
         {
@@ -67,18 +87,15 @@ public class PackageService : IPackageService
             Price = package.Price,
             DurationDay = package.DurationDay,
             RoomType = package.RoomType,
-            PackageTranslations = new List<PackageTranslationDto>
+            PackageTranslations = packageTranslation == null ? new List<PackageTranslationDto>() : new List<PackageTranslationDto>
+        {
+            new PackageTranslationDto
             {
-                new PackageTranslationDto
-                {
-                    Description = translation?.Description ?? string.Empty
-                }
-            },
-            TreatmentMethods = package.TreatmentMethods.Select(tm => new TreatmentMethodDto
-            {
-                Id = tm.Id,
-                Name = tm.Translations.FirstOrDefault(t => t.Language == language)?.Name
-            }).ToList()
+                Description = packageTranslation.Description,
+                Language = packageTranslation.Language
+            }
+        },
+            TreatmentMethods = treatmentMethods
         };
     }
 
@@ -96,7 +113,7 @@ public class PackageService : IPackageService
             RoomType = dto.RoomType,
             PackageTranslations = dto.PackageTranslations.Select(t => new PackageTranslation
             {
-                Description = t.Description
+                Description = t.Description,Language = t.Language
             }).ToList(),
             TreatmentMethods = treatmentMethods
         };

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NaftalanHotelSystem.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e9af5f6df2384a72f2c7ddd8e83ddd1175bef89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f27394efd0650c1541bfc3e8942c428065a7267")]
 [assembly: System.Reflection.AssemblyProductAttribute("NaftalanHotelSystem.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NaftalanHotelSystem.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
