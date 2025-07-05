@@ -26,6 +26,7 @@ public static class ServiceRegistration
     *Add-Migration InitialCreate -Project NaftalanHotelSystem.Persistence -StartupProject NaftalanHotelSystem.API
 
     Update-Database -Project NaftalanHotelSystem.Persistence -StartupProject NaftalanHotelSystem.API
+    Remove-Migration -Project NaftalanHotelSystem.Persistence -StartupProject NaftalanHotelSystem.API
 
     */
 }

@@ -11,6 +11,8 @@ public class RoomTranslation:BaseEntity
 
     public string Service { get; set; }
     public string Description { get; set; }
+    //public string Description2 { get; set; }
+    //public string Description3 { get; set; }
     public Language Language { get; set; } 
 
 

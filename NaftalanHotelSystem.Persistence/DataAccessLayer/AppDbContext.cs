@@ -19,7 +19,8 @@ public class AppDbContext : DbContext
     public DbSet<EquipmentTranslation> EquipmentTranslations { get; set; }
     public DbSet<TreatmentMethod> TreatmentMethods { get; set; }
     public DbSet<TreatmentMethodTranslation> TreatmentMethodTranslations { get; set; }
-
+    public DbSet<TreatmentCategory> TreatmentCategories { get; set; }
+    public DbSet<TreatmentCategoryTranslation> TreatmentCategoryTranslations { get; set; }
     public DbSet<Package> Packages { get; set; }
     public DbSet<PackageTranslation> PackageTranslations { get; set; }
 

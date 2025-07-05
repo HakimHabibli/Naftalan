@@ -14,7 +14,7 @@ public class Room:BaseEntity
     public double Price { get; set; }
     public short Member { get; set; }
 
-
+ 
     public ICollection<RoomEquipment> Equipments { get; set; }
     public ICollection<RoomTranslation> RoomTranslations { get; set; }
 }
