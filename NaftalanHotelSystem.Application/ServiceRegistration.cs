@@ -15,6 +15,7 @@ public static class ServiceRegistration
         services.AddScoped<IEquipmentService, EquipmentService>();
         services.AddScoped<ITreatmentMethodService, TreatmentMethodService>();
         services.AddScoped<IPackageService, PackageService>();
-
+        services.AddScoped<IIllnessService,  IllnessService>();
+        services.AddScoped<ITreatmentCategoryService, TreatmentCategoryService>();
     }
 }

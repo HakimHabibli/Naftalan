@@ -31,8 +31,16 @@ public class UnitOfWork : IUnitOfWork
     public IReadRepository<TreatmentMethod> TreatmentMethodReadRepository => new ReadRepository<TreatmentMethod>(_context);
     public IWriteRepository<TreatmentMethod> TreatmentMethodWriteRepository => new WriteRepository<TreatmentMethod>(_context);
 
-    public IReadRepository<Package> PackageReadRepository => new ReadRepository<Package>(_context);
+    public IReadRepository<Package> PackageReadRepository => new ReadRepository<Package>(   _context);
     public IWriteRepository<Package> PackageWriteRepository => new WriteRepository<Package>(_context);
+
+    public IReadRepository<Illness> IllnessReadRepository =>  new ReadRepository<Illness>(_context);
+
+    public IWriteRepository<Illness> IllnessWriteRepository => new WriteRepository<Illness>(_context);
+
+    public IReadRepository<TreatmentCategory> TreatmentCategoryReadRepository => new ReadRepository<TreatmentCategory>(_context);
+
+    public IWriteRepository<TreatmentCategory> TreatmentCategoryWriteRepository => new WriteRepository<TreatmentCategory>(_context);
 
 
     /*

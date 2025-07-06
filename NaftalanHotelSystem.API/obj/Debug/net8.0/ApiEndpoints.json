@@ -84,6 +84,90 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.IllnessController",
+    "Method": "GetAll",
+    "RelativePath": "api/Illness",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.IllnessController",
+    "Method": "Create",
+    "RelativePath": "api/Illness",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.IllnessCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.IllnessController",
+    "Method": "GetById",
+    "RelativePath": "api/Illness/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "language",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.IllnessController",
+    "Method": "Update",
+    "RelativePath": "api/Illness/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.IllnessUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.IllnessController",
+    "Method": "Delete",
+    "RelativePath": "api/Illness/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NaftalanHotelSystem.API.Controllers.NotificationController",
     "Method": "SendEmail",
     "RelativePath": "api/Notification/send",
@@ -260,6 +344,90 @@
     "ContainingType": "NaftalanHotelSystem.API.Controllers.RoomController",
     "Method": "Delete",
     "RelativePath": "api/Room/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentCategoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/TreatmentCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentCategoryController",
+    "Method": "Create",
+    "RelativePath": "api/TreatmentCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.TreatmentCategoryCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentCategoryController",
+    "Method": "GetById",
+    "RelativePath": "api/TreatmentCategory/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "language",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentCategoryController",
+    "Method": "Update",
+    "RelativePath": "api/TreatmentCategory/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.TreatmentCategoryUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentCategoryController",
+    "Method": "Delete",
+    "RelativePath": "api/TreatmentCategory/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

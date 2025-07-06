@@ -31,7 +31,7 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Equipments", (string)null);
+                    b.ToTable("Equipments");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.EquipmentTranslation", b =>
@@ -58,7 +58,55 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasIndex("EquipmentId");
 
-                    b.ToTable("EquipmentTranslations", (string)null);
+                    b.ToTable("EquipmentTranslations");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Illness", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("TreatmentCategoryId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TreatmentCategoryId");
+
+                    b.ToTable("Illnesses");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.IllnessTranslation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("IllnessId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IllnessId");
+
+                    b.ToTable("IllnessesTranslation");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Package", b =>
@@ -85,7 +133,7 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Packages", (string)null);
+                    b.ToTable("Packages");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.PackageTranslation", b =>
@@ -111,7 +159,7 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasIndex("PackageId");
 
-                    b.ToTable("PackageTranslations", (string)null);
+                    b.ToTable("PackageTranslations");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Room", b =>
@@ -145,7 +193,7 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Rooms", (string)null);
+                    b.ToTable("Rooms");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.RoomEquipment", b =>
@@ -160,7 +208,7 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasIndex("EquipmentId");
 
-                    b.ToTable("RoomEquipments", (string)null);
+                    b.ToTable("RoomEquipments");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.RoomTranslation", b =>
@@ -190,7 +238,46 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasIndex("RoomId");
 
-                    b.ToTable("RoomTranslations", (string)null);
+                    b.ToTable("RoomTranslations");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.TreatmentCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TreatmentCategories");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.TreatmentCategoryTranslation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TreatmentCategoryId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TreatmentCategoryId");
+
+                    b.ToTable("TreatmentCategoryTranslations");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.TreatmentMethod", b =>
@@ -203,7 +290,7 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TreatmentMethods", (string)null);
+                    b.ToTable("TreatmentMethods");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.TreatmentMethodTranslation", b =>
@@ -233,7 +320,7 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasIndex("TreatmentMethodId");
 
-                    b.ToTable("TreatmentMethodTranslations", (string)null);
+                    b.ToTable("TreatmentMethodTranslations");
                 });
 
             modelBuilder.Entity("PackageTreatmentMethod", b =>
@@ -248,7 +335,7 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
                     b.HasIndex("TreatmentMethodsId");
 
-                    b.ToTable("PackageTreatmentMethod", (string)null);
+                    b.ToTable("PackageTreatmentMethod");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.EquipmentTranslation", b =>
@@ -260,6 +347,28 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("Equipment");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Illness", b =>
+                {
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.TreatmentCategory", "TreatmentCategory")
+                        .WithMany("Illnesses")
+                        .HasForeignKey("TreatmentCategoryId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("TreatmentCategory");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.IllnessTranslation", b =>
+                {
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.Illness", "Illness")
+                        .WithMany("Translations")
+                        .HasForeignKey("IllnessId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Illness");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.PackageTranslation", b =>
@@ -303,6 +412,17 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.Navigation("Room");
                 });
 
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.TreatmentCategoryTranslation", b =>
+                {
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.TreatmentCategory", "TreatmentCategory")
+                        .WithMany("Translations")
+                        .HasForeignKey("TreatmentCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TreatmentCategory");
+                });
+
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.TreatmentMethodTranslation", b =>
                 {
                     b.HasOne("NaftalanHotelSystem.Domain.Entites.TreatmentMethod", "TreatmentMethod")
@@ -336,6 +456,11 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.Navigation("RoomEquipments");
                 });
 
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Illness", b =>
+                {
+                    b.Navigation("Translations");
+                });
+
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Package", b =>
                 {
                     b.Navigation("PackageTranslations");
@@ -346,6 +471,13 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.Navigation("Equipments");
 
                     b.Navigation("RoomTranslations");
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.TreatmentCategory", b =>
+                {
+                    b.Navigation("Illnesses");
+
+                    b.Navigation("Translations");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.TreatmentMethod", b =>

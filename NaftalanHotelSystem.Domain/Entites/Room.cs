@@ -6,6 +6,7 @@ public class Room:BaseEntity
     //TODO:Picture propu class tamamlandiqdan sonra edilecek
     #region ToDo
     public string Picture { get; set; }
+    //TODO: 4 dene sekil olacaq
     public string YoutubeVideoLink { get; set; }
     #endregion
 

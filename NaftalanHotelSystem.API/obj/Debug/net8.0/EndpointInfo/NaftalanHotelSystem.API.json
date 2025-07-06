@@ -137,6 +137,138 @@
         }
       }
     },
+    "/api/Illness": {
+      "get": {
+        "tags": [
+          "Illness"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Illness"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IllnessCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IllnessCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/IllnessCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Illness/{id}": {
+      "get": {
+        "tags": [
+          "Illness"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "language",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Language"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Illness"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IllnessUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IllnessUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/IllnessUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Illness"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Notification/send": {
       "post": {
         "tags": [
@@ -429,6 +561,138 @@
         }
       }
     },
+    "/api/TreatmentCategory": {
+      "get": {
+        "tags": [
+          "TreatmentCategory"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TreatmentCategory"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreatmentCategoryCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreatmentCategoryCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreatmentCategoryCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/TreatmentCategory/{id}": {
+      "get": {
+        "tags": [
+          "TreatmentCategory"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "language",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Language"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TreatmentCategory"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreatmentCategoryUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreatmentCategoryUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TreatmentCategoryUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TreatmentCategory"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/TreatmentMethod": {
       "post": {
         "tags": [
@@ -592,6 +856,74 @@
         },
         "additionalProperties": false
       },
+      "IllnessCreateDto": {
+        "type": "object",
+        "properties": {
+          "treatmentCategoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "translations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IllnessTranslationCreateDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "IllnessTranslationCreateDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "$ref": "#/components/schemas/Language"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IllnessTranslationUpdateDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "$ref": "#/components/schemas/Language"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IllnessUpdateDto": {
+        "type": "object",
+        "properties": {
+          "treatmentCategoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "translations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IllnessTranslationUpdateDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Language": {
         "enum": [
           1,
@@ -724,6 +1056,58 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/TreatmentMethodTranslationDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TreatmentCategoryCreateDto": {
+        "type": "object",
+        "properties": {
+          "translations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TreatmentCategoryTranslationCreateDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TreatmentCategoryTranslationCreateDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "$ref": "#/components/schemas/Language"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TreatmentCategoryTranslationUpdateDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "$ref": "#/components/schemas/Language"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TreatmentCategoryUpdateDto": {
+        "type": "object",
+        "properties": {
+          "translations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TreatmentCategoryTranslationUpdateDto"
             },
             "nullable": true
           }
