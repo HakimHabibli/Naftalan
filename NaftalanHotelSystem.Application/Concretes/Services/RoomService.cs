@@ -31,6 +31,9 @@ public class RoomService : IRoomService
                 {
                     Service = t.Service,
                     Description = t.Description,
+                    MiniDescription = t.MiniDescription,
+                    MiniTitle = t.MiniTitle,
+                    Title = t.Title,
                     Language = t.Language
                 }
             ).ToList(),
@@ -145,6 +148,9 @@ public class RoomService : IRoomService
         {
             Service = t.Service,
             Description = t.Description,
+            MiniDescription = t.MiniDescription,
+            MiniTitle= t.MiniTitle,
+            Title = t.Title,
             Language = t.Language
         }).ToList();
 
