@@ -12,6 +12,9 @@ public class RoomTranslationEntityConfiguration : IEntityTypeConfiguration<RoomT
 
         builder.Property(x => x.Service).IsRequired();
         builder.Property(x=>x.Description).IsRequired();
+        builder.Property(x=>x.MiniTitle).IsRequired(); 
+        builder.Property(x => x.Title).IsRequired();
+        builder.Property(x => x.MiniDescription).IsRequired();
         builder.Property(x=>x.Language).HasConversion<string>().IsRequired();
         builder.HasOne(rt => rt.Room)
         .WithMany(r => r.RoomTranslations)

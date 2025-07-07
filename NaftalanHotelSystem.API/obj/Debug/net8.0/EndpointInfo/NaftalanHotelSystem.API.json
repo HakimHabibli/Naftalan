@@ -1039,6 +1039,18 @@
             "type": "string",
             "nullable": true
           },
+          "miniDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "miniTitle": {
+            "type": "string",
+            "nullable": true
+          },
           "language": {
             "$ref": "#/components/schemas/Language"
           }

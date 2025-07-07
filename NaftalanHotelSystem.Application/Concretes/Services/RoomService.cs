@@ -76,6 +76,9 @@ public class RoomService : IRoomService
             {
                 Service = t.Service,
                 Description = t.Description,
+                MiniDescription = t.MiniDescription,
+                MiniTitle = t.MiniTitle,
+                Title = t.Title,
                 Language = t.Language
             }).ToList(),
             EquipmentIds = room.Equipments.Select(re => re.EquipmentId).ToList()
@@ -107,6 +110,9 @@ public class RoomService : IRoomService
             {
                 Service = t.Service,
                 Description = t.Description,
+                MiniDescription= t.MiniDescription,
+                MiniTitle = t.MiniTitle,
+                Title = t.Title,
                 Language = t.Language
             }).ToList(),
             EquipmentIds = room.Equipments.Select(re => re.EquipmentId).ToList()
