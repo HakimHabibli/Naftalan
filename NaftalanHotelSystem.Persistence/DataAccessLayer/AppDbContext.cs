@@ -33,6 +33,7 @@ public class AppDbContext : DbContext
 
 
     public DbSet<About> Abouts { get; set; }
+    public DbSet<AboutTranslation> AboutTranslations { get; set; }
     public DbSet<Contact> Contacts { get; set; }
 
     public DbSet<Package> Packages { get; set; }
@@ -45,8 +46,8 @@ public class AppDbContext : DbContext
        
         
         var stringListConverter = new ValueConverter<List<string>, string>(
-       v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
-       v => JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null)
+        v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
+        v => JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null)
    );
 
         modelBuilder.Entity<Contact>()

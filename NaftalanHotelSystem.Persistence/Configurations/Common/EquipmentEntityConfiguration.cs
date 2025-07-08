@@ -26,13 +26,29 @@ public class AboutEntityConfiguration : IEntityTypeConfiguration<About>
     {
         builder.ConfigureBaseEntity();
 
-        builder.Property(x=>x.Title).IsRequired();
-        builder.Property(x=>x.MiniTitle).IsRequired();
-        builder.Property(x=>x.Description).IsRequired();
+  
         builder.Property(x=>x.VideoLink).IsRequired();
 
+
+        builder.HasMany(x => x.AboutTranslations)
+               .WithOne(x => x.About)
+               .HasForeignKey(x => x.AboutId);
     }
 }
+public class AboutTranslationEntityConfiguration : IEntityTypeConfiguration<AboutTranslation>
+{
+    public void Configure(EntityTypeBuilder<AboutTranslation> builder)
+    {
+        builder.Property(x => x.Title).IsRequired();
+        builder.Property(x => x.MiniTitle).IsRequired();
+        builder.Property(x => x.Description).IsRequired();
+
+        builder.Property(x => x.Language)
+               .HasConversion<string>()
+               .IsRequired();
+    }
+}
+
 public class ContactEntityConfiguration : IEntityTypeConfiguration<Contact>
 {
     public void Configure(EntityTypeBuilder<Contact> builder)

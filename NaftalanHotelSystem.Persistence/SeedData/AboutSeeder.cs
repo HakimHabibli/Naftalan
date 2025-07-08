@@ -10,14 +10,38 @@ public class AboutSeeder : ISeeder
     {
         if (!await context.Abouts.AnyAsync())
         {
-            await context.Abouts.AddAsync(new About
+            var about = new About
             {
-                Title = "Haqqımızda",
-                Description = "Biz 2020-ci ildən fəaliyyət göstəririk.",
-                MiniTitle = "Title",
-                VideoLink ="asdad"
-            });
+                VideoLink = "Test",
+           
+                AboutTranslations = new List<AboutTranslation>
+                {
+                    new AboutTranslation
+                    {
+                        Title = "Haqqımızda",
+                        MiniTitle = "Naftalan Hotel",
+                        Description = "Biz 2020-ci ildən fəaliyyət göstəririk.",
+                        Language = Domain.Enums.Language.Az
+                    },
+                    new AboutTranslation
+                    {
+                        Title = "About Us",
+                        MiniTitle = "Naftalan Hotel",
+                        Description = "We have been operating since 2020.",
+                        Language = Domain.Enums.Language.En
+                    },
+                       new AboutTranslation
+                    {
+                        Title = "О нас",
+                        MiniTitle = "Нафталан Отель",
+                        Description = "Мы - лечебный отель, расположенный в Нафталане.",
+                        Language = Domain.Enums.Language.Ru
+                    }
 
+                }
+            };
+
+            await context.Abouts.AddAsync(about);
             await context.SaveChangesAsync();
         }
     }

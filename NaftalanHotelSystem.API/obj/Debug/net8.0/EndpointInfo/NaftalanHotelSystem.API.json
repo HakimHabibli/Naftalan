@@ -899,10 +899,19 @@
   },
   "components": {
     "schemas": {
-      "AboutUpdateDto": {
+      "AboutTranslationUpdateDto": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
           "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "miniTitle": {
             "type": "string",
             "nullable": true
           },
@@ -910,12 +919,28 @@
             "type": "string",
             "nullable": true
           },
+          "language": {
+            "$ref": "#/components/schemas/Language"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AboutUpdateDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "videoLink": {
             "type": "string",
             "nullable": true
           },
-          "miniTitle": {
-            "type": "string",
+          "translations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AboutTranslationUpdateDto"
+            },
             "nullable": true
           }
         },

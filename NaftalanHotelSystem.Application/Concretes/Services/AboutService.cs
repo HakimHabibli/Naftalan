@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Domain.Entites;
+using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.Application.Concretes.Services;
 
@@ -17,50 +18,109 @@ public class AboutService : IAboutService
 
     public async Task<AboutDto> GetAboutAsync()
     {
-        var about = await _unitOfWork.AboutReadRepository.Table.FirstOrDefaultAsync();
+        var about = await _unitOfWork.AboutReadRepository
+            .Table
+            .Include(x => x.AboutTranslations)
+            .FirstOrDefaultAsync();
 
-        if (about is null) return null;
 
         return new AboutDto
         {
             Id = about.Id,
-            Title = about.Title,
-            Description = about.Description,
-            MiniTitle = about.MiniTitle,
-            VideoLink = about.VideoLink
+            VideoLink = about.VideoLink,
+            Translations = about.AboutTranslations.Select(t => new AboutTranslationDto
+            {
+                Title = t.Title,
+                MiniTitle = t.MiniTitle,
+                Description = t.Description,
+                Language = t.Language
+            }).ToList()
         };
     }
 
     public async Task UpdateAboutAsync(AboutUpdateDto dto)
     {
-        var existing = await _unitOfWork.AboutWriteRepository.Table.FirstOrDefaultAsync();
-        if (existing is not null)
-        {
-            existing.Title = dto.Title;
-            existing.Description = dto.Description;
-            existing.MiniTitle  = dto.MiniTitle;
-            existing.VideoLink = dto.VideoLink;
+        var about = await _unitOfWork.AboutWriteRepository
+            .Table
+            .Include(x => x.AboutTranslations)
+            .FirstOrDefaultAsync(x => x.Id == dto.Id);
 
-            _unitOfWork.AboutWriteRepository.Update(existing);
-            await _unitOfWork.SaveChangesAsync();
+    
+
+        about.VideoLink = dto.VideoLink;
+       
+
+        foreach (var translationDto in dto.Translations)
+        {
+            var existingTranslation = about.AboutTranslations
+                .FirstOrDefault(t => t.Language == translationDto.Language);
+
+            if (existingTranslation != null)
+            {
+                
+                existingTranslation.Title = translationDto.Title;
+                existingTranslation.MiniTitle = translationDto.MiniTitle;
+                existingTranslation.Description = translationDto.Description;
+            }
+            else
+            {
+             
+                about.AboutTranslations.Add(new AboutTranslation
+                {
+                    Title = translationDto.Title,
+                    MiniTitle = translationDto.MiniTitle,
+                    Description = translationDto.Description,
+                    Language = translationDto.Language
+                });
+            }
         }
+
+        _unitOfWork.AboutWriteRepository.Update(about);
+        await _unitOfWork.SaveChangesAsync();
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
 public class AboutDto
 {
     public int Id { get; set; }
-    public string Title { get; set; }
-    public string Description { get; set; }
     public string VideoLink { get; set; }
+
+    public List<AboutTranslationDto> Translations { get; set; }
+}
+
+public class AboutTranslationDto
+{
+    public string Title { get; set; }
     public string MiniTitle { get; set; }
+    public string Description { get; set; }
+    public Language Language { get; set; }
 }
 public class AboutUpdateDto
 {
-    public string Title { get; set; }
-    public string Description { get; set; }
+    public int Id { get; set; }
     public string VideoLink { get; set; }
 
+    public List<AboutTranslationUpdateDto> Translations { get; set; }
+}
+
+public class AboutTranslationUpdateDto
+{
+    public int? Id { get; set; } 
+    public string Title { get; set; }
     public string MiniTitle { get; set; }
+    public string Description { get; set; }
+    public Language Language { get; set; }
 }
 public class ContactDto
 {

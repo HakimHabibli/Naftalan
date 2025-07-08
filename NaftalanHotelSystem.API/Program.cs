@@ -23,7 +23,7 @@ namespace NaftalanHotelSystem.API
 
             builder.Services.AddCors(
                     opt=>opt.AddDefaultPolicy(
-                        builder=>builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000", "http://localhost:3000")
+                        builder=>builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000", "http://localhost:3000", "http://localhost:3001", "https://localhost:3001")
                         )
                 );
 
