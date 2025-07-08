@@ -17,5 +17,8 @@ public static class ServiceRegistration
         services.AddScoped<IPackageService, PackageService>();
         services.AddScoped<IIllnessService,  IllnessService>();
         services.AddScoped<ITreatmentCategoryService, TreatmentCategoryService>();
+        services.AddScoped<IAboutService, AboutService>();
+        services.AddScoped<IContactService, ContactService>();
+
     }
 }

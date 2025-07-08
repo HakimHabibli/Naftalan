@@ -1,5 +1,4 @@
 ﻿using NaftalanHotelSystem.Application.DataTransferObject;
-using NaftalanHotelSystem.Domain.Entites;
 using NaftalanHotelSystem.Domain.Enums;
 using Org.BouncyCastle.Asn1.Mozilla;
 
@@ -13,3 +12,4 @@ public interface IEquipmentService
     public Task DeleteEquipmentAsync(int id);
     public Task UpdateEquipmentAsync(int id,EquipmentUpdateDto equipment);
 }
+

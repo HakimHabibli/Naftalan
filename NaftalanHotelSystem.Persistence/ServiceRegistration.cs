@@ -4,6 +4,7 @@ using NaftalanHotelSystem.Application.Abstractions.Repositories;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Domain.Entites;
 using NaftalanHotelSystem.Persistence.Repositories;
+using NaftalanHotelSystem.Persistence.SeedData;
 using NaftalanHotelSystem.Persistence.UnitOfWork;
 
 namespace NaftalanHotelSystem.Persistence;
@@ -20,6 +21,12 @@ public static class ServiceRegistration
         services.AddScoped<IReadRepository<Room>, ReadRepository<Room>>();
 
         services.AddScoped<IUnitOfWork, NaftalanHotelSystem.Persistence.UnitOfWork.UnitOfWork>();
+       
+        
+        services.AddScoped<ISeeder, AboutSeeder>();
+        services.AddScoped<ISeeder, ContactSeeder>();
+        services.AddScoped<SeederManager>();
+
     }
     /*
 

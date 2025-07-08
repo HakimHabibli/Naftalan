@@ -22,6 +22,12 @@ public interface IUnitOfWork
 
     IReadRepository<TreatmentCategory> TreatmentCategoryReadRepository { get;}
     IWriteRepository<TreatmentCategory> TreatmentCategoryWriteRepository { get;}
+
+    IReadRepository<About> AboutReadRepository { get; }
+    IWriteRepository<About> AboutWriteRepository { get; }
+
+    IReadRepository<Contact> ContactReadRepository { get; }
+    IWriteRepository<Contact> ContactWriteRepository { get; }
     /*
      IReadRepository< >  .ReadRepository {get;}
      IWriteRepository< >  .WriteRepository {get;}

@@ -5,6 +5,88 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/About": {
+      "get": {
+        "tags": [
+          "About"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "About"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AboutUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AboutUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AboutUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Contact": {
+      "get": {
+        "tags": [
+          "Contact"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Contact"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Equipment": {
       "get": {
         "tags": [
@@ -817,6 +899,69 @@
   },
   "components": {
     "schemas": {
+      "AboutUpdateDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "videoLink": {
+            "type": "string",
+            "nullable": true
+          },
+          "miniTitle": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContactUpdateDto": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "mail": {
+            "type": "string",
+            "nullable": true
+          },
+          "adress": {
+            "type": "string",
+            "nullable": true
+          },
+          "instagramLink": {
+            "type": "string",
+            "nullable": true
+          },
+          "facebookLink": {
+            "type": "string",
+            "nullable": true
+          },
+          "tiktokLink": {
+            "type": "string",
+            "nullable": true
+          },
+          "youtubeLink": {
+            "type": "string",
+            "nullable": true
+          },
+          "whatsappNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "EquipmentCreateDto": {
         "type": "object",
         "properties": {

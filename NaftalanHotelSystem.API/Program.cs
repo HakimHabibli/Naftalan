@@ -4,12 +4,13 @@ using NaftalanHotelSystem.Application;
 using NaftalanHotelSystem.Infrastructure.Services;
 using NaftalanHotelSystem.Persistence;
 using NaftalanHotelSystem.Persistence.DataAccessLayer;
+using NaftalanHotelSystem.Persistence.SeedData;
 
 namespace NaftalanHotelSystem.API
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -33,12 +34,21 @@ namespace NaftalanHotelSystem.API
             //TODO : SmtpSetting Configure --> Infrastructure Layer SR
             builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
 
-           
+
+
+          
             builder.Services.AddInfrastructureServices();
             builder.Services.AddApplicationServices();
             builder.Services.AddPersistenceServices(builder.Configuration);
 
             var app = builder.Build();
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+                var seederManager = scope.ServiceProvider.GetRequiredService<SeederManager>();
+                await seederManager.SeedAsync(context);
+            }
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -52,7 +62,7 @@ namespace NaftalanHotelSystem.API
 
             app.MapControllers();
 
-            app.Run();
+            await app.RunAsync();
         }
     }
 }

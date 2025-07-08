@@ -42,6 +42,14 @@ public class UnitOfWork : IUnitOfWork
 
     public IWriteRepository<TreatmentCategory> TreatmentCategoryWriteRepository => new WriteRepository<TreatmentCategory>(_context);
 
+    public IReadRepository<About> AboutReadRepository =>  new ReadRepository<About>(_context);
+
+    public IWriteRepository<About> AboutWriteRepository =>  new WriteRepository<About>(_context);
+
+    public IReadRepository<Contact> ContactReadRepository =>  new ReadRepository<Contact>(_context);
+
+    public IWriteRepository<Contact> ContactWriteRepository =>  new WriteRepository<Contact>(_context);
+
 
     /*
     public IReadRepository< >   .ReadRepository => new ReadRepository<  >(_context);

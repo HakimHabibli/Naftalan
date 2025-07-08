@@ -1,5 +1,57 @@
 [
   {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.AboutController",
+    "Method": "Get",
+    "RelativePath": "api/About",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.AboutController",
+    "Method": "Update",
+    "RelativePath": "api/About",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NaftalanHotelSystem.Application.Concretes.Services.AboutUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.ContactController",
+    "Method": "Get",
+    "RelativePath": "api/Contact",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.ContactController",
+    "Method": "Update",
+    "RelativePath": "api/Contact",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NaftalanHotelSystem.Application.Concretes.Services.ContactUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NaftalanHotelSystem.API.Controllers.EquipmentController",
     "Method": "GetAll",
     "RelativePath": "api/Equipment",

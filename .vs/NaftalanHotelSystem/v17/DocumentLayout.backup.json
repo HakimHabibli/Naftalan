@@ -3,16 +3,104 @@
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\concretes\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\concretes\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\concretes\\services\\aboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\concretes\\services\\aboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|solutionrelative:naftalanhotelsystem.api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59328DF4-6023-4ABE-95CC-75298B05ECB5}|NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.domain\\entites\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59328DF4-6023-4ABE-95CC-75298B05ECB5}|NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj|solutionrelative:naftalanhotelsystem.domain\\entites\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59328DF4-6023-4ABE-95CC-75298B05ECB5}|NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.domain\\entites\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59328DF4-6023-4ABE-95CC-75298B05ECB5}|NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj|solutionrelative:naftalanhotelsystem.domain\\entites\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.persistence\\seeddata\\aboutseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|solutionrelative:naftalanhotelsystem.persistence\\seeddata\\aboutseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.persistence\\seeddata\\contactseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|solutionrelative:naftalanhotelsystem.persistence\\seeddata\\contactseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|solutionrelative:naftalanhotelsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.persistence\\migrations\\20250708070629_aboutandcontactentityadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|solutionrelative:naftalanhotelsystem.persistence\\migrations\\20250708070629_aboutandcontactentityadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|solutionrelative:naftalanhotelsystem.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.api\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|solutionrelative:naftalanhotelsystem.api\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\Migrations\\20250708091541_FixContactNumberConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NaftalanHotelSystem.Persistence\\Migrations\\20250708091541_FixContactNumberConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.api\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|solutionrelative:naftalanhotelsystem.api\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.api\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F1EB5D1-BA7C-4CD4-ABC5-9CBDB62704D1}|NaftalanHotelSystem.API\\NaftalanHotelSystem.API.csproj|solutionrelative:naftalanhotelsystem.api\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB330901-3FA8-45FD-BCC8-94EA12FFA99B}|NaftalanHotelSystem.Infrastructure\\NaftalanHotelSystem.Infrastructure.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.infrastructure\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB330901-3FA8-45FD-BCC8-94EA12FFA99B}|NaftalanHotelSystem.Infrastructure\\NaftalanHotelSystem.Infrastructure.csproj|solutionrelative:naftalanhotelsystem.infrastructure\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.persistence\\dataaccesslayer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|solutionrelative:naftalanhotelsystem.persistence\\dataaccesslayer\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.persistence\\seeddata\\seedermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|solutionrelative:naftalanhotelsystem.persistence\\seeddata\\seedermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.persistence\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|solutionrelative:naftalanhotelsystem.persistence\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\abstractions\\services\\iequipmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\abstractions\\services\\iequipmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\abstractions\\services\\icontactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\abstractions\\services\\icontactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\abstractions\\services\\iaboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\abstractions\\services\\iaboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\datatransferobject\\treatmentmethoddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\datatransferobject\\treatmentmethoddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\datatransferobject\\packagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\datatransferobject\\packagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\datatransferobject\\roomcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\datatransferobject\\roomcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\datatransferobject\\equipmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\datatransferobject\\equipmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\datatransferobject\\treatmentcategoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\datatransferobject\\treatmentcategoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\datatransferobject\\roomtranslationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +111,24 @@
       "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\datatransferobject\\roomgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\concretes\\services\\treatmentcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\concretes\\services\\treatmentcategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\concretes\\services\\illnessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\concretes\\services\\illnessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.persistence\\seeddata\\iseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F79172C-793C-4582-A62C-36AA574FF4F6}|NaftalanHotelSystem.Persistence\\NaftalanHotelSystem.Persistence.csproj|solutionrelative:naftalanhotelsystem.persistence\\seeddata\\iseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB330901-3FA8-45FD-BCC8-94EA12FFA99B}|NaftalanHotelSystem.Infrastructure\\NaftalanHotelSystem.Infrastructure.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.infrastructure\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB330901-3FA8-45FD-BCC8-94EA12FFA99B}|NaftalanHotelSystem.Infrastructure\\NaftalanHotelSystem.Infrastructure.csproj|solutionrelative:naftalanhotelsystem.infrastructure\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB330901-3FA8-45FD-BCC8-94EA12FFA99B}|NaftalanHotelSystem.Infrastructure\\NaftalanHotelSystem.Infrastructure.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.infrastructure\\configurations\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB330901-3FA8-45FD-BCC8-94EA12FFA99B}|NaftalanHotelSystem.Infrastructure\\NaftalanHotelSystem.Infrastructure.csproj|solutionrelative:naftalanhotelsystem.infrastructure\\configurations\\smtpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|c:\\users\\user\\onedrive\\desktop\\github\\naftalan\\naftalan\\naftalanhotelsystem.application\\concretes\\services\\equipmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B731E8D-1C14-42FB-8317-652BA7C91E85}|NaftalanHotelSystem.Application\\NaftalanHotelSystem.Application.csproj|solutionrelative:naftalanhotelsystem.application\\concretes\\services\\equipmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +138,397 @@
       "DocumentGroups": [
         {
           "DockedWidth": 180,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoomController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Controllers\\RoomController.cs",
-              "RelativeDocumentMoniker": "NaftalanHotelSystem.API\\Controllers\\RoomController.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Controllers\\RoomController.cs",
-              "RelativeToolTip": "NaftalanHotelSystem.API\\Controllers\\RoomController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AboutSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\SeedData\\AboutSeeder.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Persistence\\SeedData\\AboutSeeder.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\SeedData\\AboutSeeder.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Persistence\\SeedData\\AboutSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T15:57:02.202Z",
+              "WhenOpened": "2025-07-08T09:18:09.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RoomGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\RoomGetDto.cs",
-              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\DataTransferObject\\RoomGetDto.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\RoomGetDto.cs",
-              "RelativeToolTip": "NaftalanHotelSystem.Application\\DataTransferObject\\RoomGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "20250708091541_FixContactNumberConverter.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\Migrations\\20250708091541_FixContactNumberConverter.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Persistence\\Migrations\\20250708091541_FixContactNumberConverter.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\Migrations\\20250708091541_FixContactNumberConverter.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Persistence\\Migrations\\20250708091541_FixContactNumberConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T14:22:15.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T09:15:41.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.API\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.API\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T09:13:55.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.API\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.API\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T09:13:18.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EquipmentController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Controllers\\EquipmentController.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.API\\Controllers\\EquipmentController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Controllers\\EquipmentController.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.API\\Controllers\\EquipmentController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T09:11:54.167Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TreatmentCategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\TreatmentCategoryService.cs",
-              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\Concretes\\Services\\TreatmentCategoryService.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\TreatmentCategoryService.cs",
-              "RelativeToolTip": "NaftalanHotelSystem.Application\\Concretes\\Services\\TreatmentCategoryService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.API\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\Program.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.API\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB4AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T14:21:55.937Z"
+              "WhenOpened": "2025-07-08T08:01:30.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Persistence\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\ServiceRegistration.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Persistence\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:58:58.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AboutService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\AboutService.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\Concretes\\Services\\AboutService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\AboutService.cs*",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\Concretes\\Services\\AboutService.cs*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwCkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:43:53.62Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "About.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Domain\\Entites\\About.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Domain\\Entites\\About.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Domain\\Entites\\About.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Domain\\Entites\\About.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:46:58.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Domain\\Entites\\Contact.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Domain\\Entites\\Contact.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Domain\\Entites\\Contact.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Domain\\Entites\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:47:00.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250708070629_AboutAndContactEntityAdded.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\Migrations\\20250708070629_AboutAndContactEntityAdded.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Persistence\\Migrations\\20250708070629_AboutAndContactEntityAdded.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\Migrations\\20250708070629_AboutAndContactEntityAdded.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Persistence\\Migrations\\20250708070629_AboutAndContactEntityAdded.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T09:16:23.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\SeedData\\ContactSeeder.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Persistence\\SeedData\\ContactSeeder.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\SeedData\\ContactSeeder.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Persistence\\SeedData\\ContactSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T09:22:31.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Infrastructure\\NotificationService.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Infrastructure\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Infrastructure\\NotificationService.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Infrastructure\\NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:50:11.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\ServiceRegistration.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:43:24.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\DataAccessLayer\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Persistence\\DataAccessLayer\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\DataAccessLayer\\AppDbContext.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Persistence\\DataAccessLayer\\AppDbContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwC4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T09:08:38.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SeederManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\SeedData\\SeederManager.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Persistence\\SeedData\\SeederManager.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\SeedData\\SeederManager.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Persistence\\SeedData\\SeederManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T09:08:20.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T09:08:23.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IEquipmentService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Abstractions\\Services\\IEquipmentService.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\Abstractions\\Services\\IEquipmentService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Abstractions\\Services\\IEquipmentService.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\Abstractions\\Services\\IEquipmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:43:13.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IContactService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Abstractions\\Services\\IContactService.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\Abstractions\\Services\\IContactService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Abstractions\\Services\\IContactService.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\Abstractions\\Services\\IContactService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T08:44:05.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IAboutService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Abstractions\\Services\\IAboutService.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\Abstractions\\Services\\IAboutService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Abstractions\\Services\\IAboutService.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\Abstractions\\Services\\IAboutService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T08:36:05.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TreatmentMethodDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\TreatmentMethodDto.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\DataTransferObject\\TreatmentMethodDto.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\TreatmentMethodDto.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\DataTransferObject\\TreatmentMethodDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T08:43:22.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PackageDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\PackageDto.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\DataTransferObject\\PackageDto.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\PackageDto.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\DataTransferObject\\PackageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T08:43:24.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "RoomCreateDto.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\RoomCreateDto.cs",
               "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\DataTransferObject\\RoomCreateDto.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\RoomCreateDto.cs",
               "RelativeToolTip": "NaftalanHotelSystem.Application\\DataTransferObject\\RoomCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T14:21:31.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T08:43:27.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\RoomService.cs",
-              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\Concretes\\Services\\RoomService.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\RoomService.cs*",
-              "RelativeToolTip": "NaftalanHotelSystem.Application\\Concretes\\Services\\RoomService.cs*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCMAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "EquipmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\EquipmentDto.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\DataTransferObject\\EquipmentDto.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\EquipmentDto.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\DataTransferObject\\EquipmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T14:17:30.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T07:46:21.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 24,
+              "Title": "TreatmentCategoryUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\TreatmentCategoryUpdateDto.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\DataTransferObject\\TreatmentCategoryUpdateDto.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\TreatmentCategoryUpdateDto.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\DataTransferObject\\TreatmentCategoryUpdateDto.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T08:43:18.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "RoomTranslationCreateDto.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\RoomTranslationCreateDto.cs",
               "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\DataTransferObject\\RoomTranslationCreateDto.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\RoomTranslationCreateDto.cs",
               "RelativeToolTip": "NaftalanHotelSystem.Application\\DataTransferObject\\RoomTranslationCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T14:17:15.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T08:43:17.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RoomGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\RoomGetDto.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\DataTransferObject\\RoomGetDto.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\DataTransferObject\\RoomGetDto.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\DataTransferObject\\RoomGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T08:43:16.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IllnessService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\IllnessService.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\Concretes\\Services\\IllnessService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\IllnessService.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\Concretes\\Services\\IllnessService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T08:33:57.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ISeeder.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\SeedData\\ISeeder.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Persistence\\SeedData\\ISeeder.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Persistence\\SeedData\\ISeeder.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Persistence\\SeedData\\ISeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:55:28.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Infrastructure\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Infrastructure\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Infrastructure\\ServiceRegistration.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Infrastructure\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:50:16.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SmtpSettings.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Infrastructure\\Configurations\\SmtpSettings.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Infrastructure\\Configurations\\SmtpSettings.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Infrastructure\\Configurations\\SmtpSettings.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Infrastructure\\Configurations\\SmtpSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:50:07.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EquipmentService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\EquipmentService.cs",
+              "RelativeDocumentMoniker": "NaftalanHotelSystem.Application\\Concretes\\Services\\EquipmentService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Application\\Concretes\\Services\\EquipmentService.cs",
+              "RelativeToolTip": "NaftalanHotelSystem.Application\\Concretes\\Services\\EquipmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T07:43:34.289Z"
             }
           ]
         }
