@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\about\\f22ba3e3da8546339a9726cb6fed84de.jfif",
+      "PackagePath": "staticwebassets\\uploads\\images\\about\\f22ba3e3da8546339a9726cb6fed84de.jfif"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NaftalanHotelSystem.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NaftalanHotelSystem.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.NaftalanHotelSystem.API.props",
+      "PackagePath": "build\\NaftalanHotelSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.NaftalanHotelSystem.API.props",
+      "PackagePath": "buildMultiTargeting\\NaftalanHotelSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.NaftalanHotelSystem.API.props",
+      "PackagePath": "buildTransitive\\NaftalanHotelSystem.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

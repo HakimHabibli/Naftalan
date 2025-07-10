@@ -22,19 +22,42 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/AboutUpdateDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/AboutUpdateDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/AboutUpdateDto"
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "VideoLink": {
+                    "type": "string"
+                  },
+                  "ImageFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Translations": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/AboutTranslationUpdateDto"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "VideoLink": {
+                  "style": "form"
+                },
+                "ImageFile": {
+                  "style": "form"
+                },
+                "Translations": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -921,27 +944,6 @@
           },
           "language": {
             "$ref": "#/components/schemas/Language"
-          }
-        },
-        "additionalProperties": false
-      },
-      "AboutUpdateDto": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "videoLink": {
-            "type": "string",
-            "nullable": true
-          },
-          "translations": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/AboutTranslationUpdateDto"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false

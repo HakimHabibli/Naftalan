@@ -205,6 +205,31 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.ToTable("IllnessesTranslation");
                 });
 
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Image", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Entity")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RelatedEntityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Images");
+                });
+
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Package", b =>
                 {
                     b.Property<int>("Id")

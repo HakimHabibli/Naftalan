@@ -15,3 +15,7 @@ public interface IRoomService
     public Task DeleteRoomAsync(int id);
 
 }
+//public interface IImageService 
+//{
+//    public
+//}

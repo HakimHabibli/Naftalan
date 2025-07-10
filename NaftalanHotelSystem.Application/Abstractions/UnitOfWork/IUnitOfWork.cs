@@ -1,5 +1,6 @@
 ﻿using NaftalanHotelSystem.Application.Abstractions.Repositories;
 using NaftalanHotelSystem.Domain.Entites;
+using Org.BouncyCastle.Asn1.Esf;
 
 namespace NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 
@@ -28,6 +29,10 @@ public interface IUnitOfWork
 
     IReadRepository<Contact> ContactReadRepository { get; }
     IWriteRepository<Contact> ContactWriteRepository { get; }
+
+    IReadRepository<Image> ImageReadRepository { get; }
+    IWriteRepository<Image> ImageWriteRepository { get; }
+
     /*
      IReadRepository< >  .ReadRepository {get;}
      IWriteRepository< >  .WriteRepository {get;}

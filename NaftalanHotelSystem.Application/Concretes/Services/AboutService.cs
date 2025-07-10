@@ -1,7 +1,9 @@
 ﻿using System;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
+using NaftalanHotelSystem.Application.DataTransferObject;
 using NaftalanHotelSystem.Domain.Entites;
 using NaftalanHotelSystem.Domain.Enums;
 
@@ -10,10 +12,12 @@ namespace NaftalanHotelSystem.Application.Concretes.Services;
 public class AboutService : IAboutService
 {
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IImageService _imageService;
 
-    public AboutService(IUnitOfWork unitOfWork)
+    public AboutService(IUnitOfWork unitOfWork, IImageService imageService)
     {
         _unitOfWork = unitOfWork;
+        _imageService = imageService;
     }
 
     public async Task<AboutDto> GetAboutAsync()
@@ -23,11 +27,15 @@ public class AboutService : IAboutService
             .Include(x => x.AboutTranslations)
             .FirstOrDefaultAsync();
 
+        var image = await _unitOfWork.ImageReadRepository.GetAll()
+            .Where(x => x.Entity == ImageEntity.About && x.RelatedEntityId == about.Id)
+        .OrderByDescending(x => x.Id) 
+        .FirstOrDefaultAsync();
 
         return new AboutDto
         {
-            Id = about.Id,
             VideoLink = about.VideoLink,
+            ImageUrl = image?.Url,
             Translations = about.AboutTranslations.Select(t => new AboutTranslationDto
             {
                 Title = t.Title,
@@ -74,6 +82,27 @@ public class AboutService : IAboutService
                 });
             }
         }
+        if (dto.ImageFile != null)
+        {
+            var existingImages = await _unitOfWork.ImageReadRepository.GetAll()
+                .Where(x => x.Entity == ImageEntity.About && x.RelatedEntityId == about.Id)
+                .ToListAsync();
+
+            foreach (var img in existingImages)
+            {
+                await _imageService.DeleteImageAsync(img.Id);
+            }
+
+            // Yeni şəkili yüklə
+            var imageCreateDto = new ImageCreateDto
+            {
+                File = dto.ImageFile,
+                Entity = ImageEntity.About,
+                RelatedEntityId = about.Id
+            };
+
+            await _imageService.UploadImageAsync(imageCreateDto);
+        }
 
         _unitOfWork.AboutWriteRepository.Update(about);
         await _unitOfWork.SaveChangesAsync();
@@ -82,19 +111,12 @@ public class AboutService : IAboutService
 }
 
 
-
-
-
-
-
-
-
-
-
 public class AboutDto
 {
     public int Id { get; set; }
     public string VideoLink { get; set; }
+
+    public string ImageUrl  { get; set; }//
 
     public List<AboutTranslationDto> Translations { get; set; }
 }
@@ -110,7 +132,7 @@ public class AboutUpdateDto
 {
     public int Id { get; set; }
     public string VideoLink { get; set; }
-
+    public IFormFile ImageFile { get; set; }
     public List<AboutTranslationUpdateDto> Translations { get; set; }
 }
 

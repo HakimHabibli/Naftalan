@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Runtime.CompilerServices;
+using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.DataTransferObject;
 using NaftalanHotelSystem.Domain.Enums;
@@ -10,7 +11,6 @@ namespace NaftalanHotelSystem.API.Controllers;
 public class PackageController : ControllerBase
 {
     private readonly IPackageService _packageService;
-
     public PackageController(IPackageService packageService)
     {
         _packageService = packageService;

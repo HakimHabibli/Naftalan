@@ -10,7 +10,7 @@ namespace NaftalanHotelSystem.API.Controllers
     public class IllnessController : ControllerBase
     {
         private readonly IIllnessService _illnessService;
-    
+
         public IllnessController(IIllnessService illnessService)
         {
             _illnessService = illnessService;

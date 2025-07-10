@@ -18,9 +18,24 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "NaftalanHotelSystem.Application.Concretes.Services.AboutUpdateDto",
-        "IsRequired": true
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoLink",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Translations",
+        "Type": "System.Collections.Generic.List\u00601[[NaftalanHotelSystem.Application.Concretes.Services.AboutTranslationUpdateDto, NaftalanHotelSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

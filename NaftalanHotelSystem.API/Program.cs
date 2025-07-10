@@ -1,6 +1,9 @@
 
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using NaftalanHotelSystem.API.Services;
 using NaftalanHotelSystem.Application;
+using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Infrastructure.Services;
 using NaftalanHotelSystem.Persistence;
 using NaftalanHotelSystem.Persistence.DataAccessLayer;
@@ -20,22 +23,30 @@ namespace NaftalanHotelSystem.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
-            builder.Services.AddCors(
-                    opt=>opt.AddDefaultPolicy(
-                        builder=>builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000", "http://localhost:3000", "http://localhost:3001", "https://localhost:3001")
-                        )
-                );
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                {
+                    policy.WithOrigins(
+                        "http://localhost:3000",
+                        "https://localhost:3000",
+                        "http://localhost:3001",
+                        "https://localhost:3001"
+                    )
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
+            });
 
             //TODO : AppDbContext-->Persistence layer SR
-           builder.Services.AddDbContext<AppDbContext>(options =>
+            builder.Services.AddDbContext<AppDbContext>(options =>
                    options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
             //TODO : SmtpSetting Configure --> Infrastructure Layer SR
             builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
 
 
-
+            builder.Services.AddScoped<IFileService, WebFileService>();
           
             builder.Services.AddInfrastructureServices();
             builder.Services.AddApplicationServices();
@@ -56,10 +67,10 @@ namespace NaftalanHotelSystem.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            app.UseCors();
+            app.UseCors("AllowFrontend");
             app.UseAuthorization();
 
-
+            app.UseStaticFiles();
             app.MapControllers();
 
             await app.RunAsync();

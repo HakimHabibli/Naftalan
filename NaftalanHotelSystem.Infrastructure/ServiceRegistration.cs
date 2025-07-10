@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using NaftalanHotelSystem.Application.Abstractions.Services;
+using NaftalanHotelSystem.Application.Concretes.Services;
 using NaftalanHotelSystem.Infrastructure;
 
 namespace NaftalanHotelSystem.Persistence;
@@ -12,6 +13,9 @@ public static class ServiceRegistration
 
 
         services.AddScoped<INotificationService, NotificationService>();
+
+
+        services.AddScoped<IImageService, ImageService>();
     }
 
 }

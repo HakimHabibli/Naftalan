@@ -50,6 +50,10 @@ public class UnitOfWork : IUnitOfWork
 
     public IWriteRepository<Contact> ContactWriteRepository =>  new WriteRepository<Contact>(_context);
 
+    public IReadRepository<Image> ImageReadRepository => new ReadRepository<Image>(_context);
+
+    public IWriteRepository<Image> ImageWriteRepository =>  new WriteRepository<Image>(_context);
+
 
     /*
     public IReadRepository< >   .ReadRepository => new ReadRepository<  >(_context);

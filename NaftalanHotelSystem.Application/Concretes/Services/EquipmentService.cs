@@ -47,6 +47,10 @@ public class EquipmentService : IEquipmentService
         await _unitOfWork.EquipmentWriteRepository.CreateAsync(equipment);
     }
 
+
+    //TODO : Butun getbyid servislerinde sadece idye gore olmalidi servis daxilinde ise butun translationlarini getirmey lazimdi  
+    //    public async Task<EquipmentDto> GetEquipmentByIdAsync(int id)  -- >Bele olmalidi 
+
     public async Task<EquipmentDto> GetEquipmentByIdAsync(int id, Language? language = Language.Az)
     {
         var equipment = await _unitOfWork.EquipmentReadRepository.Table

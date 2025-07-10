@@ -39,16 +39,18 @@ public class AppDbContext : DbContext
     public DbSet<Package> Packages { get; set; }
     public DbSet<PackageTranslation> PackageTranslations { get; set; }
 
+    public DbSet<Image> Images { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
        
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
        
-        
-        var stringListConverter = new ValueConverter<List<string>, string>(
-        v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
-        v => JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null)
-   );
+        var stringListConverter = new ValueConverter<List<string>, string>
+            (   
+                v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
+                v => JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null)
+            );
 
         modelBuilder.Entity<Contact>()
             .Property(c => c.Number)
