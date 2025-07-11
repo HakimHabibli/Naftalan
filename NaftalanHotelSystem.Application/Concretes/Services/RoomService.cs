@@ -27,6 +27,7 @@ public class RoomService : IRoomService
 
         var roomDtos = new List<RoomGetDto>();
 
+
         foreach (var room in rooms)
         {
             // Hər otaq üçün şəkilləri ayrı-ayrı yükləyin
@@ -267,18 +268,21 @@ public class RoomService : IRoomService
             await _unitOfWork.RoomEquipmentWriteRepository.CreateAsync(newRoomEquipment); // Yeni əlaqə yaradılır
         }
 
-        // Şəkilləri silin
-        if (dto.ImageIdsToDelete != null && dto.ImageIdsToDelete.Any())
-        {
-            foreach (var imageId in dto.ImageIdsToDelete)
-            {
-                await _imageService.DeleteImageAsync(imageId); // ImageService öz daxilində SaveChangesAsync-i çağırır
-            }
-        }
-
-        // Yeni şəkilləri yükləyin
+        // --- Şəkil Yeniləmə Məntiqi (YENİLƏNDİ - Ssenari 1) ---
+        // Əgər yeni şəkil faylları göndərilibsə, mövcud şəkilləri tamamilə sil və yalnız yeniləri əlavə et
         if (dto.NewImageFiles != null && dto.NewImageFiles.Any())
         {
+            // Mövcud bütün şəkilləri tapın və silin
+            var existingImages = await _unitOfWork.ImageReadRepository.GetAll(asNoTracking: true)
+                .Where(x => x.Entity == ImageEntity.Room && x.RelatedEntityId == roomToUpdate.Id)
+                .ToListAsync();
+
+            foreach (var image in existingImages)
+            {
+                await _imageService.DeleteImageAsync(image.Id);
+            }
+
+            // Yeni şəkilləri əlavə edin
             foreach (var file in dto.NewImageFiles)
             {
                 var imageCreateDto = new ImageCreateDto
@@ -287,7 +291,7 @@ public class RoomService : IRoomService
                     Entity = ImageEntity.Room,
                     RelatedEntityId = roomToUpdate.Id
                 };
-                await _imageService.UploadImageAsync(imageCreateDto); // ImageService öz daxilində SaveChangesAsync-i çağırır
+                await _imageService.UploadImageAsync(imageCreateDto);
             }
         }
 

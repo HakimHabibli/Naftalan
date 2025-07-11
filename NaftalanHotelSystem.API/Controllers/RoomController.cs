@@ -170,7 +170,6 @@ public class RoomController : ControllerBase
             YoutubeVideoLink = binableDto.YoutubeVideoLink,
             Translations = translations, // Deserializasiya edilmiş tərcümələr
             EquipmentIds = binableDto.EquipmentIds,
-            ImageIdsToDelete = binableDto.ImageIdsToDelete, // Silinəcək şəkil ID-ləri
             NewImageFiles = binableDto.NewImageFiles // Yeni şəkil faylları
         };
 

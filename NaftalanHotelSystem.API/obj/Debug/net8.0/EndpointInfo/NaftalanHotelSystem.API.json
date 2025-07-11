@@ -776,13 +776,6 @@
                       "format": "int32"
                     }
                   },
-                  "ImageIdsToDelete": {
-                    "type": "array",
-                    "items": {
-                      "type": "integer",
-                      "format": "int32"
-                    }
-                  },
                   "NewImageFiles": {
                     "type": "array",
                     "items": {
@@ -815,9 +808,6 @@
                   "style": "form"
                 },
                 "EquipmentIds": {
-                  "style": "form"
-                },
-                "ImageIdsToDelete": {
                   "style": "form"
                 },
                 "NewImageFiles": {

@@ -25,6 +25,5 @@ public class BinableRoomUpdateDto
 
     public List<int> EquipmentIds { get; set; } = new List<int>();
 
-    public List<int>? ImageIdsToDelete { get; set; } // Silinəcək şəkillərin ID-ləri
     public List<IFormFile>? NewImageFiles { get; set; } // Əlavə ediləcək yeni şəkillərin faylları
 }
