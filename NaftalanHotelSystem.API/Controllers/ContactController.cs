@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
-using NaftalanHotelSystem.Application.Concretes.Services;
+using NaftalanHotelSystem.Application.DataTransferObject;
 
 namespace NaftalanHotelSystem.API.Controllers
 {

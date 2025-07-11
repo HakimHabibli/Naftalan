@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NaftalanHotelSystem.API.ModelBinders;
 using NaftalanHotelSystem.Application.Abstractions.Services;
-using NaftalanHotelSystem.Application.Concretes.Services;
+using NaftalanHotelSystem.Application.DataTransferObject;
+using Newtonsoft.Json;
 
 namespace NaftalanHotelSystem.API.Controllers
 {
@@ -25,12 +27,32 @@ namespace NaftalanHotelSystem.API.Controllers
             return Ok(about);
             
         }
-
         [HttpPut]
-        public async Task<IActionResult> Update([FromForm] AboutUpdateDto dto)
+        public async Task<IActionResult> Update([FromForm][ModelBinder(BinderType = typeof(AboutUpdateDtoModelBinder))] BinableAboutUpdateDto dto)
         {
-            await _aboutService.UpdateAboutAsync(dto);
-            return NoContent(); 
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            List<AboutTranslationUpdateDto> translations;
+            try
+            {
+                translations = JsonConvert.DeserializeObject<List<AboutTranslationUpdateDto>>(dto.Translations);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Translations JSON is invalid: " + ex.Message);
+            }
+
+            var appDto = new AboutUpdateDto
+            {
+                Id = dto.Id,
+                VideoLink = dto.VideoLink,
+                ImageFile = dto.ImageFile,
+                Translations = translations
+            };
+
+            await _aboutService.UpdateAboutAsync(appDto);
+            return NoContent();
         }
     }
 }

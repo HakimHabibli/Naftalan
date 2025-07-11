@@ -45,7 +45,7 @@ namespace NaftalanHotelSystem.API
             //TODO : SmtpSetting Configure --> Infrastructure Layer SR
             builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
 
-
+            //TODO : Infrastructure layer 
             builder.Services.AddScoped<IFileService, WebFileService>();
           
             builder.Services.AddInfrastructureServices();

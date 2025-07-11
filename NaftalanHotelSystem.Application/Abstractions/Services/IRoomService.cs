@@ -5,17 +5,9 @@ namespace NaftalanHotelSystem.Application.Abstractions.Services;
 
 public interface IRoomService
 {
-
-    public Task<List<RoomGetDto>> GetAllRoomsAsync();
-
-    public Task<RoomCreateDto> GetRoomByIdAsync(int id);
-
-    public Task CreateRoomAsync(RoomCreateDto room);
-    public Task UpdateRoomAsync(int id ,RoomCreateDto room);
-    public Task DeleteRoomAsync(int id);
-
+    Task<List<RoomGetDto>> GetAllRoomsAsync();
+    Task<RoomGetDto> GetRoomByIdAsync(int id);
+    Task CreateRoomAsync(RoomCreateDto dto);
+    Task DeleteRoomAsync(int id);
+    Task UpdateRoomAsync(int id, RoomUpdateDto dto); // <-- Məhz bu formada olmalıdır!
 }
-//public interface IImageService 
-//{
-//    public
-//}

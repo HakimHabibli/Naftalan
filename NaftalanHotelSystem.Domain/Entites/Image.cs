@@ -12,5 +12,6 @@ public class Image :BaseEntity
 }
 public enum ImageEntity 
 {
-    About = 1
+    About = 1,
+    Room = 2
 }

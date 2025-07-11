@@ -24,6 +24,10 @@ public class WriteRepository<T> : IWriteRepository<T> where T : class
         Table.Remove(entity);
     }
 
+    public void RemoveRange(IEnumerable<T> entities)
+    {
+        Table.RemoveRange(entities);
+    }
     public void Update(T entity)
     {
         Table.Update(entity);

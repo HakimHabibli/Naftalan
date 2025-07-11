@@ -33,6 +33,12 @@ public interface IUnitOfWork
     IReadRepository<Image> ImageReadRepository { get; }
     IWriteRepository<Image> ImageWriteRepository { get; }
 
+    // Bu repositoryləri əlavə edin:
+    IReadRepository<RoomTranslation> RoomTranslationReadRepository { get; }
+    IWriteRepository<RoomTranslation> RoomTranslationWriteRepository { get; }
+
+    IReadRepository<RoomEquipment> RoomEquipmentReadRepository { get; }
+    IWriteRepository<RoomEquipment> RoomEquipmentWriteRepository { get; }
     /*
      IReadRepository< >  .ReadRepository {get;}
      IWriteRepository< >  .WriteRepository {get;}

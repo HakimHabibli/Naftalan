@@ -53,6 +53,11 @@ public class UnitOfWork : IUnitOfWork
     public IReadRepository<Image> ImageReadRepository => new ReadRepository<Image>(_context);
 
     public IWriteRepository<Image> ImageWriteRepository =>  new WriteRepository<Image>(_context);
+    public IReadRepository<RoomTranslation> RoomTranslationReadRepository => new ReadRepository<RoomTranslation>(_context);
+    public IWriteRepository<RoomTranslation> RoomTranslationWriteRepository => new WriteRepository<RoomTranslation>(_context);
+
+    public IReadRepository<RoomEquipment> RoomEquipmentReadRepository => new ReadRepository<RoomEquipment>(_context);
+    public IWriteRepository<RoomEquipment> RoomEquipmentWriteRepository => new WriteRepository<RoomEquipment>(_context);
 
 
     /*
