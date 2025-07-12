@@ -33,7 +33,7 @@ public class ImageService : IImageService
 
         var image = new Image
         {
-            Url = Path.Combine("uploads", dto.Entity.ToString().ToLower(), uniqueFileName).Replace("\\", "/"),
+            Url = Path.Combine("uploads", "images", dto.Entity.ToString().ToLower(), uniqueFileName).Replace("\\", "/"),
             Entity = dto.Entity,
             RelatedEntityId = dto.RelatedEntityId
         };

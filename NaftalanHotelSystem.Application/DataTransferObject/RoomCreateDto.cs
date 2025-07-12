@@ -37,5 +37,5 @@ public class RoomTranslationUpdateDto
     public string MiniDescription { get; set; } = string.Empty;
     public string Title { get; set; } = string.Empty;
     public string MiniTitle { get; set; } = string.Empty;
-    public Language Language { get; set; } // <-- RoomTranslation modelində Language enum olduğu üçün ENUM
+    public Language Language { get; set; } 
 }

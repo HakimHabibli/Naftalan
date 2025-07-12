@@ -13,5 +13,10 @@ wwwroot\uploads\images\about\ee4ac3b116324cc2a9a704f739de5271.jfif
 wwwroot\uploads\images\about\f22ba3e3da8546339a9726cb6fed84de.jfif
 wwwroot\uploads\images\room\1bdb578bf10e454fae68db2e7895d32d.jfif
 wwwroot\uploads\images\room\21e355b0c0a54430bcebf2fd3224da03.jfif
+wwwroot\uploads\images\room\60629311e6e24a72addc41838c77cd4e.jfif
 wwwroot\uploads\images\room\736f366cd31e45dc88f1db59dbcc1625.jfif
+wwwroot\uploads\images\room\e2c0de84f6374f91a29a6b130596ddc4.jfif
+wwwroot\uploads\images\room\e810ebf746f3480692845489b9a210df.jfif
+wwwroot\uploads\images\room\ea50b565baf64434b9fb48b695ee50ea.jfif
+wwwroot\uploads\images\room\ea68484799f04c93919098f6d295f124.jfif
 wwwroot\uploads\images\room\ff17776c20494c23ac18d7fb8b0f9806.jfif
