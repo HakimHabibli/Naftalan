@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vr/sy3pke7Kz/iUb8LaZWVKbnSBqx9Y6HJKZPDClAyY=",
+  "Hash": "d6lq5lfncpzTU4PRx0dDUUl9bUZNza5+a0+FpLl6nh8=",
   "Source": "NaftalanHotelSystem.API",
   "BasePath": "_content/NaftalanHotelSystem.API",
   "Mode": "Default",
@@ -290,6 +290,489 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\about\\f22ba3e3da8546339a9726cb6fed84de.jfif"
     },
     {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\10.webp",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/10#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xfeujta4ly",
+      "Integrity": "YzSius5qp/Cpz0WKKAmfRwi3jxDiebDx2b8ZxggPWkY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\10.webp"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\11.webp",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/11#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "onqpx3u17q",
+      "Integrity": "NCBxYwA4QWEp3K2vvx1HqNyu8sijjwlnlgQZjJlfM48=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\11.webp"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\12.webp",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/12#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7to1dt0rr8",
+      "Integrity": "JUuRv9p3xASMYAz9cX5QHub98aRBlrtT98RepS4RMUY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\12.webp"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\13.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/13#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dswxzac79w",
+      "Integrity": "PQ+FTd+H8DxuygAWM26tUBorNvQhLAk7zkDcAPfVYD4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\13.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\14.jpeg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/14#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i51pmxrdk6",
+      "Integrity": "6kO/LqBzf6/F8KBvcnaDeuf6aXuzUEOP9qfXhhDcR/g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\14.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\15.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/15#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dziu1xrncw",
+      "Integrity": "mfAoCfC1M9djF/hHC/eE4SCYnh22/3+9peVXoljzahk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\15.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\16.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/16#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9t53fqwhzs",
+      "Integrity": "LZcOtyRCEs0sWcaZEQ7x8uswOKg+GEpo4GOeTjzCElg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\16.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\17.png",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/17#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0gb4w91v5m",
+      "Integrity": "EDkzJvufGHL1I0GjS6T+c5p/oLs6tq2absBBIHWkGEE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\17.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\18.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/18#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fvqg46dyxj",
+      "Integrity": "9WcoSA3+f/H9Mc90YfW9aXM0dkax0sSZSsTB3ffQmcA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\18.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\19.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/19#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kk9r6ioa37",
+      "Integrity": "NLdDufSIXEhIDOjjR4fxZ3AWxI8046BKi5dcliUBVdA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\19.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\2.png",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k4uoe8sptk",
+      "Integrity": "fGO7fFi5u2qZiMWnVlzd12COUa08rDHSemmLX9vWGfs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\2.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\20.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/20#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zfttz22eay",
+      "Integrity": "sdqsvvybb2W9fg7pYrbaTo/j/hDMq+z2mHelyYn36M0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\20.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\3.png",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o9qkkiq479",
+      "Integrity": "/H26zs3JzMs1B+ZtfVNfdZoVsDjwj8HJPeEe5V/k6QU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\3.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\4.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lmoqtaqkjt",
+      "Integrity": "07u/sdT8i8K4fsY66DSyUXY0xRGGw2lkVs4oKvyvmpw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\5.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7t9fms6m41",
+      "Integrity": "lXorvH1ifbD/aFY/mdrV+yAfc65bt9AB/thuLmJu3oc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\6.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l6dcf1hwy4",
+      "Integrity": "vfANo2ZbbPxdOfGrPN4BkunlQQK3W0z0aIrCreEpvhs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\7.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0jnbyoqi87",
+      "Integrity": "JNK0Yn0CJvTuIKpryRluqCxXGbl4/bEw0ke3SQHi/pA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\8.jpg",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7fg9fh4gat",
+      "Integrity": "nbFF+IW4ymqY0GNnuTXKanFDFZDCjs3JP2EZz8Hah90=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\9.webp",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/illness/9#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7fg2nkutqe",
+      "Integrity": "XdkIYMTcz22Qg6m6b0jRdrn+Vav0CWHaHVa+7aAdfK4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\illness\\9.webp"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\07f3a30a83bf4328a823e6507d5dd178.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/07f3a30a83bf4328a823e6507d5dd178#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y970j6t5y1",
+      "Integrity": "1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\07f3a30a83bf4328a823e6507d5dd178.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\0aeddebefaf6442cbc111ae7544481a8.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/0aeddebefaf6442cbc111ae7544481a8#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhfzz73o2o",
+      "Integrity": "zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\0aeddebefaf6442cbc111ae7544481a8.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\1798d5f62d95467dbe70d5a19be3fa0f.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/1798d5f62d95467dbe70d5a19be3fa0f#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhfzz73o2o",
+      "Integrity": "zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\1798d5f62d95467dbe70d5a19be3fa0f.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\1bca1c26adba464f9110d8e197784b2f.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/1bca1c26adba464f9110d8e197784b2f#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y970j6t5y1",
+      "Integrity": "1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\1bca1c26adba464f9110d8e197784b2f.jfif"
+    },
+    {
       "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\1bdb578bf10e454fae68db2e7895d32d.jfif",
       "SourceId": "NaftalanHotelSystem.API",
       "SourceType": "Discovered",
@@ -332,6 +815,90 @@
       "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\21e355b0c0a54430bcebf2fd3224da03.jfif"
     },
     {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\2bffdd66960443d6ad98bf1e95cefd15.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/2bffdd66960443d6ad98bf1e95cefd15#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y970j6t5y1",
+      "Integrity": "1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\2bffdd66960443d6ad98bf1e95cefd15.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\3672c46375974ba886c7f8356b8f8e6a.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/3672c46375974ba886c7f8356b8f8e6a#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y970j6t5y1",
+      "Integrity": "1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\3672c46375974ba886c7f8356b8f8e6a.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\3e70779796f240ac8ddb27036500285f.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/3e70779796f240ac8ddb27036500285f#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y970j6t5y1",
+      "Integrity": "1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\3e70779796f240ac8ddb27036500285f.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\51824cf8774e4d94afcf74776bf7ea11.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/51824cf8774e4d94afcf74776bf7ea11#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y970j6t5y1",
+      "Integrity": "1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\51824cf8774e4d94afcf74776bf7ea11.jfif"
+    },
+    {
       "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\60629311e6e24a72addc41838c77cd4e.jfif",
       "SourceId": "NaftalanHotelSystem.API",
       "SourceType": "Discovered",
@@ -372,6 +939,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\736f366cd31e45dc88f1db59dbcc1625.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\b180ff0406fe48969066c1385beb9402.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/b180ff0406fe48969066c1385beb9402#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhfzz73o2o",
+      "Integrity": "zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\b180ff0406fe48969066c1385beb9402.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\d0d59c95933b42ef99e4a20b3e5b707e.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/d0d59c95933b42ef99e4a20b3e5b707e#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhfzz73o2o",
+      "Integrity": "zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\d0d59c95933b42ef99e4a20b3e5b707e.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\d72213542b714839a17d457ee65c663c.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/d72213542b714839a17d457ee65c663c#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhfzz73o2o",
+      "Integrity": "zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\d72213542b714839a17d457ee65c663c.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\db4a4c6fe2ab4cc4b2e7dd678d6cbe8e.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/db4a4c6fe2ab4cc4b2e7dd678d6cbe8e#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhfzz73o2o",
+      "Integrity": "zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\db4a4c6fe2ab4cc4b2e7dd678d6cbe8e.jfif"
     },
     {
       "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\e2c0de84f6374f91a29a6b130596ddc4.jfif",
@@ -1547,6 +2198,1892 @@
       ]
     },
     {
+      "Route": "uploads/images/illness/10.webp",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\10.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106042"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YzSius5qp/Cpz0WKKAmfRwi3jxDiebDx2b8ZxggPWkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YzSius5qp/Cpz0WKKAmfRwi3jxDiebDx2b8ZxggPWkY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/10.xfeujta4ly.webp",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\10.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106042"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YzSius5qp/Cpz0WKKAmfRwi3jxDiebDx2b8ZxggPWkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xfeujta4ly"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/10.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YzSius5qp/Cpz0WKKAmfRwi3jxDiebDx2b8ZxggPWkY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/11.onqpx3u17q.webp",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\11.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NCBxYwA4QWEp3K2vvx1HqNyu8sijjwlnlgQZjJlfM48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:06:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "onqpx3u17q"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/11.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NCBxYwA4QWEp3K2vvx1HqNyu8sijjwlnlgQZjJlfM48="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/11.webp",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\11.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NCBxYwA4QWEp3K2vvx1HqNyu8sijjwlnlgQZjJlfM48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:06:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NCBxYwA4QWEp3K2vvx1HqNyu8sijjwlnlgQZjJlfM48="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/12.7to1dt0rr8.webp",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\12.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "139272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JUuRv9p3xASMYAz9cX5QHub98aRBlrtT98RepS4RMUY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:25:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7to1dt0rr8"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/12.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JUuRv9p3xASMYAz9cX5QHub98aRBlrtT98RepS4RMUY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/12.webp",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\12.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "139272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JUuRv9p3xASMYAz9cX5QHub98aRBlrtT98RepS4RMUY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:25:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JUuRv9p3xASMYAz9cX5QHub98aRBlrtT98RepS4RMUY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/13.dswxzac79w.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\13.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PQ+FTd+H8DxuygAWM26tUBorNvQhLAk7zkDcAPfVYD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:05:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dswxzac79w"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/13.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PQ+FTd+H8DxuygAWM26tUBorNvQhLAk7zkDcAPfVYD4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/13.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\13.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PQ+FTd+H8DxuygAWM26tUBorNvQhLAk7zkDcAPfVYD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:05:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PQ+FTd+H8DxuygAWM26tUBorNvQhLAk7zkDcAPfVYD4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/14.i51pmxrdk6.jpeg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\14.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1075128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6kO/LqBzf6/F8KBvcnaDeuf6aXuzUEOP9qfXhhDcR/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:04:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i51pmxrdk6"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/14.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6kO/LqBzf6/F8KBvcnaDeuf6aXuzUEOP9qfXhhDcR/g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/14.jpeg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\14.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1075128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6kO/LqBzf6/F8KBvcnaDeuf6aXuzUEOP9qfXhhDcR/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:04:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6kO/LqBzf6/F8KBvcnaDeuf6aXuzUEOP9qfXhhDcR/g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/15.dziu1xrncw.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\15.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mfAoCfC1M9djF/hHC/eE4SCYnh22/3+9peVXoljzahk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:03:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dziu1xrncw"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/15.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfAoCfC1M9djF/hHC/eE4SCYnh22/3+9peVXoljzahk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/15.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\15.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mfAoCfC1M9djF/hHC/eE4SCYnh22/3+9peVXoljzahk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:03:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mfAoCfC1M9djF/hHC/eE4SCYnh22/3+9peVXoljzahk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/16.9t53fqwhzs.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\16.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44465"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LZcOtyRCEs0sWcaZEQ7x8uswOKg+GEpo4GOeTjzCElg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:03:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9t53fqwhzs"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/16.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LZcOtyRCEs0sWcaZEQ7x8uswOKg+GEpo4GOeTjzCElg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/16.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\16.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44465"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LZcOtyRCEs0sWcaZEQ7x8uswOKg+GEpo4GOeTjzCElg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:03:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LZcOtyRCEs0sWcaZEQ7x8uswOKg+GEpo4GOeTjzCElg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/17.0gb4w91v5m.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\17.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "605888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EDkzJvufGHL1I0GjS6T+c5p/oLs6tq2absBBIHWkGEE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0gb4w91v5m"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/17.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EDkzJvufGHL1I0GjS6T+c5p/oLs6tq2absBBIHWkGEE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/17.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\17.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "605888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EDkzJvufGHL1I0GjS6T+c5p/oLs6tq2absBBIHWkGEE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EDkzJvufGHL1I0GjS6T+c5p/oLs6tq2absBBIHWkGEE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/18.fvqg46dyxj.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\18.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9WcoSA3+f/H9Mc90YfW9aXM0dkax0sSZSsTB3ffQmcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fvqg46dyxj"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/18.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9WcoSA3+f/H9Mc90YfW9aXM0dkax0sSZSsTB3ffQmcA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/18.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\18.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9WcoSA3+f/H9Mc90YfW9aXM0dkax0sSZSsTB3ffQmcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9WcoSA3+f/H9Mc90YfW9aXM0dkax0sSZSsTB3ffQmcA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/19.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\19.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NLdDufSIXEhIDOjjR4fxZ3AWxI8046BKi5dcliUBVdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:02:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NLdDufSIXEhIDOjjR4fxZ3AWxI8046BKi5dcliUBVdA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/19.kk9r6ioa37.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\19.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NLdDufSIXEhIDOjjR4fxZ3AWxI8046BKi5dcliUBVdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:02:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kk9r6ioa37"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/19.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NLdDufSIXEhIDOjjR4fxZ3AWxI8046BKi5dcliUBVdA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/2.k4uoe8sptk.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167514"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGO7fFi5u2qZiMWnVlzd12COUa08rDHSemmLX9vWGfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:15:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k4uoe8sptk"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGO7fFi5u2qZiMWnVlzd12COUa08rDHSemmLX9vWGfs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/2.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167514"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fGO7fFi5u2qZiMWnVlzd12COUa08rDHSemmLX9vWGfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:15:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fGO7fFi5u2qZiMWnVlzd12COUa08rDHSemmLX9vWGfs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/20.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\20.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sdqsvvybb2W9fg7pYrbaTo/j/hDMq+z2mHelyYn36M0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:02:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sdqsvvybb2W9fg7pYrbaTo/j/hDMq+z2mHelyYn36M0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/20.zfttz22eay.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\20.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sdqsvvybb2W9fg7pYrbaTo/j/hDMq+z2mHelyYn36M0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:02:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zfttz22eay"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/20.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sdqsvvybb2W9fg7pYrbaTo/j/hDMq+z2mHelyYn36M0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/3.o9qkkiq479.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/H26zs3JzMs1B+ZtfVNfdZoVsDjwj8HJPeEe5V/k6QU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:16:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o9qkkiq479"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/H26zs3JzMs1B+ZtfVNfdZoVsDjwj8HJPeEe5V/k6QU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/3.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/H26zs3JzMs1B+ZtfVNfdZoVsDjwj8HJPeEe5V/k6QU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:16:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/H26zs3JzMs1B+ZtfVNfdZoVsDjwj8HJPeEe5V/k6QU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/4.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"07u/sdT8i8K4fsY66DSyUXY0xRGGw2lkVs4oKvyvmpw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:17:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-07u/sdT8i8K4fsY66DSyUXY0xRGGw2lkVs4oKvyvmpw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/4.lmoqtaqkjt.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"07u/sdT8i8K4fsY66DSyUXY0xRGGw2lkVs4oKvyvmpw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:17:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lmoqtaqkjt"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-07u/sdT8i8K4fsY66DSyUXY0xRGGw2lkVs4oKvyvmpw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/5.7t9fms6m41.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11762"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXorvH1ifbD/aFY/mdrV+yAfc65bt9AB/thuLmJu3oc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:18:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7t9fms6m41"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXorvH1ifbD/aFY/mdrV+yAfc65bt9AB/thuLmJu3oc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/5.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11762"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lXorvH1ifbD/aFY/mdrV+yAfc65bt9AB/thuLmJu3oc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:18:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lXorvH1ifbD/aFY/mdrV+yAfc65bt9AB/thuLmJu3oc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/6.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5615"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfANo2ZbbPxdOfGrPN4BkunlQQK3W0z0aIrCreEpvhs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:19:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vfANo2ZbbPxdOfGrPN4BkunlQQK3W0z0aIrCreEpvhs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/6.l6dcf1hwy4.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5615"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfANo2ZbbPxdOfGrPN4BkunlQQK3W0z0aIrCreEpvhs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:19:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l6dcf1hwy4"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vfANo2ZbbPxdOfGrPN4BkunlQQK3W0z0aIrCreEpvhs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/7.0jnbyoqi87.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JNK0Yn0CJvTuIKpryRluqCxXGbl4/bEw0ke3SQHi/pA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:08:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0jnbyoqi87"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JNK0Yn0CJvTuIKpryRluqCxXGbl4/bEw0ke3SQHi/pA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/7.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JNK0Yn0CJvTuIKpryRluqCxXGbl4/bEw0ke3SQHi/pA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:08:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JNK0Yn0CJvTuIKpryRluqCxXGbl4/bEw0ke3SQHi/pA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/8.7fg9fh4gat.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "349493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nbFF+IW4ymqY0GNnuTXKanFDFZDCjs3JP2EZz8Hah90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:08:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7fg9fh4gat"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nbFF+IW4ymqY0GNnuTXKanFDFZDCjs3JP2EZz8Hah90="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/8.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "349493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nbFF+IW4ymqY0GNnuTXKanFDFZDCjs3JP2EZz8Hah90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:08:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nbFF+IW4ymqY0GNnuTXKanFDFZDCjs3JP2EZz8Hah90="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/9.7fg2nkutqe.webp",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\9.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XdkIYMTcz22Qg6m6b0jRdrn+Vav0CWHaHVa+7aAdfK4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:07:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7fg2nkutqe"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/illness/9.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XdkIYMTcz22Qg6m6b0jRdrn+Vav0CWHaHVa+7aAdfK4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/illness/9.webp",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\illness\\9.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XdkIYMTcz22Qg6m6b0jRdrn+Vav0CWHaHVa+7aAdfK4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Jul 2025 11:07:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XdkIYMTcz22Qg6m6b0jRdrn+Vav0CWHaHVa+7aAdfK4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/07f3a30a83bf4328a823e6507d5dd178.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\07f3a30a83bf4328a823e6507d5dd178.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:05:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/07f3a30a83bf4328a823e6507d5dd178.y970j6t5y1.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\07f3a30a83bf4328a823e6507d5dd178.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:05:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y970j6t5y1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/07f3a30a83bf4328a823e6507d5dd178.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/0aeddebefaf6442cbc111ae7544481a8.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\0aeddebefaf6442cbc111ae7544481a8.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:03:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/0aeddebefaf6442cbc111ae7544481a8.vhfzz73o2o.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\0aeddebefaf6442cbc111ae7544481a8.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:03:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhfzz73o2o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/0aeddebefaf6442cbc111ae7544481a8.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/1798d5f62d95467dbe70d5a19be3fa0f.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\1798d5f62d95467dbe70d5a19be3fa0f.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:05:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/1798d5f62d95467dbe70d5a19be3fa0f.vhfzz73o2o.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\1798d5f62d95467dbe70d5a19be3fa0f.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:05:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhfzz73o2o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/1798d5f62d95467dbe70d5a19be3fa0f.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/1bca1c26adba464f9110d8e197784b2f.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\1bca1c26adba464f9110d8e197784b2f.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 14:52:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/1bca1c26adba464f9110d8e197784b2f.y970j6t5y1.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\1bca1c26adba464f9110d8e197784b2f.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 14:52:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y970j6t5y1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/1bca1c26adba464f9110d8e197784b2f.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
       "Route": "uploads/images/room/1bdb578bf10e454fae68db2e7895d32d.jfif",
       "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\1bdb578bf10e454fae68db2e7895d32d.jfif",
       "Selectors": [],
@@ -1711,6 +4248,334 @@
       ]
     },
     {
+      "Route": "uploads/images/room/2bffdd66960443d6ad98bf1e95cefd15.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\2bffdd66960443d6ad98bf1e95cefd15.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:03:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/2bffdd66960443d6ad98bf1e95cefd15.y970j6t5y1.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\2bffdd66960443d6ad98bf1e95cefd15.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:03:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y970j6t5y1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/2bffdd66960443d6ad98bf1e95cefd15.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/3672c46375974ba886c7f8356b8f8e6a.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\3672c46375974ba886c7f8356b8f8e6a.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:02:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/3672c46375974ba886c7f8356b8f8e6a.y970j6t5y1.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\3672c46375974ba886c7f8356b8f8e6a.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:02:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y970j6t5y1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/3672c46375974ba886c7f8356b8f8e6a.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/3e70779796f240ac8ddb27036500285f.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\3e70779796f240ac8ddb27036500285f.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:03:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/3e70779796f240ac8ddb27036500285f.y970j6t5y1.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\3e70779796f240ac8ddb27036500285f.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:03:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y970j6t5y1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/3e70779796f240ac8ddb27036500285f.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/51824cf8774e4d94afcf74776bf7ea11.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\51824cf8774e4d94afcf74776bf7ea11.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 14:57:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/51824cf8774e4d94afcf74776bf7ea11.y970j6t5y1.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\51824cf8774e4d94afcf74776bf7ea11.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 14:57:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y970j6t5y1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/51824cf8774e4d94afcf74776bf7ea11.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
       "Route": "uploads/images/room/60629311e6e24a72addc41838c77cd4e.jfif",
       "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\60629311e6e24a72addc41838c77cd4e.jfif",
       "Selectors": [],
@@ -1867,6 +4732,334 @@
         {
           "Name": "label",
           "Value": "uploads/images/room/736f366cd31e45dc88f1db59dbcc1625.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/b180ff0406fe48969066c1385beb9402.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\b180ff0406fe48969066c1385beb9402.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:02:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/b180ff0406fe48969066c1385beb9402.vhfzz73o2o.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\b180ff0406fe48969066c1385beb9402.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:02:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhfzz73o2o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/b180ff0406fe48969066c1385beb9402.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/d0d59c95933b42ef99e4a20b3e5b707e.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\d0d59c95933b42ef99e4a20b3e5b707e.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 14:52:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/d0d59c95933b42ef99e4a20b3e5b707e.vhfzz73o2o.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\d0d59c95933b42ef99e4a20b3e5b707e.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 14:52:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhfzz73o2o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/d0d59c95933b42ef99e4a20b3e5b707e.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/d72213542b714839a17d457ee65c663c.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\d72213542b714839a17d457ee65c663c.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 14:57:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/d72213542b714839a17d457ee65c663c.vhfzz73o2o.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\d72213542b714839a17d457ee65c663c.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 14:57:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhfzz73o2o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/d72213542b714839a17d457ee65c663c.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/db4a4c6fe2ab4cc4b2e7dd678d6cbe8e.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\db4a4c6fe2ab4cc4b2e7dd678d6cbe8e.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:03:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/db4a4c6fe2ab4cc4b2e7dd678d6cbe8e.vhfzz73o2o.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\db4a4c6fe2ab4cc4b2e7dd678d6cbe8e.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 16:03:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhfzz73o2o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/db4a4c6fe2ab4cc4b2e7dd678d6cbe8e.jfif"
         },
         {
           "Name": "integrity",

@@ -8,6 +8,10 @@
 
   <ItemGroup>
 
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -24,7 +28,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NaftalanHotelSystem.Application\NaftalanHotelSystem.Application.csproj" />
-    <ProjectReference Include="..\NaftalanHotelSystem.Domain\NaftalanHotelSystem.Domain.csproj" />
     <ProjectReference Include="..\NaftalanHotelSystem.Infrastructure\NaftalanHotelSystem.Infrastructure.csproj" />
     <ProjectReference Include="..\NaftalanHotelSystem.Persistence\NaftalanHotelSystem.Persistence.csproj" />
   </ItemGroup>

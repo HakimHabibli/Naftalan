@@ -2,6 +2,8 @@
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.Image;
+using NaftalanHotelSystem.Application.DataTransferObject.Room;
 using NaftalanHotelSystem.Domain.Entites;
 
 namespace NaftalanHotelSystem.Infrastructure.Services;

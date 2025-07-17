@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.About;
 using NaftalanHotelSystem.Domain.Entites;
 
 namespace NaftalanHotelSystem.Application.Abstractions.Services;

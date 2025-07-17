@@ -1,4 +1,4 @@
-﻿using NaftalanHotelSystem.Application.DataTransferObject;
+﻿using NaftalanHotelSystem.Application.DataTransferObject.Equipment;
 using NaftalanHotelSystem.Domain.Enums;
 using Org.BouncyCastle.Asn1.Mozilla;
 

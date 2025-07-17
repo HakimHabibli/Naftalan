@@ -1,4 +1,4 @@
-﻿using NaftalanHotelSystem.Application.DataTransferObject;
+﻿using NaftalanHotelSystem.Application.DataTransferObject.Package;
 using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.Application.Abstractions.Services;

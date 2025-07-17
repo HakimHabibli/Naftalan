@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
-using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.Package;
 using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.API.Controllers;

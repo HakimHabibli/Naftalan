@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
-using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.Illness;
 using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.API.Controllers

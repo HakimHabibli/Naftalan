@@ -1,5 +1,7 @@
 
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Options;
 using NaftalanHotelSystem.API.Services;
 using NaftalanHotelSystem.Application;
@@ -8,6 +10,8 @@ using NaftalanHotelSystem.Infrastructure.Services;
 using NaftalanHotelSystem.Persistence;
 using NaftalanHotelSystem.Persistence.DataAccessLayer;
 using NaftalanHotelSystem.Persistence.SeedData;
+
+
 
 namespace NaftalanHotelSystem.API
 {
@@ -20,6 +24,8 @@ namespace NaftalanHotelSystem.API
             // Add services to the container.
 
             builder.Services.AddControllers();
+        
+            builder.Services.AddApplicationServices();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -37,13 +43,23 @@ namespace NaftalanHotelSystem.API
                     .AllowAnyMethod();
                 });
             });
+            builder.Services.AddFluentValidation(fv =>
+            {
 
+                fv.RegisterValidatorsFromAssembly(typeof(NaftalanHotelSystem.Application.ServiceRegistration).Assembly);
+
+                fv.DisableDataAnnotationsValidation = true;
+
+            });
             //TODO : AppDbContext-->Persistence layer SR
             builder.Services.AddDbContext<AppDbContext>(options =>
                    options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
             //TODO : SmtpSetting Configure --> Infrastructure Layer SR
             builder.Services.Configure<SmtpSettings>(builder.Configuration.GetSection("SmtpSettings"));
+
+            
+
 
             //TODO : Infrastructure layer 
             builder.Services.AddScoped<IFileService, WebFileService>();
@@ -67,10 +83,13 @@ namespace NaftalanHotelSystem.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseStaticFiles();
+
             app.UseCors("AllowFrontend");
             app.UseAuthorization();
 
-            app.UseStaticFiles();
+         
             app.MapControllers();
 
             await app.RunAsync();

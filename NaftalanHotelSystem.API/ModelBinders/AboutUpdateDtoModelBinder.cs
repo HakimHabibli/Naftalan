@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.About;
 using Newtonsoft.Json;
 
 namespace NaftalanHotelSystem.API.ModelBinders;

@@ -2,6 +2,7 @@
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.Package;
 using NaftalanHotelSystem.Domain.Entites;
 using NaftalanHotelSystem.Domain.Enums;
 

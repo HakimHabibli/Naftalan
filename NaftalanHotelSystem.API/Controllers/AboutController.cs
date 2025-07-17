@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.API.ModelBinders;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.About;
 using Newtonsoft.Json;
 
 namespace NaftalanHotelSystem.API.Controllers
@@ -30,8 +31,7 @@ namespace NaftalanHotelSystem.API.Controllers
         [HttpPut]
         public async Task<IActionResult> Update([FromForm][ModelBinder(BinderType = typeof(AboutUpdateDtoModelBinder))] BinableAboutUpdateDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+         
 
             List<AboutTranslationUpdateDto> translations;
             try

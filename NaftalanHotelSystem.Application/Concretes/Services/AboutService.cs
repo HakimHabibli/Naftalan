@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.About;
+using NaftalanHotelSystem.Application.DataTransferObject.Image;
 using NaftalanHotelSystem.Domain.Entites;
 
 namespace NaftalanHotelSystem.Application.Concretes.Services;

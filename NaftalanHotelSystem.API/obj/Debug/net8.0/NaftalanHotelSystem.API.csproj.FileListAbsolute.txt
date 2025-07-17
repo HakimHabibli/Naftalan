@@ -562,8 +562,16 @@ C:\Users\ADMIN\OneDrive\Desktop\Naftalan-main\NaftalanHotelSystem.API\obj\Debug\
 C:\Users\ADMIN\OneDrive\Desktop\Naftalan-main\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.pdb
 C:\Users\ADMIN\OneDrive\Desktop\Naftalan-main\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.genruntimeconfig.cache
 C:\Users\ADMIN\OneDrive\Desktop\Naftalan-main\NaftalanHotelSystem.API\obj\Debug\net8.0\ref\NaftalanHotelSystem.API.dll
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.sourcelink.json
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\appsettings.json
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\NaftalanHotelSystem.API.staticwebassets.runtime.json
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\NaftalanHotelSystem.API.staticwebassets.endpoints.json
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\NaftalanHotelSystem.API.exe
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\NaftalanHotelSystem.API.deps.json
@@ -573,6 +581,8 @@ C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\Humanizer.dll
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\MailKit.dll
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -820,14 +830,7 @@ C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\NaftalanHotelSystem.Domain.pdb
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\NaftalanHotelSystem.Infrastructure.pdb
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\NaftalanHotelSystem.Persistence.pdb
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.csproj.AssemblyReference.cache
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.AssemblyInfoInputs.cache
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.AssemblyInfo.cs
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.csproj.CoreCompileInputs.cache
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.sourcelink.json
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\scopedcss\bundle\NaftalanHotelSystem.API.styles.css
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\staticwebassets.development.json
@@ -845,4 +848,4 @@ C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.pdb
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.genruntimeconfig.cache
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\ref\NaftalanHotelSystem.API.dll
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\NaftalanHotelSystem.API.staticwebassets.runtime.json
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll

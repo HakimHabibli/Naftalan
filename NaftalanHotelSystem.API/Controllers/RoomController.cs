@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.API.ModelBinders;
 using NaftalanHotelSystem.Application.Abstractions.Services;
-using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.Room;
 using Newtonsoft.Json;
 
 namespace NaftalanHotelSystem.API.Controllers;

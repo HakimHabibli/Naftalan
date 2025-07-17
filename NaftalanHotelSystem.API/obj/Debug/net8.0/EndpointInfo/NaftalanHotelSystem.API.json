@@ -1267,6 +1267,9 @@
       "IllnessTranslationCreateDto": {
         "type": "object",
         "properties": {
+          "language": {
+            "$ref": "#/components/schemas/Language"
+          },
           "name": {
             "type": "string",
             "nullable": true
@@ -1274,9 +1277,6 @@
           "description": {
             "type": "string",
             "nullable": true
-          },
-          "language": {
-            "$ref": "#/components/schemas/Language"
           }
         },
         "additionalProperties": false
@@ -1284,6 +1284,9 @@
       "IllnessTranslationUpdateDto": {
         "type": "object",
         "properties": {
+          "language": {
+            "$ref": "#/components/schemas/Language"
+          },
           "name": {
             "type": "string",
             "nullable": true
@@ -1291,9 +1294,6 @@
           "description": {
             "type": "string",
             "nullable": true
-          },
-          "language": {
-            "$ref": "#/components/schemas/Language"
           }
         },
         "additionalProperties": false

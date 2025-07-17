@@ -60,7 +60,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "NaftalanHotelSystem.Application.DataTransferObject.ContactUpdateDto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Contact.ContactUpdateDto",
         "IsRequired": true
       }
     ],
@@ -86,7 +86,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "NaftalanHotelSystem.Application.DataTransferObject.EquipmentCreateDto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Equipment.EquipmentCreateDto",
         "IsRequired": true
       }
     ],
@@ -128,7 +128,7 @@
       },
       {
         "Name": "dto",
-        "Type": "NaftalanHotelSystem.Application.DataTransferObject.EquipmentUpdateDto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Equipment.EquipmentUpdateDto",
         "IsRequired": true
       }
     ],
@@ -170,7 +170,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "NaftalanHotelSystem.Application.DataTransferObject.IllnessCreateDto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Illness.IllnessCreateDto",
         "IsRequired": true
       }
     ],
@@ -212,7 +212,7 @@
       },
       {
         "Name": "dto",
-        "Type": "NaftalanHotelSystem.Application.DataTransferObject.IllnessUpdateDto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Illness.IllnessUpdateDto",
         "IsRequired": true
       }
     ],
@@ -280,7 +280,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "NaftalanHotelSystem.Application.DataTransferObject.PackageCreateDto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Package.PackageCreateDto",
         "IsRequired": true
       }
     ],
@@ -322,7 +322,7 @@
       },
       {
         "Name": "dto",
-        "Type": "NaftalanHotelSystem.Application.DataTransferObject.PackageCreateDto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Package.PackageCreateDto",
         "IsRequired": true
       }
     ],
@@ -405,7 +405,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[NaftalanHotelSystem.Application.DataTransferObject.RoomGetDto, NaftalanHotelSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[NaftalanHotelSystem.Application.DataTransferObject.Room.RoomGetDto, NaftalanHotelSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -436,7 +436,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "NaftalanHotelSystem.Application.DataTransferObject.RoomGetDto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Room.RoomGetDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
