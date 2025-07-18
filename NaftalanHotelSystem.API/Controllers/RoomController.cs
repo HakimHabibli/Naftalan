@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.API.ModelBinders;
 using NaftalanHotelSystem.Application.Abstractions.Services;
@@ -21,6 +22,7 @@ public class RoomController : ControllerBase
 
  
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Create([FromForm] BinableRoomCreateDto binableDto)
     {
         if (!ModelState.IsValid)
@@ -77,6 +79,7 @@ public class RoomController : ControllerBase
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<RoomGetDto>))]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAll()
     {
         try
@@ -91,6 +94,7 @@ public class RoomController : ControllerBase
         }
     }
 
+
     // --- GET ROOM BY ID ---
     /// <summary>
     /// Verilən ID-yə görə bir otağı geri qaytarır.
@@ -100,6 +104,7 @@ public class RoomController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(RoomGetDto))]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    [AllowAnonymous]
     public async Task<IActionResult> GetById(int id)
     {
         try
@@ -131,6 +136,7 @@ public class RoomController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(int id, [FromForm] BinableRoomUpdateDto binableDto) // <-- Burda BinableRoomUpdateDto istifadə edildi
     {
         if (!ModelState.IsValid)
@@ -198,6 +204,7 @@ public class RoomController : ControllerBase
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int id)
     {
         try

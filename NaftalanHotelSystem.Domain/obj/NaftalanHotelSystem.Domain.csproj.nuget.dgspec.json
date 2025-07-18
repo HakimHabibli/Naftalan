@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj": {
+    "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj",
         "projectName": "NaftalanHotelSystem.Domain",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.Domain\\NaftalanHotelSystem.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.Domain\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

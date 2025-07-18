@@ -1089,6 +1089,9 @@
         }
       },
       "NaftalanHotelSystem.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.17"
+        },
         "runtime": {
           "NaftalanHotelSystem.Domain.dll": {
             "assemblyVersion": "1.0.0",

@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.Text.Json;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NaftalanHotelSystem.Domain.Entites;
@@ -7,7 +8,7 @@ using NaftalanHotelSystem.Persistence.Configurations.Common;
 
 namespace NaftalanHotelSystem.Persistence.DataAccessLayer;
 
-public class AppDbContext : DbContext
+public class AppDbContext : IdentityDbContext<ApplicationUser>
 {
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
@@ -35,6 +36,8 @@ public class AppDbContext : DbContext
     public DbSet<About> Abouts { get; set; }
     public DbSet<AboutTranslation> AboutTranslations { get; set; }
     public DbSet<Contact> Contacts { get; set; }
+
+    public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
     public DbSet<Package> Packages { get; set; }
     public DbSet<PackageTranslation> PackageTranslations { get; set; }

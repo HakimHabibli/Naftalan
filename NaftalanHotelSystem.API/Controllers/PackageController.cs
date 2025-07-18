@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.DataTransferObject.Package;
@@ -17,6 +18,7 @@ public class PackageController : ControllerBase
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAll()
     {
         var packages = await _packageService.GetAllPackageAsync();
@@ -24,6 +26,7 @@ public class PackageController : ControllerBase
     }
 
     [HttpGet("{id}")]
+    [AllowAnonymous]
     public async Task<IActionResult> GetById(int id, Language? language)
     {
         var package = await _packageService.GetPackageByIdAsync(id, language);
@@ -34,6 +37,7 @@ public class PackageController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Create([FromBody] PackageCreateDto dto)
     {
         if (!ModelState.IsValid)
@@ -44,6 +48,7 @@ public class PackageController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(int id, [FromBody] PackageCreateDto dto)
     {
         if (!ModelState.IsValid)
@@ -54,6 +59,7 @@ public class PackageController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int id)
     {
         await _packageService.DeletePackageAsync(id);

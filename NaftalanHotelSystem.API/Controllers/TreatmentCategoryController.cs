@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.DataTransferObject;
 using NaftalanHotelSystem.Domain.Enums;
@@ -15,6 +16,7 @@ public class TreatmentCategoryController : ControllerBase
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAll()
     {
         var result = await _service.GetAllTreatmentCategoriesAsync();
@@ -22,6 +24,7 @@ public class TreatmentCategoryController : ControllerBase
     }
 
     [HttpGet("{id}")]
+    [AllowAnonymous]
     public async Task<IActionResult> GetById(int id, [FromQuery] Language? language)
     {
         var result = await _service.GetTreatmentCategoryByIdAsync(id, language);
@@ -29,6 +32,7 @@ public class TreatmentCategoryController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Create([FromBody] TreatmentCategoryCreateDto dto)
     {
         await _service.CreateTreatmentCategoryAsync(dto);
@@ -36,6 +40,7 @@ public class TreatmentCategoryController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(int id, [FromBody] TreatmentCategoryUpdateDto dto)
     {
         await _service.UpdateTreatmentCategoryAsync(id, dto);
@@ -43,6 +48,7 @@ public class TreatmentCategoryController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int id)
     {
         await _service.DeleteTreatmentCategoryAsync(id);

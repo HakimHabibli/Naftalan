@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.DataTransferObject.Illness;
 using NaftalanHotelSystem.Domain.Enums;
@@ -17,6 +18,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var result = await _illnessService.GetAllIllnessesAsync();
@@ -24,6 +26,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetById(int id, [FromQuery] Language? language)
         {
             var result = await _illnessService.GetIllnessByIdAsync(id, language);
@@ -31,6 +34,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] IllnessCreateDto dto)
         {
             await _illnessService.CreateIllnessAsync(dto);
@@ -38,6 +42,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int id, [FromBody] IllnessUpdateDto dto)
         {
             await _illnessService.UpdateIllnessAsync(id, dto);
@@ -45,6 +50,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             await _illnessService.DeleteIllnessAsync(id);

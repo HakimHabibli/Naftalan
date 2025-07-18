@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.DataTransferObject;
 using NaftalanHotelSystem.Domain.Enums;
@@ -20,6 +21,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] TreatmentMethodCreateDto dto)
         {
             await _treatmentService.CreateTreatmentMethodAsync(dto);
@@ -27,6 +29,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update([FromBody] TrearmentMethodWriteDto dto)
         {
             await _treatmentService.UpdateTrearmentMethodAsync(dto);
@@ -34,6 +37,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             await _treatmentService.DeleteTreatmentMethodAsync(id);
@@ -41,6 +45,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var result = await _treatmentService.GetAllTrearmentMethodAsync();
@@ -48,6 +53,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetById(int id, [FromQuery] Language? language = Language.Az)
         {
             var result = await _treatmentService.GetTreatmentMethodByIdAsync(id, language);

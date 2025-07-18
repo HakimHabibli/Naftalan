@@ -41,6 +41,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Login.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NaftalanHotelSystem.API.Controllers.ContactController",
     "Method": "Get",
     "RelativePath": "api/Contact",

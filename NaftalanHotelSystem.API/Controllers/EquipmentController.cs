@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.DataTransferObject.Equipment;
 using NaftalanHotelSystem.Domain.Enums;
@@ -20,6 +21,7 @@ public class EquipmentController : ControllerBase
 
 
     [HttpGet]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAll()
     {
         var equipments = await _equipmentService.GetAllEquipmentAsync();
@@ -27,6 +29,7 @@ public class EquipmentController : ControllerBase
     }
 
     [HttpGet("{id}")]
+    [AllowAnonymous]
     public async Task<IActionResult> GetById(int id,Language? language)
     {
         var equipment = await _equipmentService.GetEquipmentByIdAsync(id,language);
@@ -38,6 +41,7 @@ public class EquipmentController : ControllerBase
     }
  
     [HttpPost]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Create([FromBody] EquipmentCreateDto dto)
     {
         if (!ModelState.IsValid)
@@ -50,6 +54,7 @@ public class EquipmentController : ControllerBase
 
 
     [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(int id,[FromBody] EquipmentUpdateDto dto)
     {
         if (!ModelState.IsValid)
@@ -60,6 +65,7 @@ public class EquipmentController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(int id)
     {
         await _equipmentService.DeleteEquipmentAsync(id);

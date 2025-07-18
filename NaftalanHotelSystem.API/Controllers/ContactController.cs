@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.DataTransferObject.Contact;
@@ -17,6 +18,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> Get()
         {
             var contact = await _contactService.GetContactAsync();
@@ -25,6 +27,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update([FromBody] ContactUpdateDto dto)
         {
             await _contactService.UpdateContactAsync(dto);
