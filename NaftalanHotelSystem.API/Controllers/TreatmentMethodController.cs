@@ -2,64 +2,104 @@
 using Microsoft.AspNetCore.Mvc;
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.TreatmentMethod;
 using NaftalanHotelSystem.Domain.Enums;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
+
 namespace NaftalanHotelSystem.API.Controllers
 {
-
     [Route("api/[controller]")]
     [ApiController]
     public class TreatmentMethodController : ControllerBase
     {
-        private readonly ITreatmentMethodService _treatmentService;
+        private readonly ITreatmentMethodService _treatmentMethodService;
 
-        public TreatmentMethodController(ITreatmentMethodService treatmentService)
+        public TreatmentMethodController(ITreatmentMethodService treatmentMethodService)
         {
-            _treatmentService = treatmentService;
+            _treatmentMethodService = treatmentMethodService;
         }
 
+      
         [HttpPost]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([FromBody] TreatmentMethodCreateDto dto)
+        //[Authorize(Roles = "Admin")]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> Create([FromForm] TreatmentMethodCreateDto dto) 
         {
-            await _treatmentService.CreateTreatmentMethodAsync(dto);
-            return Ok();
+            if (!ModelState.IsValid) 
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                await _treatmentMethodService.CreateTreatmentMethodAsync(dto);
+                return StatusCode(201, "Treatment Method created successfully.");
+            }
+            catch (Exception ex)
+            {
+               
+                return BadRequest(ex.Message);
+            }
         }
 
-        [HttpPut]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Update([FromBody] TrearmentMethodWriteDto dto)
+   
+        [HttpPut("{id}")] 
+        //[Authorize(Roles = "Admin")]
+        [Consumes("multipart/form-data")] 
+        public async Task<IActionResult> Update(int id, [FromForm] TreatmentMethodUpdateDto dto)
         {
-            await _treatmentService.UpdateTrearmentMethodAsync(dto);
-            return NoContent();
+            if (!ModelState.IsValid) 
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                await _treatmentMethodService.UpdateTreatmentMethodAsync(id, dto);
+                return Ok("Treatment Method updated successfully."); 
+            }
+            catch (Exception ex)
+            {
+               
+                return NotFound(ex.Message); 
+            }
         }
 
+    
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _treatmentService.DeleteTreatmentMethodAsync(id);
-            return NoContent();
+            try
+            {
+                await _treatmentMethodService.DeleteTreatmentMethodAsync(id);
+                return NoContent(); 
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message); 
+            }
         }
 
         [HttpGet]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
-            var result = await _treatmentService.GetAllTrearmentMethodAsync();
+            var result = await _treatmentMethodService.GetAllTreatmentMethodsAsync();
             return Ok(result);
         }
 
         [HttpGet("{id}")]
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public async Task<IActionResult> GetById(int id)
         {
-            var result = await _treatmentService.GetTreatmentMethodByIdAsync(id);
+            var result = await _treatmentMethodService.GetTreatmentMethodByIdAsync(id);
             if (result == null)
-                return NotFound();
-
+            {
+                return NotFound($"Treatment Method with Id {id} not found."); 
+            }
             return Ok(result);
         }
     }

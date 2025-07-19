@@ -1,15 +1,15 @@
-﻿using NaftalanHotelSystem.Application.DataTransferObject;
+﻿using NaftalanHotelSystem.Application.DataTransferObject.TreatmentMethod;
 using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.Application.Abstractions.Services;
 
 public interface ITreatmentMethodService 
 {
-    public Task<List<TreatmentMethodDto>> GetAllTrearmentMethodAsync();
-    public Task<TreatmentMethodGetByIdDto> GetTreatmentMethodByIdAsync(int id );
-    public Task CreateTreatmentMethodAsync(TreatmentMethodCreateDto dto);
-    public Task DeleteTreatmentMethodAsync(int id);
-    public Task UpdateTrearmentMethodAsync(TrearmentMethodWriteDto dto);
-        
+    Task<List<TreatmentMethodGetByIdDto>> GetAllTreatmentMethodsAsync(); 
+    Task<TreatmentMethodGetByIdDto> GetTreatmentMethodByIdAsync(int id);
+    Task CreateTreatmentMethodAsync(TreatmentMethodCreateDto dto);
+    Task DeleteTreatmentMethodAsync(int id);
+    Task UpdateTreatmentMethodAsync(int id, TreatmentMethodUpdateDto dto); 
+
 }
 

@@ -28,10 +28,10 @@ wwwroot\uploads\images\illness\20.jpg
 wwwroot\uploads\images\illness\3.png
 wwwroot\uploads\images\illness\4.jpg
 wwwroot\uploads\images\illness\5.jpg
-wwwroot\uploads\images\illness\54dc33255bd04eecb812727bb71064ce.PNG
 wwwroot\uploads\images\illness\6.jpg
 wwwroot\uploads\images\illness\7.jpg
 wwwroot\uploads\images\illness\8.jpg
+wwwroot\uploads\images\illness\8dbeb6ff79304fe185e916e6891c4443.PNG
 wwwroot\uploads\images\illness\9.webp
 wwwroot\uploads\images\room\07f3a30a83bf4328a823e6507d5dd178.jfif
 wwwroot\uploads\images\room\0aeddebefaf6442cbc111ae7544481a8.jfif

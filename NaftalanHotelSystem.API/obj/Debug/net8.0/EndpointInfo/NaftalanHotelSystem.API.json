@@ -1087,48 +1087,29 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/TreatmentMethodCreateDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TreatmentMethodCreateDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/TreatmentMethodCreateDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "TreatmentMethod"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TrearmentMethodWriteDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TrearmentMethodWriteDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/TrearmentMethodWriteDto"
+                "type": "object",
+                "properties": {
+                  "Translations": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TreatmentMethodTranslationCreateDto"
+                    }
+                  },
+                  "ImageFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Translations": {
+                  "style": "form"
+                },
+                "ImageFile": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -1151,6 +1132,63 @@
       }
     },
     "/api/TreatmentMethod/{id}": {
+      "put": {
+        "tags": [
+          "TreatmentMethod"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Translations": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TreatmentMethodTranslationUpdateDto"
+                    }
+                  },
+                  "ImageFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Translations": {
+                  "style": "form"
+                },
+                "ImageFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "delete": {
         "tags": [
           "TreatmentMethod"
@@ -1504,23 +1542,6 @@
         },
         "additionalProperties": false
       },
-      "TrearmentMethodWriteDto": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "treatmentMethodTranslationDtos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TreatmentMethodTranslationDto"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "TreatmentCategoryCreateDto": {
         "type": "object",
         "properties": {
@@ -1573,32 +1594,40 @@
         },
         "additionalProperties": false
       },
-      "TreatmentMethodCreateDto": {
-        "type": "object",
-        "properties": {
-          "treatmentMethodTranslationDtos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/TreatmentMethodTranslationDto"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "TreatmentMethodTranslationDto": {
+      "TreatmentMethodTranslationCreateDto": {
         "type": "object",
         "properties": {
           "name": {
             "type": "string",
             "nullable": true
           },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
           "language": {
             "$ref": "#/components/schemas/Language"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TreatmentMethodTranslationUpdateDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
           },
           "description": {
             "type": "string",
             "nullable": true
+          },
+          "language": {
+            "$ref": "#/components/schemas/Language"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

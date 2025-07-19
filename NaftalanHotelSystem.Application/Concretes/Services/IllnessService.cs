@@ -140,7 +140,7 @@ public class IllnessService : IIllnessService
         _imageService = imageService;
     }
 
-    // --- CREATE ILLNESS ---
+    
     public async Task<int> CreateIllnessAsync(IllnessCreateDto dto)
     {
         var illness = new Illness
@@ -172,7 +172,7 @@ public class IllnessService : IIllnessService
         return illness.Id;
     }
 
-    // --- UPDATE ILLNESS ---
+    
     public async Task UpdateIllnessAsync(int id, IllnessUpdateDto dto)
     {
         var illness = await _unitOfWork.IllnessWriteRepository.Table
@@ -247,7 +247,7 @@ public class IllnessService : IIllnessService
         await _unitOfWork.SaveChangesAsync(); // Bütün dəyişiklikləri yadda saxlayın
     }
 
-    // --- DELETE ILLNESS ---
+    
     public async Task DeleteIllnessAsync(int id)
     {
         var illness = await _unitOfWork.IllnessWriteRepository.Table
@@ -279,7 +279,7 @@ public class IllnessService : IIllnessService
         await _unitOfWork.SaveChangesAsync(); // Bütün qalan dəyişiklikləri vahid transaksiyada yadda saxlayın
     }
 
-    // --- GET ALL ILLNESSES ---
+   
     public async Task<List<IllnessGetDto>> GetAllIllnessesAsync() 
     {
         var illnesses = await _unitOfWork.IllnessReadRepository.Table
@@ -320,7 +320,7 @@ public class IllnessService : IIllnessService
         return illnessGetDtos;
     }
 
-    // --- GET ILLNESS BY ID ---
+    
     public async Task<IllnessGetDto> GetIllnessByIdAsync(int id)
     {
         var illness = await _unitOfWork.IllnessReadRepository.Table
@@ -331,14 +331,14 @@ public class IllnessService : IIllnessService
 
         if (illness == null)
         {
-            return null; // Throw new Exception($"Illness with Id {id} not found"); - Controller exception-u tutmalıdır
+            return null;
         }
 
-        // Xəstəliyə aid şəkli yükləyin (yalnız bir dənə)
+       
         var illnessImageUrl = await _unitOfWork.ImageReadRepository.GetAll(asNoTracking: true)
             .Where(x => x.Entity == ImageEntity.Illness && x.RelatedEntityId == illness.Id)
             .Select(x => x.Url)
-            .FirstOrDefaultAsync(); // Yalnız ilk şəklin URL-ini götürürük
+            .FirstOrDefaultAsync(); 
 
         var illnessTranslations = illness.Translations.Select(t => new IllnessTranslationDto
         {
@@ -361,7 +361,7 @@ public class IllnessService : IIllnessService
             TreatmentCategoryId = illness.TreatmentCategoryId,
             Translations = illnessTranslations,
             TreatmentCategoryTranslations = treatmentCategoryTranslations,
-            ImageUrls = illnessImageUrl // Tək şəkil URL-ini DTO-ya əlavə edirik
+            ImageUrls = illnessImageUrl 
         };
     }
 

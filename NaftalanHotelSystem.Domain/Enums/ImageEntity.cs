@@ -4,5 +4,6 @@ public enum ImageEntity
 {
     About = 1,
     Room = 2,
-    Illness = 3
+    Illness = 3,
+    TreatmentMethod = 4
 }

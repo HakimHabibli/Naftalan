@@ -63,6 +63,10 @@ public class UnitOfWork : IUnitOfWork
 
     public IWriteRepository<IllnessTranslation> IllnessTranslationWriteRepository => new WriteRepository<IllnessTranslation>(_context);
 
+    public IReadRepository<TreatmentMethodTranslation> TreatmentMethodTranslationReadRepository => new ReadRepository<TreatmentMethodTranslation>(_context);
+
+    public IWriteRepository<TreatmentMethodTranslation> TreatmentMethodTranslationWriteRepository => new WriteRepository<TreatmentMethodTranslation>(_context);
+
 
 
     /*

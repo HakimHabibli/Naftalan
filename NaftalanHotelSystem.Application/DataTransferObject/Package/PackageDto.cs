@@ -1,4 +1,7 @@
-﻿namespace NaftalanHotelSystem.Application.DataTransferObject.Package;
+﻿using NaftalanHotelSystem.Application.DataTransferObject.TreatmentMethod;
+using NaftalanHotelSystem.Domain.Enums;
+
+namespace NaftalanHotelSystem.Application.DataTransferObject.Package;
 
 public class PackageDto
 {
@@ -10,4 +13,17 @@ public class PackageDto
 
     public List<PackageTranslationDto> PackageTranslations { get; set; }
     public List<TreatmentMethodDto> TreatmentMethods { get; set; }
+}
+public class TreatmentMethodDto 
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public Language Language { get; set; }
+    public string Description { get; set; }
+}
+public class TreatmentMethodTranslationGetByIdDto
+{
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public Language Language { get; set; }
 }

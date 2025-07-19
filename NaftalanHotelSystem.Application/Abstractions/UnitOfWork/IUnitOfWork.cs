@@ -14,6 +14,10 @@ public interface IUnitOfWork
    
     IReadRepository<TreatmentMethod>TreatmentMethodReadRepository {get;}
     IWriteRepository<TreatmentMethod> TreatmentMethodWriteRepository { get;}
+    IReadRepository<TreatmentMethodTranslation> TreatmentMethodTranslationReadRepository { get; }
+    IWriteRepository<TreatmentMethodTranslation> TreatmentMethodTranslationWriteRepository { get; }
+
+
 
     IReadRepository<Package> PackageReadRepository { get;}
     IWriteRepository<Package> PackageWriteRepository { get;}

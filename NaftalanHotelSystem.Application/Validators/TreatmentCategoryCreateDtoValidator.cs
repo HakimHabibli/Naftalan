@@ -1,5 +1,8 @@
-﻿using FluentValidation;
+﻿using System.Linq;
+using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.TreatmentMethod;
 
 namespace NaftalanHotelSystem.Application.Validators;
 
@@ -115,47 +118,76 @@ public class TreatmentCategoryUpdateDtoValidator : AbstractValidator<TreatmentCa
         return translations.Select(t => t.Language).Distinct().Count() == translations.Count;
     }
 }
-public class TrearmentMethodWriteDtoValidator : AbstractValidator<TrearmentMethodWriteDto>
+
+
+public class TreatmentMethodTranslationCreateDtoValidator : AbstractValidator<TreatmentMethodTranslationCreateDto>
 {
-    public TrearmentMethodWriteDtoValidator()
+    public TreatmentMethodTranslationCreateDtoValidator()
     {
+        RuleFor(x => x.Name)
+            .NotEmpty().WithMessage("Ad boş ola bilməz.")
+            .MaximumLength(100).WithMessage("Ad maksimum 100 simvol ola bilər."); 
 
-        RuleFor(x => x.Id)
-          .GreaterThan(0).WithMessage("ID sıfırdan böyük olmalıdır.");
+        RuleFor(x => x.Language)
+            .IsInEnum().WithMessage("Dil dəyəri etibarlı deyil.")
+            .NotNull().WithMessage("Dil boş ola bilməz.");
 
-        RuleFor(x => x.TreatmentMethodTranslationDtos)
-            .NotNull().WithMessage("Tərcümələr siyahısı boş ola bilməz.")
-            .NotEmpty().WithMessage("Ən azı bir tərcümə olmalıdır.");
-        RuleForEach(x => x.TreatmentMethodTranslationDtos).SetValidator(new TreatmentMethodTranslationDtoValidator());  
-
-        RuleFor(x => x.TreatmentMethodTranslationDtos)
-            .Must(HaveUniqueLanguages)
-            .WithMessage("Hər dil üçün yalnız bir tərcümə daxil edilə bilər.");
-    }
-
-    private bool HaveUniqueLanguages(List<TreatmentMethodTranslationDto> translations)
-    {
-        if (translations == null || !translations.Any())
-        {
-            return true;
-        }
-        return translations.Select(t => t.Language).Distinct().Count() == translations.Count;
+        RuleFor(x => x.Description)
+            .NotEmpty().WithMessage("Təsvir boş ola bilməz.")
+            .MaximumLength(1000).WithMessage("Təsvir maksimum 1000 simvol ola bilər."); 
     }
 }
+
+public class TreatmentMethodTranslationUpdateDtoValidator : AbstractValidator<TreatmentMethodTranslationUpdateDto>
+{
+    public TreatmentMethodTranslationUpdateDtoValidator()
+    {
+        RuleFor(x => x.Id)
+            .GreaterThan(0).WithMessage("ID sıfırdan böyük olmalıdır.");
+
+        RuleFor(x => x.Name)
+            .NotEmpty().WithMessage("Ad boş ola bilməz.")
+            .MaximumLength(100).WithMessage("Ad maksimum 100 simvol ola bilər.");
+
+        RuleFor(x => x.Language)
+            .IsInEnum().WithMessage("Dil dəyəri etibarlı deyil.")
+            .NotNull().WithMessage("Dil boş ola bilməz.");
+
+        RuleFor(x => x.Description)
+            .NotEmpty().WithMessage("Təsvir boş ola bilməz.")
+            .MaximumLength(1000).WithMessage("Təsvir maksimum 1000 simvol ola bilər.");
+    }
+}
+
+
 public class TreatmentMethodCreateDtoValidator : AbstractValidator<TreatmentMethodCreateDto>
 {
     public TreatmentMethodCreateDtoValidator()
     {
-        RuleFor(x => x.TreatmentMethodTranslationDtos)
+        RuleFor(x => x.Translations) 
             .NotNull().WithMessage("Tərcümələr siyahısı boş ola bilməz.")
             .NotEmpty().WithMessage("Ən azı bir tərcümə olmalıdır.");
-        RuleForEach(x => x.TreatmentMethodTranslationDtos).SetValidator(new TreatmentMethodTranslationDtoValidator()); 
-        RuleFor(x => x.TreatmentMethodTranslationDtos)
+
+        
+        RuleForEach(x => x.Translations).SetValidator(new TreatmentMethodTranslationCreateDtoValidator());
+
+        
+        RuleFor(x => x.Translations)
             .Must(HaveUniqueLanguages)
             .WithMessage("Hər dil üçün yalnız bir tərcümə daxil edilə bilər.");
+
+    
+        
+        RuleFor(x => x.ImageFile)
+            .Must(BeAValidImageSize).When(x => x.ImageFile != null) 
+                .WithMessage("Şəkil faylının ölçüsü 5MB-dan çox olmamalıdır.")
+            .Must(BeAValidImageExtension).When(x => x.ImageFile != null)
+                .WithMessage("Yalnız JPG, JPEG, PNG formatlı şəkillərə icazə verilir.");
+     
     }
 
-    private bool HaveUniqueLanguages(List<TreatmentMethodTranslationDto> translations)
+  
+    private bool HaveUniqueLanguages(List<TreatmentMethodTranslationCreateDto> translations)
     {
         if (translations == null || !translations.Any())
         {
@@ -163,41 +195,72 @@ public class TreatmentMethodCreateDtoValidator : AbstractValidator<TreatmentMeth
         }
         return translations.Select(t => t.Language).Distinct().Count() == translations.Count;
     }
-}
-public class TreatmentMethodDtoValidator : AbstractValidator<TreatmentMethodDto>
-{
-    public TreatmentMethodDtoValidator()
+
+  
+    private bool BeAValidImageSize(IFormFile file)
     {
-        RuleFor(x => x.Id)
-    .GreaterThan(0).WithMessage("ID sıfırdan böyük olmalıdır.");
+        return file.Length <= 11 * 1024 * 1024;
+    }
 
-        RuleFor(x => x.Name)
-            .NotEmpty().WithMessage("Ad boş ola bilməz.")
-            .MaximumLength(150).WithMessage("Ad maksimum 150 simvol ola bilər.");
-
-        RuleFor(x => x.Language)
-            .IsInEnum().WithMessage("Dil dəyəri etibarlı deyil.")
-            .NotNull().WithMessage("Dil boş ola bilməz.");
-
-        RuleFor(x => x.Description)
-            .NotEmpty().WithMessage("Təsvir boş ola bilməz.")
-            .MaximumLength(1000).WithMessage("Təsvir maksimum 1000 simvol ola bilər.");
+    
+    private bool BeAValidImageExtension(IFormFile file)
+    {
+        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+        var extension = Path.GetExtension(file.FileName).ToLowerInvariant();
+        return allowedExtensions.Contains(extension);
     }
 }
-public class TreatmentMethodTranslationDtoValidator : AbstractValidator<TreatmentMethodTranslationDto>
+
+
+public class TreatmentMethodUpdateDtoValidator : AbstractValidator<TreatmentMethodUpdateDto>
 {
-    public TreatmentMethodTranslationDtoValidator()
+    public TreatmentMethodUpdateDtoValidator()
     {
-        RuleFor(x => x.Name)
-            .NotEmpty().WithMessage("Ad boş ola bilməz.")
-            .MaximumLength(150).WithMessage("Ad maksimum 150 simvol ola bilər.");
+        RuleFor(x => x.Id)
+            .GreaterThan(0).WithMessage("ID sıfırdan böyük olmalıdır.");
 
-        RuleFor(x => x.Language)
-            .IsInEnum().WithMessage("Dil dəyəri etibarlı deyil.")
-            .NotNull().WithMessage("Dil boş ola bilməz.");
+        RuleFor(x => x.Translations) 
+            .NotNull().WithMessage("Tərcümələr siyahısı boş ola bilməz.")
+            .NotEmpty().WithMessage("Ən azı bir tərcümə olmalıdır.");
 
-        RuleFor(x => x.Description)
-            .NotEmpty().WithMessage("Təsvir boş ola bilməz.")
-            .MaximumLength(1000).WithMessage("Təsvir maksimum 1000 simvol ola bilər.");
+      
+        RuleForEach(x => x.Translations).SetValidator(new TreatmentMethodTranslationUpdateDtoValidator());
+
+     
+        RuleFor(x => x.Translations)
+            .Must(HaveUniqueLanguages)
+            .WithMessage("Hər dil üçün yalnız bir tərcümə daxil edilə bilər.");
+
+     
+        RuleFor(x => x.ImageFile)
+            .Must(BeAValidImageSize).When(x => x.ImageFile != null)
+                .WithMessage("Şəkil faylının ölçüsü 5MB-dan çox olmamalıdır.")
+            .Must(BeAValidImageExtension).When(x => x.ImageFile != null)
+                .WithMessage("Yalnız JPG, JPEG, PNG formatlı şəkillərə icazə verilir.");
+    }
+
+  
+    private bool HaveUniqueLanguages(List<TreatmentMethodTranslationUpdateDto> translations)
+    {
+        if (translations == null || !translations.Any())
+        {
+            return true;
+        }
+        return translations.Select(t => t.Language).Distinct().Count() == translations.Count;
+    }
+
+  
+    private bool BeAValidImageSize(IFormFile file)
+    {
+        return file.Length <= 11 * 1024 * 1024;
+    }
+
+  
+    private bool BeAValidImageExtension(IFormFile file)
+    {
+        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+      
+        var extension = Path.GetExtension(file.FileName).ToLowerInvariant();
+        return allowedExtensions.Contains(extension);
     }
 }
