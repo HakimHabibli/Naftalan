@@ -85,35 +85,17 @@ public class TreatmentCategoryService:ITreatmentCategoryService
     }
 
     
-    public async Task<TreatmentCategoryDto> GetTreatmentCategoryByIdAsync(int id, Language? language = Language.Az)
+    public async Task<TreatmentCategoryDto> GetTreatmentCategoryByIdAsync(int id)
     {
         var category = await _unitOfWork.TreatmentCategoryReadRepository.Table
             .Include(c => c.Translations)
             .FirstOrDefaultAsync(c => c.Id == id);
 
-        //if (category == null)
-        //    throw new NotFoundException($"TreatmentCategory with Id {id} not found");
-
-        List<TreatmentCategoryTranslationDto> translations;
-
-        if (language.HasValue)
+        var translations = category.Translations.Select(t => new TreatmentCategoryTranslationDto
         {
-            translations = category.Translations
-                .Where(t => t.Language == language)
-                .Select(t => new TreatmentCategoryTranslationDto
-                {
-                    Name = t.Name,
-                    Language = t.Language
-                }).ToList();
-        }
-        else
-        {
-            translations = category.Translations.Select(t => new TreatmentCategoryTranslationDto
-            {
-                Name = t.Name,
-                Language = t.Language
-            }).ToList();
-        }
+            Name = t.Name,
+            Language = t.Language
+        }).ToList();
 
         return new TreatmentCategoryDto
         {

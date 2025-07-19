@@ -61,23 +61,29 @@ public class TreatmentMethodService : ITreatmentMethodService
         return result;
     }
 
-    public async Task<TreatmentMethodDto> GetTreatmentMethodByIdAsync(int id, Language? language = Language.Az)
+    public async Task<TreatmentMethodGetByIdDto> GetTreatmentMethodByIdAsync(int id)
     {
         var treatment = await _unitOfWork.TreatmentMethodReadRepository.Table
-            .Include(t => t.Translations).FirstOrDefaultAsync(t => t.Id == id);
+            .Include(t => t.Translations)
+            .FirstOrDefaultAsync(t => t.Id == id);
 
-        var translation = language == null
-            ? treatment.Translations.FirstOrDefault()
-            : treatment.Translations.FirstOrDefault(t => t.Id == id);
-
-        return new TreatmentMethodDto
+        if (treatment == null)
         {
-            Id = id,
-            Description = translation.Description,
-            Language = translation.Language,
-            Name = translation.Name
-        };
+            return null; 
+        }
 
+        var translations = treatment.Translations.Select(t => new TreatmentMethodTranslationGetByIdDto
+        {
+            Name = t.Name,
+            Description = t.Description,
+            Language = t.Language
+        }).ToList();
+
+        return new TreatmentMethodGetByIdDto
+        {
+            Id = treatment.Id,
+            Translations = translations
+        };
     }
 
 

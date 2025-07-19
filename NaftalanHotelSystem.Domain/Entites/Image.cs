@@ -1,4 +1,5 @@
 ﻿using NaftalanHotelSystem.Domain.Common;
+using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.Domain.Entites;
 
@@ -9,9 +10,4 @@ public class Image :BaseEntity
     public ImageEntity Entity { get; set; }
 
     public int RelatedEntityId { get; set; }
-}
-public enum ImageEntity 
-{
-    About = 1,
-    Room = 2
 }

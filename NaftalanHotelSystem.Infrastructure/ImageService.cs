@@ -2,6 +2,7 @@
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Application.DataTransferObject.Image;
 using NaftalanHotelSystem.Domain.Entites;
+using NaftalanHotelSystem.Domain.Enums;
 namespace NaftalanHotelSystem.Application.Concretes.Services;
 
 public class ImageService : IImageService

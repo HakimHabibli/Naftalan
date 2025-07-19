@@ -39,6 +39,10 @@ public interface IUnitOfWork
 
     IReadRepository<RoomEquipment> RoomEquipmentReadRepository { get; }
     IWriteRepository<RoomEquipment> RoomEquipmentWriteRepository { get; }
+
+
+    IReadRepository<IllnessTranslation> IllnessTranslationReadRepository { get; }
+    IWriteRepository<IllnessTranslation> IllnessTranslationWriteRepository { get; }
     /*
      IReadRepository< >  .ReadRepository {get;}
      IWriteRepository< >  .WriteRepository {get;}

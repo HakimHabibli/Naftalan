@@ -28,6 +28,7 @@ wwwroot\uploads\images\illness\20.jpg
 wwwroot\uploads\images\illness\3.png
 wwwroot\uploads\images\illness\4.jpg
 wwwroot\uploads\images\illness\5.jpg
+wwwroot\uploads\images\illness\54dc33255bd04eecb812727bb71064ce.PNG
 wwwroot\uploads\images\illness\6.jpg
 wwwroot\uploads\images\illness\7.jpg
 wwwroot\uploads\images\illness\8.jpg

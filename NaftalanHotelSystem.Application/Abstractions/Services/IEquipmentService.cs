@@ -7,7 +7,7 @@ namespace NaftalanHotelSystem.Application.Abstractions.Services;
 public interface IEquipmentService 
 {
     public Task<List<EquipmentDto>> GetAllEquipmentAsync();
-    public Task<EquipmentDto> GetEquipmentByIdAsync(int id, Language? language = Language.Az);
+    public Task<EquipmentGetDto> GetEquipmentByIdAsync(int id);
     public Task CreateAsync(EquipmentCreateDto dto);
     public Task DeleteEquipmentAsync(int id);
     public Task UpdateEquipmentAsync(int id,EquipmentUpdateDto equipment);

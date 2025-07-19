@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using NaftalanHotelSystem.Domain.Entites;
+using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.Application.DataTransferObject.Image;
 

@@ -27,9 +27,9 @@ public class PackageController : ControllerBase
 
     [HttpGet("{id}")]
     [AllowAnonymous]
-    public async Task<IActionResult> GetById(int id, Language? language)
+    public async Task<IActionResult> GetById(int id)
     {
-        var package = await _packageService.GetPackageByIdAsync(id, language);
+        var package = await _packageService.GetPackageByIdAsync(id);
         if (package == null)
             return NotFound();
 

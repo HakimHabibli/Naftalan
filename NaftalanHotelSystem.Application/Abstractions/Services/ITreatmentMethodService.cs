@@ -6,7 +6,7 @@ namespace NaftalanHotelSystem.Application.Abstractions.Services;
 public interface ITreatmentMethodService 
 {
     public Task<List<TreatmentMethodDto>> GetAllTrearmentMethodAsync();
-    public Task<TreatmentMethodDto> GetTreatmentMethodByIdAsync(int id ,Language? language = Language.Az);
+    public Task<TreatmentMethodGetByIdDto> GetTreatmentMethodByIdAsync(int id );
     public Task CreateTreatmentMethodAsync(TreatmentMethodCreateDto dto);
     public Task DeleteTreatmentMethodAsync(int id);
     public Task UpdateTrearmentMethodAsync(TrearmentMethodWriteDto dto);

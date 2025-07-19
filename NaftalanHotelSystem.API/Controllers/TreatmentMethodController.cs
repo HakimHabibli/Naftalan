@@ -54,9 +54,9 @@ namespace NaftalanHotelSystem.API.Controllers
 
         [HttpGet("{id}")]
         [AllowAnonymous]
-        public async Task<IActionResult> GetById(int id, [FromQuery] Language? language = Language.Az)
+        public async Task<IActionResult> GetById(int id)
         {
-            var result = await _treatmentService.GetTreatmentMethodByIdAsync(id, language);
+            var result = await _treatmentService.GetTreatmentMethodByIdAsync(id);
             if (result == null)
                 return NotFound();
 

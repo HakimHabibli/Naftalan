@@ -51,24 +51,28 @@ public class EquipmentService : IEquipmentService
     //TODO : Butun getbyid servislerinde sadece idye gore olmalidi servis daxilinde ise butun translationlarini getirmey lazimdi  
     //    public async Task<EquipmentDto> GetEquipmentByIdAsync(int id)  -- >Bele olmalidi 
 
-    public async Task<EquipmentDto> GetEquipmentByIdAsync(int id, Language? language = Language.Az)
+    public async Task<EquipmentGetDto> GetEquipmentByIdAsync(int id)
     {
         var equipment = await _unitOfWork.EquipmentReadRepository.Table
             .Include(e => e.EquipmentTranslations)
             .FirstOrDefaultAsync(e => e.Id == id);
 
         if (equipment == null)
-            return null;
+        {
+            return null; // Avadanlıq tapılmadıqda null qaytarın
+        }
 
-        var translation = language == null
-            ? equipment.EquipmentTranslations.FirstOrDefault()
-            : equipment.EquipmentTranslations.FirstOrDefault(t => t.Language == language);
+        // Bütün tərcümələri seçin və EquipmentTranslationDto obyektlərinə çevirin
+        var translations = equipment.EquipmentTranslations.Select(t => new EquipmentTranslationCreateDto
+        {
+            Name = t.Name,
+            Language = t.Language
+        }).ToList();
 
-        return new EquipmentDto
+        return new EquipmentGetDto
         {
             Id = equipment.Id,
-            Name = translation?.Name ?? string.Empty,
-            Language = translation?.Language ?? default
+            Translations = translations 
         };
     }
 

@@ -6,6 +6,7 @@ using NaftalanHotelSystem.Application.DataTransferObject;
 using NaftalanHotelSystem.Application.DataTransferObject.About;
 using NaftalanHotelSystem.Application.DataTransferObject.Image;
 using NaftalanHotelSystem.Domain.Entites;
+using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.Application.Concretes.Services;
 

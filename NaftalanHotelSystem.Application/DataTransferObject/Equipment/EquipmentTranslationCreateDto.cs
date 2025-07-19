@@ -6,3 +6,10 @@ public class EquipmentTranslationCreateDto: EquipmentBaseDto
 {
    
 }
+
+
+public class EquipmentGetDto
+{
+    public int Id { get; set; }
+    public List<EquipmentTranslationCreateDto> Translations { get; set; }
+}

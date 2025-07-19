@@ -30,9 +30,9 @@ public class EquipmentController : ControllerBase
 
     [HttpGet("{id}")]
     [AllowAnonymous]
-    public async Task<IActionResult> GetById(int id,Language? language)
+    public async Task<IActionResult> GetById(int id)
     {
-        var equipment = await _equipmentService.GetEquipmentByIdAsync(id,language);
+        var equipment = await _equipmentService.GetEquipmentByIdAsync(id);
 
         if (equipment == null)
             return NotFound();

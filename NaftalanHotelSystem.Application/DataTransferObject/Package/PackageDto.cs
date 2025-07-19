@@ -11,4 +11,3 @@ public class PackageDto
     public List<PackageTranslationDto> PackageTranslations { get; set; }
     public List<TreatmentMethodDto> TreatmentMethods { get; set; }
 }
-

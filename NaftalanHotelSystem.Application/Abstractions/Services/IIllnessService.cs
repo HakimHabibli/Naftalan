@@ -8,6 +8,6 @@ public interface IIllnessService
     Task<int> CreateIllnessAsync(IllnessCreateDto dto);
     Task UpdateIllnessAsync(int id, IllnessUpdateDto dto);
     Task DeleteIllnessAsync(int id);
-    Task<List<IllnessDto>> GetAllIllnessesAsync();
-    Task<IllnessDto> GetIllnessByIdAsync(int id, Language? language = Language.Az);
+    Task<List<IllnessGetDto>> GetAllIllnessesAsync();
+    Task<IllnessGetDto> GetIllnessByIdAsync(int id);
 }

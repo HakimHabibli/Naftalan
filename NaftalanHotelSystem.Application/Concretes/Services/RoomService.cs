@@ -5,6 +5,7 @@ using NaftalanHotelSystem.Application.DataTransferObject;
 using NaftalanHotelSystem.Application.DataTransferObject.Image;
 using NaftalanHotelSystem.Application.DataTransferObject.Room;
 using NaftalanHotelSystem.Domain.Entites;
+using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.Infrastructure.Services;
 public class RoomService : IRoomService

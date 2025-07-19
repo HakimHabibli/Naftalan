@@ -51,7 +51,9 @@ public class PackageService : IPackageService
         return result;
     }
 
-    public async Task<PackageDto> GetPackageByIdAsync(int id, Language? language = Language.Az)
+
+
+    public async Task<PackageDto> GetPackageByIdAsync(int id)
     {
         var package = await _unitOfWork.PackageReadRepository.Table
             .Include(p => p.PackageTranslations)
@@ -60,24 +62,34 @@ public class PackageService : IPackageService
             .FirstOrDefaultAsync(p => p.Id == id);
 
         if (package == null)
-            return null;
+            return null; 
 
-        var packageTranslation = language == null
-            ? package.PackageTranslations.FirstOrDefault()
-            : package.PackageTranslations.FirstOrDefault(t => t.Language == language);
+  
+        var packageTranslations = package.PackageTranslations.Select(pt => new PackageTranslationDto
+        {
+            Description = pt.Description,
+            Language = pt.Language
+        }).ToList();
 
         var treatmentMethods = package.TreatmentMethods.Select(tm =>
         {
-            var tmTranslation = language == null
-                ? tm.Translations.FirstOrDefault()
-                : tm.Translations.FirstOrDefault(t => t.Language == language);
+    
+            var tmTranslations = tm.Translations.Select(t => new TreatmentMethodTranslationGetByIdDto
+            {
+                Name = t.Name,
+                Description = t.Description,
+                Language = t.Language
+            }).ToList();
+
+   
+            var selectedTmTranslation = tmTranslations.FirstOrDefault(t => t.Language == Language.Az) ?? tmTranslations.FirstOrDefault();
 
             return new TreatmentMethodDto
             {
                 Id = tm.Id,
-                Name = tmTranslation?.Name ?? string.Empty,
-                Description = tmTranslation?.Description ?? string.Empty,
-                Language = tmTranslation?.Language ?? Language.Az
+                Name = selectedTmTranslation?.Name ?? string.Empty,
+                Description = selectedTmTranslation?.Description ?? string.Empty,
+                Language = selectedTmTranslation?.Language ?? Language.Az 
             };
         }).ToList();
 
@@ -88,17 +100,13 @@ public class PackageService : IPackageService
             Price = package.Price,
             DurationDay = package.DurationDay,
             RoomType = package.RoomType,
-            PackageTranslations = packageTranslation == null ? new List<PackageTranslationDto>() : new List<PackageTranslationDto>
-        {
-            new PackageTranslationDto
-            {
-                Description = packageTranslation.Description,
-                Language = packageTranslation.Language
-            }
-        },
+            PackageTranslations = packageTranslations,
             TreatmentMethods = treatmentMethods
         };
     }
+
+
+
 
     public async Task CreatePackageAsync(PackageCreateDto dto)
     {

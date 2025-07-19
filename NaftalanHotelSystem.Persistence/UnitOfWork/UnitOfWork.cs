@@ -59,6 +59,11 @@ public class UnitOfWork : IUnitOfWork
     public IReadRepository<RoomEquipment> RoomEquipmentReadRepository => new ReadRepository<RoomEquipment>(_context);
     public IWriteRepository<RoomEquipment> RoomEquipmentWriteRepository => new WriteRepository<RoomEquipment>(_context);
 
+    public IReadRepository<IllnessTranslation> IllnessTranslationReadRepository => new ReadRepository<IllnessTranslation>(_context);
+
+    public IWriteRepository<IllnessTranslation> IllnessTranslationWriteRepository => new WriteRepository<IllnessTranslation>(_context);
+
+
 
     /*
     public IReadRepository< >   .ReadRepository => new ReadRepository<  >(_context);

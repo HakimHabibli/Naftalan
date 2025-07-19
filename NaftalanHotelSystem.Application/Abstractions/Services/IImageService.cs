@@ -1,5 +1,5 @@
 ﻿using NaftalanHotelSystem.Application.DataTransferObject.Image;
-using NaftalanHotelSystem.Domain.Entites;
+using NaftalanHotelSystem.Domain.Enums;
 
 namespace NaftalanHotelSystem.Application.Abstractions.Services;
 

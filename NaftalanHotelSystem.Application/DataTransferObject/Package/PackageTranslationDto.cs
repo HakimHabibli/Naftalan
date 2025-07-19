@@ -8,3 +8,8 @@ public class PackageTranslationDto
     public Language Language { get; set; }
 }
 
+public class PackageTranslationGetDto
+{
+    public string Description { get; set; }
+    public Language Language { get; set; }
+}

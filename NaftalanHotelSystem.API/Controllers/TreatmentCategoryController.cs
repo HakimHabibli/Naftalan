@@ -25,9 +25,9 @@ public class TreatmentCategoryController : ControllerBase
 
     [HttpGet("{id}")]
     [AllowAnonymous]
-    public async Task<IActionResult> GetById(int id, [FromQuery] Language? language)
+    public async Task<IActionResult> GetById(int id)
     {
-        var result = await _service.GetTreatmentCategoryByIdAsync(id, language);
+        var result = await _service.GetTreatmentCategoryByIdAsync(id);
         return Ok(result);
     }
 
