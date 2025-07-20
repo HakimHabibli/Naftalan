@@ -54,3 +54,4 @@ wwwroot\uploads\images\room\e810ebf746f3480692845489b9a210df.jfif
 wwwroot\uploads\images\room\ea50b565baf64434b9fb48b695ee50ea.jfif
 wwwroot\uploads\images\room\ea68484799f04c93919098f6d295f124.jfif
 wwwroot\uploads\images\room\ff17776c20494c23ac18d7fb8b0f9806.jfif
+wwwroot\uploads\images\treatmentmethod\3a2bd0f9bbe74e50b4497801ab11f5b5.PNG

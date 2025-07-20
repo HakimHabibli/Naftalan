@@ -23,7 +23,7 @@ namespace NaftalanHotelSystem.API.Controllers
 
       
         [HttpPost]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [Consumes("multipart/form-data")]
         public async Task<IActionResult> Create([FromForm] TreatmentMethodCreateDto dto) 
         {
@@ -46,7 +46,7 @@ namespace NaftalanHotelSystem.API.Controllers
 
    
         [HttpPut("{id}")] 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [Consumes("multipart/form-data")] 
         public async Task<IActionResult> Update(int id, [FromForm] TreatmentMethodUpdateDto dto)
         {
@@ -69,7 +69,7 @@ namespace NaftalanHotelSystem.API.Controllers
 
     
         [HttpDelete("{id}")]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             try
@@ -84,7 +84,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpGet]
-        //[AllowAnonymous]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var result = await _treatmentMethodService.GetAllTreatmentMethodsAsync();
@@ -92,7 +92,7 @@ namespace NaftalanHotelSystem.API.Controllers
         }
 
         [HttpGet("{id}")]
-        //[AllowAnonymous]
+        [AllowAnonymous]
         public async Task<IActionResult> GetById(int id)
         {
             var result = await _treatmentMethodService.GetTreatmentMethodByIdAsync(id);

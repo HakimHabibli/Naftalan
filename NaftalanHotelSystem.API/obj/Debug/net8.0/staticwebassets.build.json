@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QVX983vRy+oCUWWeBEfI9+ehONQQJ5PpM2dCe85LMBM=",
+  "Hash": "MMGVtHu6Q1gdoMgMGmYNOn+1eUoNqzrNInst+TgmG4w=",
   "Source": "NaftalanHotelSystem.API",
   "BasePath": "_content/NaftalanHotelSystem.API",
   "Mode": "Default",
@@ -1191,6 +1191,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\ff17776c20494c23ac18d7fb8b0f9806.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\treatmentmethod\\3a2bd0f9bbe74e50b4497801ab11f5b5.PNG",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/treatmentmethod/3a2bd0f9bbe74e50b4497801ab11f5b5#[.{fingerprint}]?.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wr03a3t0gj",
+      "Integrity": "rCxTnEJwJnpnKin+VFl3iRM2PFRqvr7d2s7W8fOl04I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\treatmentmethod\\3a2bd0f9bbe74e50b4497801ab11f5b5.PNG"
     }
   ],
   "Endpoints": [
@@ -5783,6 +5804,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-1v+YM0q0nWEVL8e2E/AzjH0xBnUsUJ+o21gu/hSYm8k="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/treatmentmethod/3a2bd0f9bbe74e50b4497801ab11f5b5.PNG",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\treatmentmethod\\3a2bd0f9bbe74e50b4497801ab11f5b5.PNG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "640783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rCxTnEJwJnpnKin+VFl3iRM2PFRqvr7d2s7W8fOl04I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Jul 2025 12:13:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rCxTnEJwJnpnKin+VFl3iRM2PFRqvr7d2s7W8fOl04I="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/treatmentmethod/3a2bd0f9bbe74e50b4497801ab11f5b5.wr03a3t0gj.PNG",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\treatmentmethod\\3a2bd0f9bbe74e50b4497801ab11f5b5.PNG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "640783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rCxTnEJwJnpnKin+VFl3iRM2PFRqvr7d2s7W8fOl04I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Jul 2025 12:13:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wr03a3t0gj"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/treatmentmethod/3a2bd0f9bbe74e50b4497801ab11f5b5.PNG"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rCxTnEJwJnpnKin+VFl3iRM2PFRqvr7d2s7W8fOl04I="
         }
       ]
     }

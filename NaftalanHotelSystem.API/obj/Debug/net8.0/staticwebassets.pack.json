@@ -225,6 +225,10 @@
       "PackagePath": "staticwebassets\\uploads\\images\\room\\ff17776c20494c23ac18d7fb8b0f9806.jfif"
     },
     {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\SecurityGithub\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\treatmentmethod\\3a2bd0f9bbe74e50b4497801ab11f5b5.PNG",
+      "PackagePath": "staticwebassets\\uploads\\images\\treatmentmethod\\3a2bd0f9bbe74e50b4497801ab11f5b5.PNG"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NaftalanHotelSystem.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
