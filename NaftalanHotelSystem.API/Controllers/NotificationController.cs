@@ -20,4 +20,16 @@ public class NotificationController : ControllerBase
         await _notificationService.SendEmailAsync(to, subject, message);
         return Ok("Email göndərildi.");
     }
+    [HttpPost("send-reservation-confirmation")]
+    public async Task<IActionResult> SendReservationConfirmationEmail([FromBody] ReservationConfirmationDto data)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState); 
+        }   
+        
+        await _notificationService.SendReservationConfirmationEmailAsync(data.Email, data);
+        return Ok("Rezervasiya təsdiqi maili uğurla göndərildi.");
+     
+    }
 }

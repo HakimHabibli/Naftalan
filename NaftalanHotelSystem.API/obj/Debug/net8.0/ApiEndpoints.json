@@ -287,6 +287,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.NotificationController",
+    "Method": "SendReservationConfirmationEmail",
+    "RelativePath": "api/Notification/send-reservation-confirmation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "NaftalanHotelSystem.Application.Abstractions.Services.ReservationConfirmationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NaftalanHotelSystem.API.Controllers.PackageController",
     "Method": "GetAll",
     "RelativePath": "api/Package",

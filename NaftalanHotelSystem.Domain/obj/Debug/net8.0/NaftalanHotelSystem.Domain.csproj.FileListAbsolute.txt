@@ -46,3 +46,4 @@ C:\Users\User\OneDrive\Desktop\SecurityGithub\Naftalan\NaftalanHotelSystem.Domai
 C:\Users\User\OneDrive\Desktop\SecurityGithub\Naftalan\NaftalanHotelSystem.Domain\obj\Debug\net8.0\refint\NaftalanHotelSystem.Domain.dll
 C:\Users\User\OneDrive\Desktop\SecurityGithub\Naftalan\NaftalanHotelSystem.Domain\obj\Debug\net8.0\NaftalanHotelSystem.Domain.pdb
 C:\Users\User\OneDrive\Desktop\SecurityGithub\Naftalan\NaftalanHotelSystem.Domain\obj\Debug\net8.0\ref\NaftalanHotelSystem.Domain.dll
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.Domain\obj\Debug\net8.0\NaftalanHotelSystem.Domain.csproj.AssemblyReference.cache

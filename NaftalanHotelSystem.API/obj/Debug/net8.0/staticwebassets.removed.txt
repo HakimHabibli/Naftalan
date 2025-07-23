@@ -1,1 +1,1 @@
-C:\Users\User\OneDrive\Desktop\SecurityGithub\Naftalan\NaftalanHotelSystem.API\wwwroot\uploads\images\treatmentmethod\1cd67810e55a439e9aa2fe5fbcf18622.PNG
+C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\wwwroot\Templates\ReservationConfirmation.html

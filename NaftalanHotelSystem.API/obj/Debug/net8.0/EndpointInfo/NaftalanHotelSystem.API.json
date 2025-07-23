@@ -457,6 +457,37 @@
         }
       }
     },
+    "/api/Notification/send-reservation-confirmation": {
+      "post": {
+        "tags": [
+          "Notification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReservationConfirmationDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReservationConfirmationDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReservationConfirmationDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Package": {
       "get": {
         "tags": [
@@ -1456,6 +1487,85 @@
           }
         },
         "additionalProperties": { }
+      },
+      "ReservationConfirmationDto": {
+        "required": [
+          "date",
+          "dayCount",
+          "email",
+          "guest",
+          "name",
+          "phoneNumber",
+          "price",
+          "roomCount",
+          "selectedRoom",
+          "surname"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "surname": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "phoneNumber": {
+            "minLength": 1,
+            "type": "string",
+            "format": "tel"
+          },
+          "selectedRoom": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "date": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "dayCount": {
+            "maximum": 365,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "roomCount": {
+            "maximum": 10,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "guest": {
+            "maximum": 20,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "childCount": {
+            "maximum": 10,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "minimum": 0.01,
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
       },
       "RoomGetDto": {
         "type": "object",
