@@ -52,23 +52,33 @@ public class NotificationService: INotificationService
             }
         }
 
-        
+
         emailBody = emailBody.Replace("${finalData.name}", data.Name ?? "")
-                             .Replace("${finalData.surname}", data.Surname ?? "")
-                             .Replace("${finalData.selectedRoom}", data.SelectedRoom ?? "")
-                             .Replace("${finalData.date}", data.Date ?? "Seçilməyib")
-                             .Replace("${finalData.dayCount}", data.DayCount.ToString())
-                             .Replace("${finalData.roomCount}", data.RoomCount.ToString())
-                             .Replace("${finalData.guest}", data.Guest.ToString())
-                             .Replace("${finalData.childCount}", data.ChildCount.ToString())
-                             .Replace("${finalData.phoneNumber}", data.PhoneNumber ?? "")
-                             .Replace("${finalData.email}", data.Email ?? "")
-                             .Replace("${finalData.message}", string.IsNullOrEmpty(data.Message) ? "—" : data.Message)
-                             .Replace("${price}", data.Price.ToString("F2"));
+                         .Replace("${finalData.surname}", data.Surname ?? "")
+                         .Replace("${finalData.selectedRoom}", data.SelectedRoom ?? "")
+                         .Replace("${finalData.date}", data.Date ?? "Seçilməyib") 
+                         .Replace("${finalData.dayCount}", data.DayCount.ToString())
+                         .Replace("${finalData.roomCount}", data.RoomCount.ToString())
+                         .Replace("${finalData.guest}", data.Guest.ToString())
+                         .Replace("${finalData.childCount}", data.ChildCount.ToString())
+                         .Replace("${finalData.phoneNumber}", data.PhoneNumber ?? "")
+                         .Replace("${finalData.email}", data.Email ?? "")
+                         .Replace("${finalData.message}", string.IsNullOrEmpty(data.Message) ? "—" : data.Message)
+                         .Replace("${price}", data.Price.ToString("F2"));
+
 
         var message = new MimeMessage();
         message.From.Add(new MailboxAddress("Park Naftalan Sanatoriyası", _smtpSettings.User));
+
+       
         message.To.Add(MailboxAddress.Parse(toEmail));
+
+       
+        if (!string.Equals(toEmail, _smtpSettings.User, StringComparison.OrdinalIgnoreCase))
+        {
+            message.To.Add(MailboxAddress.Parse(_smtpSettings.User));
+        }
+
         message.Subject = "Rezervasiya Təsdiqi: Park Naftalan Sanatoriyası";
         message.Body = new BodyBuilder { HtmlBody = emailBody }.ToMessageBody();
 
