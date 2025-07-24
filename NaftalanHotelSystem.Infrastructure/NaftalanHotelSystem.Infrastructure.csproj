@@ -7,17 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Templates\ReservationConfirmation.html">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </EmbeddedResource>
+    <None Remove="Templates\Reservation.html" />
   </ItemGroup>
 
-
-
-  
-	
   <ItemGroup>
+    <EmbeddedResource Include="Templates\Reservation.html" />
+  </ItemGroup>
+
+	<ItemGroup>
     <ProjectReference Include="..\NaftalanHotelSystem.Application\NaftalanHotelSystem.Application.csproj" />
     <ProjectReference Include="..\NaftalanHotelSystem.Domain\NaftalanHotelSystem.Domain.csproj" />
   </ItemGroup>

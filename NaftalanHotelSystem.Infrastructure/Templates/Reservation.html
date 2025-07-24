@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="${languageCode}">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>${SubjectTranslation}</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            -webkit-text-size-adjust: 100%; 
+            -ms-text-size-adjust: 100%;
+        }
+
+       
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+
+            .header h1 {
+                color: #0056b3;
+                margin: 0;
+                font-size: 28px;
+            }
+
+        h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 5px;
+        }
+
+        
+        ul {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+            ul li {
+                margin-bottom: 10px;
+                padding-left: 15px;
+                position: relative;
+            }
+
+                ul li strong {
+                    color: #0056b3; 
+                }
+
+       
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 12px;
+            color: #777;
+        }
+
+            .footer a {
+                color: #0056b3;
+                text-decoration: none;
+            }
+
+                .footer a:hover {
+                    text-decoration: underline;
+                }
+
+       
+        p {
+            margin-bottom: 1em;
+        }
+
+       
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Park Naftalan Sanatoriyası</h1>
+        </div>
+
+        <div class="lang-az" style="display: ${displayAz};">
+            <p>Hörmətli <strong>${finalData.name} ${finalData.surname}</strong>,</p>
+            <p>Park Naftalan Sanatoriyasını seçdiyiniz üçün Sizə səmimi qəlbdən təşəkkür edirik!</p>
+            <p>Rezervasiyanız uğurla qeydə alınıb və Sizinlə tezliklə əlaqə saxlanılacaq.</p>
+            <h3>Rezervasiya məlumatlarınız:</h3>
+            <ul>
+                <li><strong>Seçilmiş otaq:</strong> ${finalData.selectedRoom}</li>
+                <li><strong>Tarix:</strong> ${finalData.date}</li>
+                <li><strong>Gün sayı:</strong> ${finalData.dayCount}</li>
+                <li><strong>Otaq sayı:</strong> ${finalData.roomCount}</li>
+                <li><strong>Qonaq sayı:</strong> ${finalData.guest}</li>
+                <li><strong>Uşaq sayı:</strong> ${finalData.childCount}</li>
+                <li><strong>Telefon nömrəsi:</strong> ${finalData.phoneNumber}</li>
+                <li><strong>Email:</strong> ${finalData.email}</li>
+                <li><strong>Əlavə qeyd:</strong> ${finalData.message}</li>
+                <li><strong>Ümumi qiymət:</strong> ${price} ₼</li>
+            </ul>
+            <p>Əlavə suallarınız olarsa, bizimlə əlaqə saxlamaqdan çəkinməyin.</p>
+            <p style="margin-top: 24px;">Hörmətlə,<br />Park Naftalan Qeydiyyat Şöbəsi</p>
+        </div>
+
+        <div class="lang-en" style="display: ${displayEn};">
+            <p>Dear <strong>${finalData.name} ${finalData.surname}</strong>,</p>
+            <p>Thank you very much for choosing Park Naftalan Sanatorium!</p>
+            <p>Your reservation has been successfully registered, and we will contact you shortly.</p>
+            <h3>Your Reservation Details:</h3>
+            <ul>
+                <li><strong>Selected Room:</strong> ${finalData.selectedRoom}</li>
+                <li><strong>Date:</strong> ${finalData.date}</li>
+                <li><strong>Number of Days:</strong> ${finalData.dayCount}</li>
+                <li><strong>Number of Rooms:</strong> ${finalData.roomCount}</li>
+                <li><strong>Number of Guests:</strong> ${finalData.guest}</li>
+                <li><strong>Number of Children:</strong> ${finalData.childCount}</li>
+                <li><strong>Phone Number:</strong> ${finalData.phoneNumber}</li>
+                <li><strong>Email:</strong> ${finalData.email}</li>
+                <li><strong>Additional Note:</strong> ${finalData.message}</li>
+                <li><strong>Total Price:</strong> ${price} ₼</li>
+            </ul>
+            <p>If you have any further questions, please do not hesitate to contact us.</p>
+            <p style="margin-top: 24px;">Sincerely,<br />Park Naftalan Registration Department</p>
+        </div>
+
+        <div class="lang-ru" style="display: ${displayRu};">
+            <p>Уважаемый(ая) <strong>${finalData.name} ${finalData.surname}</strong>,</p>
+            <p>Большое спасибо за выбор санатория "Парк Нафталан"!</p>
+            <p>Ваша бронь успешно зарегистрирована, и мы свяжемся с вами в ближайшее время.</p>
+            <h3>Данные вашей брони:</h3>
+            <ul>
+                <li><strong>Выбранный номер:</strong> ${finalData.selectedRoom}</li>
+                <li><strong>Дата:</strong> ${finalData.date}</li>
+                <li><strong>Количество дней:</strong> ${finalData.dayCount}</li>
+                <li><strong>Количество номеров:</strong> ${finalData.roomCount}</li>
+                <li><strong>Количество гостей:</strong> ${finalData.guest}</li>
+                <li><strong>Количество детей:</strong> ${finalData.childCount}</li>
+                <li><strong>Номер телефона:</strong> ${finalData.phoneNumber}</li>
+                <li><strong>Электронная почта:</strong> ${finalData.email}</li>
+                <li><strong>Дополнительное примечание:</strong> ${finalData.message}</li>
+                <li><strong>Общая стоимость:</strong> ${price} ₼</li>
+            </ul>
+            <p>Если у вас возникнут дополнительные вопросы, пожалуйста, свяжитесь с нами.</p>
+            <p style="margin-top: 24px;">С уважением,<br />Отдел Регистрации Санатория "Парк Нафталан"</p>
+        </div>
+
+        <div class="footer">
+            <p>Park Naftalan Sanatoriyası<br />Naftalan şəhəri, Azərbaycan</p>
+            <p><a href="mailto:parknaftalanaz2024@gmail.com" style="color: #0056b3;">parknaftalanaz2024@gmail.com</a>
+            | <a href="tel:+994502342458" style="color: #0056b3;">+994502342458</a></p>
+        </div>
+    </div>
+</body>
+</html>

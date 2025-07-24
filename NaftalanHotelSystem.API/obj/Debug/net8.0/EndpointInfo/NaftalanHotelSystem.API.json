@@ -1494,6 +1494,7 @@
           "dayCount",
           "email",
           "guest",
+          "language",
           "name",
           "phoneNumber",
           "price",
@@ -1563,6 +1564,11 @@
             "minimum": 0.01,
             "type": "number",
             "format": "double"
+          },
+          "language": {
+            "maxLength": 10,
+            "minLength": 0,
+            "type": "string"
           }
         },
         "additionalProperties": false
