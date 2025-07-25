@@ -22,17 +22,6 @@
         },
         "runtime": {
           "NaftalanHotelSystem.API.dll": {}
-        },
-        "resources": {
-          "az/NaftalanHotelSystem.API.resources.dll": {
-            "locale": "az"
-          },
-          "en/NaftalanHotelSystem.API.resources.dll": {
-            "locale": "en"
-          },
-          "ru/NaftalanHotelSystem.API.resources.dll": {
-            "locale": "ru"
-          }
         }
       },
       "Azure.Core/1.38.0": {

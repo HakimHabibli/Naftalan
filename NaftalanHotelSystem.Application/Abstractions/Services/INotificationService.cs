@@ -51,9 +51,9 @@ public class ReservationConfirmationDto
 
     public string Message { get; set; } 
 
-    [Required(ErrorMessage = "Qiymət boş ola bilməz.")]
-    [Range(0.01, double.MaxValue, ErrorMessage = "Qiymət müsbət dəyər olmalıdır.")]
-    public decimal Price { get; set; }
+    //[Required(ErrorMessage = "Qiymət boş ola bilməz.")]
+    //[Range(0.01, double.MaxValue, ErrorMessage = "Qiymət müsbət dəyər olmalıdır.")]
+    //public decimal Price { get; set; }
 
     [Required(ErrorMessage = "Dil seçimi boş ola bilməz.")]
     [StringLength(10, ErrorMessage = "Dil kodu çox uzundur.")]

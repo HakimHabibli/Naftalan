@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 namespace NaftalanHotelSystem.API.Controllers;
 
 
-[Route("api/[controller]")] // Controller adı RoomController olduğu üçün '/api/Room' olacaq
+[Route("api/[controller]")] 
 [ApiController]
 public class RoomController : ControllerBase
 {
@@ -42,11 +42,11 @@ public class RoomController : ControllerBase
         }
         catch (Exception ex)
         {
-            // JSON deserializasiyası zamanı xəta
+          
             return BadRequest($"Tərcümələr JSON formatında xəta: {ex.Message}");
         }
 
-        // RoomService-ə ötürüləcək əsl DTO-nu yaradın
+      
         var roomCreateDto = new RoomCreateDto
         {
             Category = binableDto.Category,
@@ -54,9 +54,9 @@ public class RoomController : ControllerBase
             Price = binableDto.Price,
             Member = binableDto.Member,
             YoutubeVideoLink = binableDto.YoutubeVideoLink,
-            Translations = translations, // Deserializasiya edilmiş tərcümələr
+            Translations = translations, 
             EquipmentIds = binableDto.EquipmentIds,
-            ImageFiles = binableDto.ImageFiles // FromForm-dan gələn şəkil faylları
+            ImageFiles = binableDto.ImageFiles 
         };
 
         try
@@ -66,16 +66,12 @@ public class RoomController : ControllerBase
         }
         catch (Exception ex)
         {
-            // Daxili server xətası zamanı loglama və cavab
-            Console.WriteLine($"Error in Create Room: {ex.Message}"); // Loglama üçün daha yaxşı bir mexanizm istifadə edin
+           
+            Console.WriteLine($"Error in Create Room: {ex.Message}"); 
             return StatusCode(StatusCodes.Status500InternalServerError, $"Otaq yaradılanda xəta baş verdi: {ex.Message}");
         }
     }
 
-    // --- GET ALL ROOMS ---
-    /// <summary>
-    /// Bütün otaqların siyahısını geri qaytarır.
-    /// </summary>
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<RoomGetDto>))]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]

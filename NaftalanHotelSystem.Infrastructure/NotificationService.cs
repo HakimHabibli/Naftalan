@@ -97,7 +97,7 @@ public class NotificationService : INotificationService
                              .Replace("${finalData.phoneNumber}", data.PhoneNumber ?? "")
                              .Replace("${finalData.email}", data.Email ?? "")
                              .Replace("${finalData.message}", string.IsNullOrEmpty(data.Message) ? "—" : data.Message)
-                             .Replace("${price}", data.Price.ToString("F2"))
+                             //.Replace("${price}", data.Price.ToString("F2"))
                              .Replace("${languageCode}", languageCode)
                              .Replace("${SubjectTranslation}", _subjectTranslations.GetValueOrDefault(languageCode, _subjectTranslations["az"]))
                              .Replace("${displayAz}", displayAz)

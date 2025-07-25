@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NaftalanHotelSystem.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89f896b67ea76d1a0edb7ea81e8e97582bce3b4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca0df6f528bba66b015eba88b00ed413eec492bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("NaftalanHotelSystem.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NaftalanHotelSystem.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

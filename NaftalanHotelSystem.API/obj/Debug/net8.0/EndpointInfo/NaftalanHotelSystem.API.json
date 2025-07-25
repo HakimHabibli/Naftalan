@@ -1497,7 +1497,6 @@
           "language",
           "name",
           "phoneNumber",
-          "price",
           "roomCount",
           "selectedRoom",
           "surname"
@@ -1559,11 +1558,6 @@
           "message": {
             "type": "string",
             "nullable": true
-          },
-          "price": {
-            "minimum": 0.01,
-            "type": "number",
-            "format": "double"
           },
           "language": {
             "maxLength": 10,

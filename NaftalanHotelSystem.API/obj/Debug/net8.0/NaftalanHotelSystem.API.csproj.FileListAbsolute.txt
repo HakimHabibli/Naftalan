@@ -1138,9 +1138,3 @@ C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.pdb
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\NaftalanHotelSystem.API.genruntimeconfig.cache
 C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\ref\NaftalanHotelSystem.API.dll
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\az\NaftalanHotelSystem.API.resources.dll
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\en\NaftalanHotelSystem.API.resources.dll
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\bin\Debug\net8.0\ru\NaftalanHotelSystem.API.resources.dll
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\az\NaftalanHotelSystem.API.resources.dll
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\en\NaftalanHotelSystem.API.resources.dll
-C:\Users\User\OneDrive\Desktop\Github\Naftalan\Naftalan\NaftalanHotelSystem.API\obj\Debug\net8.0\ru\NaftalanHotelSystem.API.resources.dll

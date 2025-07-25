@@ -22,25 +22,7 @@ public abstract class ContactBaseDtoValidator<T> : AbstractValidator<T> where T 
             .NotEmpty().WithMessage("Ünvan boş ola bilməz.")
             .MaximumLength(500).WithMessage("Ünvan maksimum 500 simvol ola bilər.");
 
-        RuleFor(x => x.InstagramLink)
-            .Matches(@"^(https?:\/\/)?(www\.)?instagram\.com\/([a-zA-Z0-9_.]+)$").WithMessage("Instagram linki etibarlı formatda olmalıdır.")
-            .When(x => !string.IsNullOrEmpty(x.InstagramLink));
-
-        RuleFor(x => x.FacebookLink)
-            .Matches(@"^(https?:\/\/)?(www\.)?facebook\.com\/[a-zA-Z0-9.]+$").WithMessage("Facebook linki etibarlı formatda olmalıdır.")
-            .When(x => !string.IsNullOrEmpty(x.FacebookLink));
-
-        RuleFor(x => x.TiktokLink)
-            .Matches(@"^(https?:\/\/)?(www\.)?tiktok\.com\/@([a-zA-Z0-9_.]+)$").WithMessage("TikTok linki etibarlı formatda olmalıdır.")
-            .When(x => !string.IsNullOrEmpty(x.TiktokLink));
-
-        RuleFor(x => x.YoutubeLink)
-            .Matches(@"^(https?\:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/.+$").WithMessage("YouTube linki etibarlı formatda olmalıdır.")
-            .When(x => !string.IsNullOrEmpty(x.YoutubeLink));
-
-        RuleFor(x => x.WhatsappNumber)
-            .Matches(@"^\+?\d{7,15}$").WithMessage("Whatsapp nömrəsi etibarlı telefon formatında olmalıdır.")
-            .When(x => !string.IsNullOrEmpty(x.WhatsappNumber));
+       
     }
 }
 public class ContactDtoValidator : ContactBaseDtoValidator<ContactDto>

@@ -32,38 +32,32 @@ namespace NaftalanHotelSystem.API.Controllers
             var result = await _illnessService.GetIllnessByIdAsync(id);
             if (result == null)
             {
-                return NotFound($"Illness with Id {id} not found."); // Əgər servis null qaytarsa
+                return NotFound($"Illness with Id {id} not found."); 
             }
             return Ok(result);
         }
 
-        // --- CREATE ENDPOINT (Şəkil yükləmə dəstəyi ilə) ---
+       
         [HttpPost]
         [Authorize(Roles = "Admin")]
-        // Fayl yükləmə zamanı [FromForm] istifadə olunur
+       
         public async Task<IActionResult> Create([FromForm] IllnessCreateDto dto)
         {
-            // Model Validasiyası
+         
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            // Əgər şəkil faylı yoxdursa və ya boşdursa, xəta qaytara bilərsiniz
-            // Ya da servisdə bu halı idarə edə bilərsiniz.
-            // if (dto.ImageFile == null || dto.ImageFile.Length == 0)
-            // {
-            //     return BadRequest("Image file is required.");
-            // }
+        
 
             await _illnessService.CreateIllnessAsync(dto);
-            return StatusCode(201, "Illness created successfully."); // 201 Created status kodu daha uyğundur
+            return StatusCode(201, "Illness created successfully."); 
         }
 
-        // --- UPDATE ENDPOINT (Şəkil yükləmə dəstəyi ilə) ---
+       
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin")]
-        // Fayl yükləmə zamanı [FromForm] istifadə olunur
         public async Task<IActionResult> Update(int id, [FromForm] IllnessUpdateDto dto)
         {
           
@@ -90,11 +84,11 @@ namespace NaftalanHotelSystem.API.Controllers
             try
             {
                 await _illnessService.DeleteIllnessAsync(id);
-                return NoContent(); // 204 No Content status kodu silmə üçün daha uyğundur
+                return NoContent(); 
             }
             catch (Exception ex)
             {
-                // Xəta idarəetməsi (məsələn, tapılmadı xətası)
+                
                 return NotFound(ex.Message);
             }
         }
