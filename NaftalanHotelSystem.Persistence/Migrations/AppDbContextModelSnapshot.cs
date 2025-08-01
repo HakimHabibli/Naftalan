@@ -22,6 +22,21 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ChildRoom", b =>
+                {
+                    b.Property<int>("ChildrenId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoomsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ChildrenId", "RoomsId");
+
+                    b.HasIndex("RoomsId");
+
+                    b.ToTable("RoomChildren", (string)null);
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -277,6 +292,32 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Child", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AgeRange")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("HasTreatment")
+                        .HasColumnType("bit");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<int>("RoomId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Children");
                 });
 
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Contact", b =>
@@ -677,6 +718,21 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.HasIndex("TreatmentMethodsId");
 
                     b.ToTable("PackageTreatmentMethod");
+                });
+
+            modelBuilder.Entity("ChildRoom", b =>
+                {
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.Child", null)
+                        .WithMany()
+                        .HasForeignKey("ChildrenId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.Room", null)
+                        .WithMany()
+                        .HasForeignKey("RoomsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

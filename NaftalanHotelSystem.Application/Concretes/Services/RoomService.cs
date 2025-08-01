@@ -108,10 +108,10 @@ public class RoomService : IRoomService
     {
         var room = new Room
         {
-            Category = dto.Category, // string
-            Area = dto.Area,         // short
-            Member = dto.Member,     // short
-            Price = dto.Price,       // double
+            Category = dto.Category, 
+            Area = dto.Area,         
+            Member = dto.Member,     
+            Price = dto.Price,       
             YoutubeVideoLink = dto.YoutubeVideoLink,
 
             // RoomTranslations-ı yaradarkən, RoomTranslationCreateDto-dan map edin

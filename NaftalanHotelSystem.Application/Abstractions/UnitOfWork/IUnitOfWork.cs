@@ -17,7 +17,8 @@ public interface IUnitOfWork
     IReadRepository<TreatmentMethodTranslation> TreatmentMethodTranslationReadRepository { get; }
     IWriteRepository<TreatmentMethodTranslation> TreatmentMethodTranslationWriteRepository { get; }
 
-
+    IReadRepository<Child> ChildReadRepository { get; }
+    IWriteRepository<Child> ChildWriteRepository { get; }
 
     IReadRepository<Package> PackageReadRepository { get;}
     IWriteRepository<Package> PackageWriteRepository { get;}
@@ -37,7 +38,7 @@ public interface IUnitOfWork
     IReadRepository<Image> ImageReadRepository { get; }
     IWriteRepository<Image> ImageWriteRepository { get; }
 
-    // Bu repositoryləri əlavə edin:
+
     IReadRepository<RoomTranslation> RoomTranslationReadRepository { get; }
     IWriteRepository<RoomTranslation> RoomTranslationWriteRepository { get; }
 

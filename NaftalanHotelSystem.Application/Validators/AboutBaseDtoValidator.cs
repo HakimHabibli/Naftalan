@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using NaftalanHotelSystem.Application.DataTransferObject.About;
 using NaftalanHotelSystem.Application.DataTransferObject.About.Abstracts;
+using NaftalanHotelSystem.Application.DataTransferObject.Child;
 
 namespace NaftalanHotelSystem.Application.Validators;
 
@@ -14,6 +15,37 @@ public abstract class AboutBaseDtoValidator<T> : BaseDtoValidator<T> where T : A
             .When(x => !string.IsNullOrEmpty(x.VideoLink)); 
     }
 }
+
+public class ChildCreateDtoValidator : AbstractValidator<ChildCreateDto>
+{
+    public ChildCreateDtoValidator()
+    {
+        RuleFor(x => x.AgeRange)
+            .NotEmpty().WithMessage("Age range is required.")
+            .Length(1, 50).WithMessage("Age range must be between 1 and 50 characters.");
+
+        RuleFor(x => x.Price)
+            .GreaterThan(0).WithMessage("Price must be greater than zero.");
+
+    }
+}
+
+public class ChildUpdateDtoValidator : AbstractValidator<ChildUpdateDto>
+{
+    public ChildUpdateDtoValidator()
+    {
+        RuleFor(x => x.Id).NotEmpty().WithMessage("ID is required for update.");
+
+        RuleFor(x => x.AgeRange)
+            .NotEmpty().WithMessage("Age range is required.")
+            .Length(1, 50).WithMessage("Age range must be between 1 and 50 characters.");
+
+        RuleFor(x => x.Price)
+            .GreaterThan(0).WithMessage("Price must be greater than zero.");
+    }
+}
+
+
 public abstract class AboutBaseTranslationDtoValidator<T> : BaseTranslationDtoValidator<T> where T : AboutBaseTranslationDto
 {
     public AboutBaseTranslationDtoValidator()

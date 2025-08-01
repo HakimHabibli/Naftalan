@@ -21,7 +21,8 @@
             services.AddScoped<ITreatmentCategoryService, TreatmentCategoryService>();
             services.AddScoped<IAboutService, AboutService>();
             services.AddScoped<IContactService, ContactService>();
-
+            services.AddScoped<IChildService, ChildService>();
+            
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }

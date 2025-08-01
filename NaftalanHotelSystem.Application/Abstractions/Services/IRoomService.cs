@@ -9,5 +9,5 @@ public interface IRoomService
     Task<RoomGetDto> GetRoomByIdAsync(int id);
     Task CreateRoomAsync(RoomCreateDto dto);
     Task DeleteRoomAsync(int id);
-    Task UpdateRoomAsync(int id, RoomUpdateDto dto); // <-- Məhz bu formada olmalıdır!
+    Task UpdateRoomAsync(int id, RoomUpdateDto dto); 
 }

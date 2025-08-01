@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Intrinsics.Wasm;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using NaftalanHotelSystem.Application.Abstractions.Repositories;
+﻿using NaftalanHotelSystem.Application.Abstractions.Repositories;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Domain.Entites;
 using NaftalanHotelSystem.Persistence.DataAccessLayer;
+using NaftalanHotelSystem.Persistence.Migrations;
 using NaftalanHotelSystem.Persistence.Repositories;
 
 namespace NaftalanHotelSystem.Persistence.UnitOfWork;
@@ -50,9 +44,9 @@ public class UnitOfWork : IUnitOfWork
 
     public IWriteRepository<Contact> ContactWriteRepository =>  new WriteRepository<Contact>(_context);
 
-    public IReadRepository<Image> ImageReadRepository => new ReadRepository<Image>(_context);
+    public IReadRepository<Domain.Entites.Image> ImageReadRepository => new ReadRepository<Domain.Entites.Image>(_context);
 
-    public IWriteRepository<Image> ImageWriteRepository =>  new WriteRepository<Image>(_context);
+    public IWriteRepository<Domain.Entites.Image> ImageWriteRepository =>  new WriteRepository<Domain.Entites.Image>(_context);
     public IReadRepository<RoomTranslation> RoomTranslationReadRepository => new ReadRepository<RoomTranslation>(_context);
     public IWriteRepository<RoomTranslation> RoomTranslationWriteRepository => new WriteRepository<RoomTranslation>(_context);
 
@@ -66,6 +60,12 @@ public class UnitOfWork : IUnitOfWork
     public IReadRepository<TreatmentMethodTranslation> TreatmentMethodTranslationReadRepository => new ReadRepository<TreatmentMethodTranslation>(_context);
 
     public IWriteRepository<TreatmentMethodTranslation> TreatmentMethodTranslationWriteRepository => new WriteRepository<TreatmentMethodTranslation>(_context);
+
+    public IReadRepository<Child> ChildReadRepository =>  new ReadRepository<Child>(_context);
+
+    public IWriteRepository<Child> ChildWriteRepository => new WriteRepository<Child>(_context);
+
+
 
 
 

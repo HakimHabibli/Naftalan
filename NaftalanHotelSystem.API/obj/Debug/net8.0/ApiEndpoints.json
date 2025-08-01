@@ -57,6 +57,85 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.ChildrenController",
+    "Method": "Create",
+    "RelativePath": "api/Children",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Child.ChildCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.ChildrenController",
+    "Method": "GetAll",
+    "RelativePath": "api/Children",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.ChildrenController",
+    "Method": "Update",
+    "RelativePath": "api/Children/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "NaftalanHotelSystem.Application.DataTransferObject.Child.ChildUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.ChildrenController",
+    "Method": "GetById",
+    "RelativePath": "api/Children/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NaftalanHotelSystem.API.Controllers.ChildrenController",
+    "Method": "Delete",
+    "RelativePath": "api/Children/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NaftalanHotelSystem.API.Controllers.ContactController",
     "Method": "Get",
     "RelativePath": "api/Contact",

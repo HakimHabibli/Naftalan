@@ -15,6 +15,7 @@ public class ReservationConfirmationDto
     [StringLength(50, MinimumLength = 2, ErrorMessage = "Ad 2 ilə 50 simvol arasında olmalıdır.")]
     public string Name { get; set; }
 
+
     [Required(ErrorMessage = "Soyad boş ola bilməz.")]
     [StringLength(50, MinimumLength = 2, ErrorMessage = "Soyad 2 ilə 50 simvol arasında olmalıdır.")]
     public string Surname { get; set; }

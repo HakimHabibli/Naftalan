@@ -20,7 +20,7 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<RoomEquipment> RoomEquipments { get; set; }
     public DbSet<RoomTranslation> RoomTranslations { get; set; }
     public DbSet<EquipmentTranslation> EquipmentTranslations { get; set; }
-
+    public DbSet<Child> Children { get; set; }
 
 
     public DbSet<TreatmentMethod> TreatmentMethods { get; set; }
