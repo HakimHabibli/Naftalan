@@ -11,14 +11,22 @@ public class RoomEntityConfiguration : IEntityTypeConfiguration<Room>
     {
         builder.ConfigureBaseEntity();
 
-        builder.Property(x=>x.Area).IsRequired();
-        builder.Property(x=>x.Price).IsRequired();
-        builder.Property(x=>x.Member).IsRequired();
-        builder.Property(x=>x.Category).IsRequired();
+        builder.Property(x => x.Area).IsRequired();
+        builder.Property(x => x.Price).IsRequired();
+        builder.Property(x => x.Member).IsRequired();
+        builder.Property(x => x.Category).IsRequired();
 
-        builder.HasMany(r=>r.RoomTranslations).WithOne(rt=>rt.Room).HasForeignKey(rt => rt.RoomId);
-        builder.HasMany(r => r.Equipments).WithOne(e => e.Room).HasForeignKey(e=>e.RoomId);
-        builder.HasMany(r => r.Children).WithMany(e => e.Rooms).UsingEntity(j => j.ToTable("RoomChildren")); ;
+        builder.HasMany(r => r.RoomTranslations)
+               .WithOne(rt => rt.Room)
+               .HasForeignKey(rt => rt.RoomId);
+
+        builder.HasMany(r => r.Equipments)
+               .WithOne(e => e.Room)
+               .HasForeignKey(e => e.RoomId);
+
+        builder.HasMany(r => r.RoomChildren)
+                   .WithOne(rc => rc.Room)
+                   .HasForeignKey(rc => rc.RoomId);
     }
 }
 
@@ -32,7 +40,24 @@ public class ChildEntityConfiguration : IEntityTypeConfiguration<Child>
         builder.Property(x => x.Price).IsRequired();
         builder.Property(x => x.AgeRange).IsRequired();
 
-     
+        builder.HasMany(c => c.RoomChildren)
+                 .WithOne(rc => rc.Child)
+                 .HasForeignKey(rc => rc.ChildId);
 
+    }
+}
+public class RoomChildEntityConfiguration : IEntityTypeConfiguration<RoomChild>
+{
+    public void Configure(EntityTypeBuilder<RoomChild> builder)
+    {
+        builder.HasKey(rc => new { rc.RoomId, rc.ChildId });
+
+        builder.HasOne(rc => rc.Room)
+               .WithMany(r => r.RoomChildren)
+               .HasForeignKey(rc => rc.RoomId);
+
+        builder.HasOne(rc => rc.Child)
+               .WithMany(c => c.RoomChildren)
+               .HasForeignKey(rc => rc.ChildId);
     }
 }

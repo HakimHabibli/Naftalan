@@ -19,6 +19,14 @@ public class Room:BaseEntity
  
         public ICollection<RoomEquipment> Equipments { get; set; }
         public ICollection<RoomTranslation> RoomTranslations { get; set; }
-        public ICollection<Child> Children { get; set; }
+    public ICollection<RoomChild> RoomChildren { get; set; } = new List<RoomChild>();
 
-    }
+}
+public class RoomChild
+{
+    public int RoomId { get; set; }
+    public Room Room { get; set; }
+
+    public int ChildId { get; set; }
+    public Child Child { get; set; }
+}

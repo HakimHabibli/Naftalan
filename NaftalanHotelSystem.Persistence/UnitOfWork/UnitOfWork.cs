@@ -19,6 +19,9 @@ public class UnitOfWork : IUnitOfWork
     public IWriteRepository<Room> RoomWriteRepository => new WriteRepository<Room>(_context);
     public IReadRepository<Room> RoomReadRepository => new ReadRepository<Room>(_context);
 
+    public IWriteRepository<RoomChild> RoomChildWriteRepository => new WriteRepository<RoomChild>(_context);
+    public IReadRepository<RoomChild> RoomChildReadRepository => new ReadRepository<RoomChild>(_context);
+
     public IWriteRepository<Equipment> EquipmentWriteRepository => new WriteRepository<Equipment>(_context);
     public IReadRepository<Equipment> EquipmentReadRepository => new ReadRepository<Equipment>(_context);
 

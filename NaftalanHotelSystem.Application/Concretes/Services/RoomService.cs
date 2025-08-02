@@ -2,6 +2,7 @@
 using NaftalanHotelSystem.Application.Abstractions.Services;
 using NaftalanHotelSystem.Application.Abstractions.UnitOfWork;
 using NaftalanHotelSystem.Application.DataTransferObject;
+using NaftalanHotelSystem.Application.DataTransferObject.Child;
 using NaftalanHotelSystem.Application.DataTransferObject.Image;
 using NaftalanHotelSystem.Application.DataTransferObject.Room;
 using NaftalanHotelSystem.Domain.Entites;
@@ -21,19 +22,17 @@ public class RoomService : IRoomService
 
     public async Task<List<RoomGetDto>> GetAllRoomsAsync()
     {
-        // Otaqları tərcümələri və avadanlıqları ilə birlikdə yükləyin
-        // AsNoTracking istifadə edirik, çünki bu, yalnız oxuma əməliyyatıdır və performansı artırır.
         var rooms = await _unitOfWork.RoomReadRepository.GetAll(asNoTracking: true)
             .Include(r => r.RoomTranslations)
-            .Include(r => r.Equipments) // Equipments kolleksiyası yüklenir
+            .Include(r => r.Equipments)
+            .Include(r => r.RoomChildren)
+                .ThenInclude(rc => rc.Child)
             .ToListAsync();
 
         var roomDtos = new List<RoomGetDto>();
 
-
         foreach (var room in rooms)
         {
-            // Hər otaq üçün şəkilləri ayrı-ayrı yükləyin
             var roomImages = await _unitOfWork.ImageReadRepository.GetAll(asNoTracking: true)
                 .Where(x => x.Entity == ImageEntity.Room && x.RelatedEntityId == room.Id)
                 .ToListAsync();
@@ -48,35 +47,40 @@ public class RoomService : IRoomService
                 YoutubeVideoLink = room.YoutubeVideoLink,
                 Translations = room.RoomTranslations.Select(t => new RoomTranslationGetDto
                 {
-                    Id = t.Id, // BaseEntity-dən gəlir
+                    Id = t.Id,
                     Service = t.Service,
                     Description = t.Description,
                     MiniDescription = t.MiniDescription,
                     Title = t.Title,
                     MiniTitle = t.MiniTitle,
-                    Language = t.Language // enum tipi
+                    Language = t.Language
+                }).ToList(),
+                Children = room.RoomChildren.Select(rc => new ChildGetDto
+                {
+                    Id = rc.Child.Id,
+                    AgeRange = rc.Child.AgeRange,
+                    HasTreatment = rc.Child.HasTreatment,
+                    Price = rc.Child.Price,
                 }).ToList(),
                 EquipmentIds = room.Equipments.Select(re => re.EquipmentId).ToList(),
                 ImageUrls = roomImages.Select(img => img.Url).ToList()
             });
         }
+
         return roomDtos;
     }
 
     public async Task<RoomGetDto> GetRoomByIdAsync(int id)
     {
-        // Otağı tərcümələri və avadanlıqları ilə birlikdə yükləyin
         var room = await _unitOfWork.RoomReadRepository.GetAll(asNoTracking: true)
             .Include(r => r.RoomTranslations)
             .Include(r => r.Equipments)
+            .Include(r => r.RoomChildren).ThenInclude(rc => rc.Child)
             .FirstOrDefaultAsync(r => r.Id == id);
 
         if (room == null)
-        {
-            return null; // Otaq tapılmadıqda null qaytarın və ya xəta atın
-        }
+            throw new Exception($"Room with ID {id} not found.");
 
-        // Otağa aid şəkilləri yükləyin
         var roomImages = await _unitOfWork.ImageReadRepository.GetAll(asNoTracking: true)
             .Where(x => x.Entity == ImageEntity.Room && x.RelatedEntityId == room.Id)
             .ToListAsync();
@@ -99,42 +103,82 @@ public class RoomService : IRoomService
                 MiniTitle = t.MiniTitle,
                 Language = t.Language
             }).ToList(),
-            EquipmentIds = room.Equipments.Select(re => re.EquipmentId).ToList(),
+
+            Children = room.RoomChildren.Select(rc => new ChildGetDto
+            {
+                Id = rc.Child.Id,
+                AgeRange = rc.Child.AgeRange,
+                HasTreatment = rc.Child.HasTreatment,
+                Price = rc.Child.Price
+            }).ToList(),
+
+            EquipmentIds = room.Equipments.Select(e => e.EquipmentId).ToList(),
             ImageUrls = roomImages.Select(img => img.Url).ToList()
         };
     }
+
 
     public async Task CreateRoomAsync(RoomCreateDto dto)
     {
         var room = new Room
         {
-            Category = dto.Category, 
-            Area = dto.Area,         
-            Member = dto.Member,     
-            Price = dto.Price,       
+            Category = dto.Category,
+            Area = dto.Area,
+            Member = dto.Member,
+            Price = dto.Price,
             YoutubeVideoLink = dto.YoutubeVideoLink,
-
-            // RoomTranslations-ı yaradarkən, RoomTranslationCreateDto-dan map edin
-            RoomTranslations = dto.Translations.Select(t => new RoomTranslation
+            RoomTranslations = dto.Translations?.Select(t => new RoomTranslation
             {
                 Service = t.Service,
                 Description = t.Description,
                 MiniDescription = t.MiniDescription,
                 MiniTitle = t.MiniTitle,
                 Title = t.Title,
-                Language = t.Language // Language enum
-            }).ToList(),
-
-            // Equipments-ı yaradarkən, EquipmentIds-dən map edin
-            Equipments = dto.EquipmentIds.Select(id => new RoomEquipment { EquipmentId = id }).ToList()
+                Language = t.Language
+            }).ToList() ?? new List<RoomTranslation>()
         };
 
-        await _unitOfWork.RoomWriteRepository.CreateAsync(room);
-        // CreateAsync içində SaveChangesAsync olmadığı üçün, burada SaveChangesAsync çağırılmalıdır.
-        // Bu, room.Id-nin generation olunmasını təmin edir, bu da şəkil yükləmək üçün vacibdir.
-        await _unitOfWork.SaveChangesAsync();
+        // Avadanlıqlar
+        if (dto.EquipmentIds != null && dto.EquipmentIds.Any())
+        {
+            var existingEquipmentIds = await _unitOfWork.EquipmentReadRepository
+                .Table
+                .Where(e => dto.EquipmentIds.Contains(e.Id))
+                .Select(e => e.Id)
+                .ToListAsync();
 
-        // Şəkilləri yükləyin
+            var invalidEquipmentIds = dto.EquipmentIds.Except(existingEquipmentIds).ToList();
+            if (invalidEquipmentIds.Any())
+                throw new ArgumentException($"Mövcud olmayan Avadanlıq ID-ləri: {string.Join(", ", invalidEquipmentIds)}");
+
+            room.Equipments = existingEquipmentIds.Select(id => new RoomEquipment
+            {
+                EquipmentId = id
+            }).ToList();
+        }
+
+        // Uşaqlar
+        if (dto.ChildIds != null && dto.ChildIds.Any())
+        {
+            var existingChildren = await _unitOfWork.ChildReadRepository
+                .Table
+                .Where(c => dto.ChildIds.Contains(c.Id))
+                .ToListAsync();
+
+            var invalidChildIds = dto.ChildIds.Except(existingChildren.Select(c => c.Id)).ToList();
+            if (invalidChildIds.Any())
+                throw new ArgumentException($"Mövcud olmayan Uşaq ID-ləri: {string.Join(", ", invalidChildIds)}");
+
+            room.RoomChildren = existingChildren.Select(child => new RoomChild
+            {
+                ChildId = child.Id
+            }).ToList();
+        }
+
+        await _unitOfWork.RoomWriteRepository.CreateAsync(room);
+        await _unitOfWork.SaveChangesAsync(); // İndi Room.Id və əlaqəli navigation propertilər hamısı EF tərəfindən idarə olunacaq
+
+        // Şəkillər
         if (dto.ImageFiles != null && dto.ImageFiles.Any())
         {
             foreach (var file in dto.ImageFiles)
@@ -143,149 +187,131 @@ public class RoomService : IRoomService
                 {
                     File = file,
                     Entity = ImageEntity.Room,
-                    RelatedEntityId = room.Id // Yeni yaradılan otağın ID-si
+                    RelatedEntityId = room.Id // EF SaveChanges-dən sonra artıq ID mövcuddur
                 };
-                await _imageService.UploadImageAsync(imageCreateDto); // ImageService öz daxilində SaveChangesAsync-i çağırır
+                await _imageService.UploadImageAsync(imageCreateDto);
             }
         }
     }
 
+
+
+
+
     public async Task DeleteRoomAsync(int id)
     {
-        // Otağı tərcümələri və avadanlıq əlaqələri ilə birlikdə yükləyin (izlənilən rejimdə)
-        var room = await _unitOfWork.RoomReadRepository.GetAll(asNoTracking: false) // Update/Delete üçün izləmə vacibdir
+        var room = await _unitOfWork.RoomReadRepository.GetAll(asNoTracking: false)
             .Include(r => r.RoomTranslations)
             .Include(r => r.Equipments)
+            .Include(r => r.RoomChildren)
             .FirstOrDefaultAsync(r => r.Id == id);
 
         if (room == null)
-        {
             throw new Exception("Otaq tapılmadı.");
-        }
 
-        // Otağa aid bütün şəkilləri tapın və ImageService vasitəsilə silin
         var imagesToDelete = await _unitOfWork.ImageReadRepository.GetAll(asNoTracking: true)
             .Where(x => x.Entity == ImageEntity.Room && x.RelatedEntityId == room.Id)
             .ToListAsync();
 
         foreach (var image in imagesToDelete)
         {
-            await _imageService.DeleteImageAsync(image.Id); // ImageService öz daxilində SaveChangesAsync-i çağırır
+            await _imageService.DeleteImageAsync(image.Id);
         }
 
-        // Otağın tərcümələrini silin
         if (room.RoomTranslations != null && room.RoomTranslations.Any())
-        {
             _unitOfWork.RoomTranslationWriteRepository.RemoveRange(room.RoomTranslations.ToList());
-        }
 
-        // Otağın avadanlıq əlaqələrini silin
         if (room.Equipments != null && room.Equipments.Any())
-        {
             _unitOfWork.RoomEquipmentWriteRepository.RemoveRange(room.Equipments.ToList());
-        }
 
-        // Otağın özünü silin
+        if (room.RoomChildren != null && room.RoomChildren.Any())
+            _unitOfWork.RoomChildWriteRepository.RemoveRange(room.RoomChildren.ToList());
+
         _unitOfWork.RoomWriteRepository.Remove(room);
-
-        // Bütün qalan dəyişiklikləri vahid transaksiyada yadda saxlayın
         await _unitOfWork.SaveChangesAsync();
     }
 
+
     public async Task UpdateRoomAsync(int id, RoomUpdateDto dto)
     {
-        // Otağı tərcümələri və avadanlıq əlaqələri ilə birlikdə yükləyin (izlənilən rejimdə)
-        var roomToUpdate = await _unitOfWork.RoomReadRepository.GetAll(asNoTracking: false) // Update üçün izləmə vacibdir
+        var roomToUpdate = await _unitOfWork.RoomReadRepository.GetAll(asNoTracking: false)
             .Include(r => r.RoomTranslations)
             .Include(r => r.Equipments)
+            .Include(r => r.RoomChildren)
             .FirstOrDefaultAsync(r => r.Id == id);
 
         if (roomToUpdate == null)
-        {
             throw new Exception("Otaq tapılmadı.");
-        }
 
-        // Əsas otaq məlumatlarını DTO-dan yeniləyin
+        // Əsas sahələr
         roomToUpdate.Category = dto.Category;
         roomToUpdate.Area = dto.Area;
         roomToUpdate.Price = dto.Price;
         roomToUpdate.Member = dto.Member;
         roomToUpdate.YoutubeVideoLink = dto.YoutubeVideoLink;
 
-        // Tərcümələri yeniləmək
+        // Tərcümələr yenilənməsi
         var currentTranslations = roomToUpdate.RoomTranslations.ToList();
-        var translationsToDelete = currentTranslations
-            .Where(ct => !dto.Translations.Any(dt => dt.Id == ct.Id)) // DTO-da olmayanları sil
-            .ToList();
+        var translationsToDelete = currentTranslations.Where(ct => !dto.Translations.Any(dt => dt.Id == ct.Id)).ToList();
         _unitOfWork.RoomTranslationWriteRepository.RemoveRange(translationsToDelete);
 
-        foreach (var newOrUpdatedTranslationDto in dto.Translations)
+        foreach (var translationDto in dto.Translations)
         {
-            var existingTranslation = currentTranslations.FirstOrDefault(ct => ct.Id == newOrUpdatedTranslationDto.Id);
+            var existingTranslation = currentTranslations.FirstOrDefault(ct => ct.Id == translationDto.Id);
             if (existingTranslation != null)
             {
-                // Mövcud tərcüməni yenilə
-                existingTranslation.Service = newOrUpdatedTranslationDto.Service;
-                existingTranslation.Description = newOrUpdatedTranslationDto.Description;
-                existingTranslation.MiniDescription = newOrUpdatedTranslationDto.MiniDescription;
-                existingTranslation.Title = newOrUpdatedTranslationDto.Title;
-                existingTranslation.MiniTitle = newOrUpdatedTranslationDto.MiniTitle;
-                existingTranslation.Language = newOrUpdatedTranslationDto.Language;
-                _unitOfWork.RoomTranslationWriteRepository.Update(existingTranslation); // Update metodu çağırılır
+                existingTranslation.Service = translationDto.Service;
+                existingTranslation.Description = translationDto.Description;
+                existingTranslation.MiniDescription = translationDto.MiniDescription;
+                existingTranslation.Title = translationDto.Title;
+                existingTranslation.MiniTitle = translationDto.MiniTitle;
+                existingTranslation.Language = translationDto.Language;
+                _unitOfWork.RoomTranslationWriteRepository.Update(existingTranslation);
             }
             else
             {
-                // Yeni tərcüməni əlavə et
                 var newTranslation = new RoomTranslation
                 {
-                    RoomId = roomToUpdate.Id, // Otağın ID-sini təyin et
-                    Service = newOrUpdatedTranslationDto.Service,
-                    Description = newOrUpdatedTranslationDto.Description,
-                    MiniDescription = newOrUpdatedTranslationDto.MiniDescription,
-                    Title = newOrUpdatedTranslationDto.Title,
-                    MiniTitle = newOrUpdatedTranslationDto.MiniTitle,
-                    Language = newOrUpdatedTranslationDto.Language
+                    RoomId = roomToUpdate.Id,
+                    Service = translationDto.Service,
+                    Description = translationDto.Description,
+                    MiniDescription = translationDto.MiniDescription,
+                    Title = translationDto.Title,
+                    MiniTitle = translationDto.MiniTitle,
+                    Language = translationDto.Language
                 };
-                await _unitOfWork.RoomTranslationWriteRepository.CreateAsync(newTranslation); // Yeni tərcümə yaradılır
+                await _unitOfWork.RoomTranslationWriteRepository.CreateAsync(newTranslation);
             }
         }
 
-        // Avadanlıqları yeniləmək
+        // Avadanlıqlar yenilənməsi
         var currentEquipments = roomToUpdate.Equipments.ToList();
-        var roomEquipmentsToDelete = currentEquipments
-            .Where(ce => !dto.EquipmentIds.Contains(ce.EquipmentId)) // DTO-da olmayanları sil
-            .ToList();
-        _unitOfWork.RoomEquipmentWriteRepository.RemoveRange(roomEquipmentsToDelete);
+        var equipmentsToDelete = currentEquipments.Where(ce => !dto.EquipmentIds.Contains(ce.EquipmentId)).ToList();
+        _unitOfWork.RoomEquipmentWriteRepository.RemoveRange(equipmentsToDelete);
 
-        var newEquipmentIds = dto.EquipmentIds
-            .Where(newId => !currentEquipments.Any(ce => ce.EquipmentId == newId)) // Mövcud olmayan yeni ID-ləri əlavə et
-            .ToList();
-
-        foreach (var newEquipmentId in newEquipmentIds)
+        var equipmentsToAdd = dto.EquipmentIds.Where(newId => !currentEquipments.Any(ce => ce.EquipmentId == newId)).ToList();
+        foreach (var newEquipmentId in equipmentsToAdd)
         {
             var newRoomEquipment = new RoomEquipment
             {
                 RoomId = roomToUpdate.Id,
                 EquipmentId = newEquipmentId
             };
-            await _unitOfWork.RoomEquipmentWriteRepository.CreateAsync(newRoomEquipment); // Yeni əlaqə yaradılır
+            await _unitOfWork.RoomEquipmentWriteRepository.CreateAsync(newRoomEquipment);
         }
 
-        // --- Şəkil Yeniləmə Məntiqi (YENİLƏNDİ - Ssenari 1) ---
-        // Əgər yeni şəkil faylları göndərilibsə, mövcud şəkilləri tamamilə sil və yalnız yeniləri əlavə et
+        // Şəkillərin yenilənməsi
         if (dto.NewImageFiles != null && dto.NewImageFiles.Any())
         {
-            // Mövcud bütün şəkilləri tapın və silin
             var existingImages = await _unitOfWork.ImageReadRepository.GetAll(asNoTracking: true)
                 .Where(x => x.Entity == ImageEntity.Room && x.RelatedEntityId == roomToUpdate.Id)
                 .ToListAsync();
 
-            foreach (var image in existingImages)
+            foreach (var img in existingImages)
             {
-                await _imageService.DeleteImageAsync(image.Id);
+                await _imageService.DeleteImageAsync(img.Id);
             }
 
-            // Yeni şəkilləri əlavə edin
             foreach (var file in dto.NewImageFiles)
             {
                 var imageCreateDto = new ImageCreateDto
@@ -298,8 +324,27 @@ public class RoomService : IRoomService
             }
         }
 
-        // Otaq obyektindəki dəyişiklikləri və yuxarıdakı RoomTranslation/RoomEquipment dəyişikliklərini yadda saxlayın
-        _unitOfWork.RoomWriteRepository.Update(roomToUpdate); // Otağın özünü update et
+        // Many-to-many (ara cədvəl) yenilənməsi
+        // Əvvəlcə köhnələri sil
+        var existingRoomChildren = roomToUpdate.RoomChildren.ToList();
+        _unitOfWork.RoomChildWriteRepository.RemoveRange(existingRoomChildren);
+
+        // Sonra yeniləri əlavə et
+        if (dto.ChildIds != null && dto.ChildIds.Any())
+        {
+            var childrenToAdd = await _unitOfWork.ChildReadRepository
+                .Table
+                .Where(c => dto.ChildIds.Contains(c.Id))
+                .ToListAsync();
+
+            roomToUpdate.RoomChildren = childrenToAdd.Select(child => new RoomChild
+            {
+                RoomId = roomToUpdate.Id,
+                ChildId = child.Id
+            }).ToList();
+        }
+
+        _unitOfWork.RoomWriteRepository.Update(roomToUpdate);
         await _unitOfWork.SaveChangesAsync();
     }
 }

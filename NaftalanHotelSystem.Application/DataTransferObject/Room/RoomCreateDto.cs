@@ -13,4 +13,5 @@ public class RoomCreateDto
     public List<RoomTranslationCreateDto> Translations { get; set; } = new List<RoomTranslationCreateDto>();
     public List<int> EquipmentIds { get; set; } = new List<int>();
     public List<IFormFile>? ImageFiles { get; set; }
+    public List<int> ChildIds { get; set; }
 }

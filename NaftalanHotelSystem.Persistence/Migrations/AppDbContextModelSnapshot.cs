@@ -22,21 +22,6 @@ namespace NaftalanHotelSystem.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ChildRoom", b =>
-                {
-                    b.Property<int>("ChildrenId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("RoomsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ChildrenId", "RoomsId");
-
-                    b.HasIndex("RoomsId");
-
-                    b.ToTable("RoomChildren", (string)null);
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -566,6 +551,21 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.ToTable("Rooms");
                 });
 
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.RoomChild", b =>
+                {
+                    b.Property<int>("RoomId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ChildId")
+                        .HasColumnType("int");
+
+                    b.HasKey("RoomId", "ChildId");
+
+                    b.HasIndex("ChildId");
+
+                    b.ToTable("RoomChildren");
+                });
+
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.RoomEquipment", b =>
                 {
                     b.Property<int>("RoomId")
@@ -720,21 +720,6 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.ToTable("PackageTreatmentMethod");
                 });
 
-            modelBuilder.Entity("ChildRoom", b =>
-                {
-                    b.HasOne("NaftalanHotelSystem.Domain.Entites.Child", null)
-                        .WithMany()
-                        .HasForeignKey("ChildrenId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("NaftalanHotelSystem.Domain.Entites.Room", null)
-                        .WithMany()
-                        .HasForeignKey("RoomsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -848,6 +833,25 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.Navigation("Packages");
                 });
 
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.RoomChild", b =>
+                {
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.Child", "Child")
+                        .WithMany("RoomChildren")
+                        .HasForeignKey("ChildId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NaftalanHotelSystem.Domain.Entites.Room", "Room")
+                        .WithMany("RoomChildren")
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Child");
+
+                    b.Navigation("Room");
+                });
+
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.RoomEquipment", b =>
                 {
                     b.HasOne("NaftalanHotelSystem.Domain.Entites.Equipment", "Equipment")
@@ -920,6 +924,11 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.Navigation("AboutTranslations");
                 });
 
+            modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Child", b =>
+                {
+                    b.Navigation("RoomChildren");
+                });
+
             modelBuilder.Entity("NaftalanHotelSystem.Domain.Entites.Equipment", b =>
                 {
                     b.Navigation("EquipmentTranslations");
@@ -942,6 +951,8 @@ namespace NaftalanHotelSystem.Persistence.Migrations
                     b.Navigation("Equipments");
 
                     b.Navigation("Images");
+
+                    b.Navigation("RoomChildren");
 
                     b.Navigation("RoomTranslations");
                 });

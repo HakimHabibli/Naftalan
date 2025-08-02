@@ -15,4 +15,5 @@ public class RoomUpdateDto
     public List<int> EquipmentIds { get; set; } = new List<int>();
     public List<int>? ImageIdsToDelete { get; set; }
     public List<IFormFile>? NewImageFiles { get; set; }
+    public List<int> ChildIds { get; set; }
 }

@@ -630,6 +630,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\illness\9.webp'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\00a12f0b10a047ae98fe517eb6ec0630.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/00a12f0b10a047ae98fe517eb6ec0630.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\00a12f0b10a047ae98fe517eb6ec0630.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\07f3a30a83bf4328a823e6507d5dd178.jfif'))">
       <SourceType>Package</SourceType>
       <SourceId>NaftalanHotelSystem.API</SourceId>
@@ -666,6 +684,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\0aeddebefaf6442cbc111ae7544481a8.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\0bce4dd8ca7943178a89304de23443a6.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/0bce4dd8ca7943178a89304de23443a6.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\0bce4dd8ca7943178a89304de23443a6.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\1798d5f62d95467dbe70d5a19be3fa0f.jfif'))">
       <SourceType>Package</SourceType>
       <SourceId>NaftalanHotelSystem.API</SourceId>
@@ -683,6 +719,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\1798d5f62d95467dbe70d5a19be3fa0f.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\1a35d88dbe6049598ab6d3b05d1ec9d1.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/1a35d88dbe6049598ab6d3b05d1ec9d1.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\1a35d88dbe6049598ab6d3b05d1ec9d1.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\1bca1c26adba464f9110d8e197784b2f.jfif'))">
       <SourceType>Package</SourceType>
@@ -738,6 +792,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\21e355b0c0a54430bcebf2fd3224da03.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\266d7fbb84244aa9ae675ce0e03373ef.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/266d7fbb84244aa9ae675ce0e03373ef.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\266d7fbb84244aa9ae675ce0e03373ef.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\2bffdd66960443d6ad98bf1e95cefd15.jfif'))">
       <SourceType>Package</SourceType>
       <SourceId>NaftalanHotelSystem.API</SourceId>
@@ -773,6 +845,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\3672c46375974ba886c7f8356b8f8e6a.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\3738079df7dc4fb1a34c421501a4443d.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/3738079df7dc4fb1a34c421501a4443d.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\3738079df7dc4fb1a34c421501a4443d.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\3e70779796f240ac8ddb27036500285f.jfif'))">
       <SourceType>Package</SourceType>
@@ -810,6 +900,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\51824cf8774e4d94afcf74776bf7ea11.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\5f3616f719e641128a37f6d26a3db4ab.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/5f3616f719e641128a37f6d26a3db4ab.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\5f3616f719e641128a37f6d26a3db4ab.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\60629311e6e24a72addc41838c77cd4e.jfif'))">
       <SourceType>Package</SourceType>
       <SourceId>NaftalanHotelSystem.API</SourceId>
@@ -827,6 +935,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\60629311e6e24a72addc41838c77cd4e.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\62c08e38bcae45518c5e2d185023217a.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/62c08e38bcae45518c5e2d185023217a.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\62c08e38bcae45518c5e2d185023217a.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\70bb8ec25fe5460fa44746e32d42b63d.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/70bb8ec25fe5460fa44746e32d42b63d.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\70bb8ec25fe5460fa44746e32d42b63d.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\736f366cd31e45dc88f1db59dbcc1625.jfif'))">
       <SourceType>Package</SourceType>
@@ -846,6 +990,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\736f366cd31e45dc88f1db59dbcc1625.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\99630eaa474c441d8287a949df89108e.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/99630eaa474c441d8287a949df89108e.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\99630eaa474c441d8287a949df89108e.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\9abc2405d5594b078d97256521130862.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/9abc2405d5594b078d97256521130862.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\9abc2405d5594b078d97256521130862.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\b180ff0406fe48969066c1385beb9402.jfif'))">
       <SourceType>Package</SourceType>
       <SourceId>NaftalanHotelSystem.API</SourceId>
@@ -863,6 +1043,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\b180ff0406fe48969066c1385beb9402.jfif'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\c5e50a6f30c944a69808048d66ced9a4.jfif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NaftalanHotelSystem.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NaftalanHotelSystem.API</BasePath>
+      <RelativePath>uploads/images/room/c5e50a6f30c944a69808048d66ced9a4.jfif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vhfzz73o2o</Fingerprint>
+      <Integrity>zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\c5e50a6f30c944a69808048d66ced9a4.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\images\room\d0d59c95933b42ef99e4a20b3e5b707e.jfif'))">
       <SourceType>Package</SourceType>

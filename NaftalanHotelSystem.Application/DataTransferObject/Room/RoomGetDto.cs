@@ -1,4 +1,6 @@
-﻿namespace NaftalanHotelSystem.Application.DataTransferObject.Room;
+﻿using NaftalanHotelSystem.Application.DataTransferObject.Child;
+
+namespace NaftalanHotelSystem.Application.DataTransferObject.Room;
 
 public class RoomGetDto
 {
@@ -11,5 +13,6 @@ public class RoomGetDto
 
     public List<RoomTranslationGetDto> Translations { get; set; } = new List<RoomTranslationGetDto>();
     public List<int> EquipmentIds { get; set; } = new List<int>();
+    public List<ChildGetDto> Children { get; set; }
     public List<string>? ImageUrls { get; set; }
 }

@@ -56,6 +56,7 @@ public class RoomController : ControllerBase
             YoutubeVideoLink = binableDto.YoutubeVideoLink,
             Translations = translations, 
             EquipmentIds = binableDto.EquipmentIds,
+            ChildIds  = binableDto.ChildIds,    
             ImageFiles = binableDto.ImageFiles 
         };
 
@@ -173,6 +174,8 @@ public class RoomController : ControllerBase
             Translations = translations, // Deserializasiya edilmiş tərcümələr
             EquipmentIds = binableDto.EquipmentIds,
             NewImageFiles = binableDto.NewImageFiles // Yeni şəkil faylları
+            ,ChildIds = binableDto.ChildIds,
+            
         };
 
         try

@@ -10,5 +10,5 @@ public class Child : BaseEntity
 
 
         public int RoomId { get; set; }
-        public ICollection<Room> Rooms { get; set; }
-    }
+    public ICollection<RoomChild> RoomChildren { get; set; } = new List<RoomChild>();
+}

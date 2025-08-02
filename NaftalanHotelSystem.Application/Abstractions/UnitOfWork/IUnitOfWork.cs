@@ -11,7 +11,9 @@ public interface IUnitOfWork
 
     IWriteRepository<Equipment> EquipmentWriteRepository { get; }
     IReadRepository<Equipment> EquipmentReadRepository { get;  }
-   
+
+    IReadRepository<RoomChild> RoomChildReadRepository { get; }
+    IWriteRepository<RoomChild> RoomChildWriteRepository { get; }
     IReadRepository<TreatmentMethod>TreatmentMethodReadRepository {get;}
     IWriteRepository<TreatmentMethod> TreatmentMethodWriteRepository { get;}
     IReadRepository<TreatmentMethodTranslation> TreatmentMethodTranslationReadRepository { get; }

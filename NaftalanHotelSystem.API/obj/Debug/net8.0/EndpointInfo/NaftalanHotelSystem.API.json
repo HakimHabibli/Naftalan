@@ -783,6 +783,13 @@
                       "type": "integer",
                       "format": "int32"
                     }
+                  },
+                  "ChildIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
                   }
                 }
               },
@@ -809,6 +816,9 @@
                   "style": "form"
                 },
                 "EquipmentIds": {
+                  "style": "form"
+                },
+                "ChildIds": {
                   "style": "form"
                 }
               }
@@ -976,6 +986,13 @@
                       "format": "int32"
                     }
                   },
+                  "ChildIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  },
                   "NewImageFiles": {
                     "type": "array",
                     "items": {
@@ -1008,6 +1025,9 @@
                   "style": "form"
                 },
                 "EquipmentIds": {
+                  "style": "form"
+                },
+                "ChildIds": {
                   "style": "form"
                 },
                 "NewImageFiles": {
@@ -1408,6 +1428,27 @@
         },
         "additionalProperties": false
       },
+      "ChildGetDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ageRange": {
+            "type": "string",
+            "nullable": true
+          },
+          "hasTreatment": {
+            "type": "boolean"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "ChildUpdateDto": {
         "type": "object",
         "properties": {
@@ -1769,6 +1810,13 @@
             "items": {
               "type": "integer",
               "format": "int32"
+            },
+            "nullable": true
+          },
+          "children": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChildGetDto"
             },
             "nullable": true
           },
