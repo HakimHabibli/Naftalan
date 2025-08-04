@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QkORDdVVc55sN+vBXKz4RY1mrBXqizUznSGNCDnpJbg=",
+  "Hash": "0rggFHpMOpyZ3WI8IxCmJ3b9gwXLIPbEvRwg7IQg7GU=",
   "Source": "NaftalanHotelSystem.API",
   "BasePath": "_content/NaftalanHotelSystem.API",
   "Mode": "Default",
@@ -1170,6 +1170,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\736f366cd31e45dc88f1db59dbcc1625.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\823460f33a2549bb981668622eb68219.jfif",
+      "SourceId": "NaftalanHotelSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\",
+      "BasePath": "_content/NaftalanHotelSystem.API",
+      "RelativePath": "uploads/images/room/823460f33a2549bb981668622eb68219#[.{fingerprint}]?.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhfzz73o2o",
+      "Integrity": "zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\images\\room\\823460f33a2549bb981668622eb68219.jfif"
     },
     {
       "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\99630eaa474c441d8287a949df89108e.jfif",
@@ -5949,6 +5970,88 @@
         {
           "Name": "label",
           "Value": "uploads/images/room/736f366cd31e45dc88f1db59dbcc1625.jfif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/823460f33a2549bb981668622eb68219.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\823460f33a2549bb981668622eb68219.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 12:16:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/images/room/823460f33a2549bb981668622eb68219.vhfzz73o2o.jfif",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\Github\\Naftalan\\Naftalan\\NaftalanHotelSystem.API\\wwwroot\\uploads\\images\\room\\823460f33a2549bb981668622eb68219.jfif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13763"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/pjpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zReGYgFWzEuGBOrxLnUMfaYUDwJpx3vgx9xXmp+krX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 12:16:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhfzz73o2o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/images/room/823460f33a2549bb981668622eb68219.jfif"
         },
         {
           "Name": "integrity",

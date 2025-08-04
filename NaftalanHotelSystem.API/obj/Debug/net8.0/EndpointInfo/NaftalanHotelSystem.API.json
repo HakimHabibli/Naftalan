@@ -1701,6 +1701,7 @@
           "language",
           "name",
           "phoneNumber",
+          "price",
           "roomCount",
           "selectedRoom",
           "surname"
@@ -1754,14 +1755,17 @@
             "format": "int32"
           },
           "childCount": {
-            "maximum": 10,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32"
+            "type": "string",
+            "nullable": true
           },
           "message": {
             "type": "string",
             "nullable": true
+          },
+          "price": {
+            "minimum": 0.01,
+            "type": "number",
+            "format": "double"
           },
           "language": {
             "maxLength": 10,

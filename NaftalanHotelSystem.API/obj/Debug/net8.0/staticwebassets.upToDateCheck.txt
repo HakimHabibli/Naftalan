@@ -53,6 +53,7 @@ wwwroot\uploads\images\room\60629311e6e24a72addc41838c77cd4e.jfif
 wwwroot\uploads\images\room\62c08e38bcae45518c5e2d185023217a.jfif
 wwwroot\uploads\images\room\70bb8ec25fe5460fa44746e32d42b63d.jfif
 wwwroot\uploads\images\room\736f366cd31e45dc88f1db59dbcc1625.jfif
+wwwroot\uploads\images\room\823460f33a2549bb981668622eb68219.jfif
 wwwroot\uploads\images\room\99630eaa474c441d8287a949df89108e.jfif
 wwwroot\uploads\images\room\9abc2405d5594b078d97256521130862.jfif
 wwwroot\uploads\images\room\b180ff0406fe48969066c1385beb9402.jfif
