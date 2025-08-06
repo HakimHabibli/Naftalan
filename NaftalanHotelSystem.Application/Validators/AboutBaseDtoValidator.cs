@@ -25,7 +25,7 @@ public class ChildCreateDtoValidator : AbstractValidator<ChildCreateDto>
             .Length(1, 50).WithMessage("Age range must be between 1 and 50 characters.");
 
         RuleFor(x => x.Price)
-            .GreaterThan(0).WithMessage("Price must be greater than zero.");
+            .GreaterThan(-1).WithMessage("Value must be greater than negative.");
 
     }
 }
@@ -41,7 +41,7 @@ public class ChildUpdateDtoValidator : AbstractValidator<ChildUpdateDto>
             .Length(1, 50).WithMessage("Age range must be between 1 and 50 characters.");
 
         RuleFor(x => x.Price)
-            .GreaterThan(0).WithMessage("Price must be greater than zero.");
+            .GreaterThan(-1).WithMessage("Value must be greater than negative.");
     }
 }
 
