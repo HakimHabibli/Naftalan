@@ -22,6 +22,7 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<EquipmentTranslation> EquipmentTranslations { get; set; }
     public DbSet<Child> Children { get; set; }
     public DbSet<RoomChild> RoomChildren { get; set; }
+    public DbSet<RoomPriceByOccupancy> RoomPricesByOccupancy { get; set; }
 
     public DbSet<TreatmentMethod> TreatmentMethods { get; set; }
     public DbSet<TreatmentMethodTranslation> TreatmentMethodTranslations { get; set; }

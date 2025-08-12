@@ -499,6 +499,11 @@
         "IsRequired": false
       },
       {
+        "Name": "PricesByOccupancy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "Translations",
         "Type": "System.String",
         "IsRequired": false
@@ -626,6 +631,11 @@
       },
       {
         "Name": "Translations",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PricesByOccupancy",
         "Type": "System.String",
         "IsRequired": false
       },

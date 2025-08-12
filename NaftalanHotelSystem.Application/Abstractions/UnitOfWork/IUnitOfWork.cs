@@ -19,6 +19,9 @@ public interface IUnitOfWork
     IReadRepository<TreatmentMethodTranslation> TreatmentMethodTranslationReadRepository { get; }
     IWriteRepository<TreatmentMethodTranslation> TreatmentMethodTranslationWriteRepository { get; }
 
+    IReadRepository<RoomPriceByOccupancy> RoomPriceByOccupancyReadRepository { get; }
+    IWriteRepository<RoomPriceByOccupancy> RoomPriceByOccupancyWriteRepository { get; }
+
     IReadRepository<Child> ChildReadRepository { get; }
     IWriteRepository<Child> ChildWriteRepository { get; }
 

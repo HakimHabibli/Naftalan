@@ -32,12 +32,19 @@ public class RoomController : ControllerBase
 
      
         List<RoomTranslationCreateDto> translations;
+        List<RoomPriceByOccupancyDto> pricesByOccupancy;
+
         try
         {
             translations = JsonConvert.DeserializeObject<List<RoomTranslationCreateDto>>(binableDto.Translations);
             if (translations == null)
             {
                 return BadRequest("Translations JSON boş və ya formatı düzgün deyil.");
+            }
+            pricesByOccupancy = JsonConvert.DeserializeObject<List<RoomPriceByOccupancyDto>>(binableDto.PricesByOccupancy);
+            if (pricesByOccupancy == null)
+            {
+                return BadRequest("PricesByOccupancy JSON boş və ya formatı düzgün deyil.");
             }
         }
         catch (Exception ex)
@@ -57,7 +64,8 @@ public class RoomController : ControllerBase
             Translations = translations, 
             EquipmentIds = binableDto.EquipmentIds,
             ChildIds  = binableDto.ChildIds,    
-            ImageFiles = binableDto.ImageFiles 
+            ImageFiles = binableDto.ImageFiles ,
+            PricesByOccupancy = pricesByOccupancy,
         };
 
         try
@@ -82,7 +90,7 @@ public class RoomController : ControllerBase
         try
         {
             var rooms = await _roomService.GetAllRoomsAsync();
-            return Ok(rooms); // 200 OK
+            return Ok(rooms); 
         }
         catch (Exception ex)
         {
@@ -148,13 +156,20 @@ public class RoomController : ControllerBase
         }
 
         // Translations JSON string-dən List<RoomTranslationUpdateDto>-ya çevrilir
-        List<RoomTranslationUpdateDto> translations;
+        List<RoomTranslationUpdateDto> translations; 
+        List<RoomPriceByOccupancyDto> pricesByOccupancy;
+
         try
         {
             translations = JsonConvert.DeserializeObject<List<RoomTranslationUpdateDto>>(binableDto.Translations);
             if (translations == null)
             {
                 return BadRequest("Translations JSON boş və ya formatı düzgün deyil.");
+            }
+            pricesByOccupancy = JsonConvert.DeserializeObject<List<RoomPriceByOccupancyDto>>(binableDto.PricesByOccupancy);
+            if (pricesByOccupancy == null)
+            {
+                return BadRequest("PricesByOccupancy JSON boş və ya formatı düzgün deyil.");
             }
         }
         catch (Exception ex)
@@ -175,6 +190,7 @@ public class RoomController : ControllerBase
             EquipmentIds = binableDto.EquipmentIds,
             NewImageFiles = binableDto.NewImageFiles // Yeni şəkil faylları
             ,ChildIds = binableDto.ChildIds,
+            PricesByOccupancy = pricesByOccupancy,
             
         };
 

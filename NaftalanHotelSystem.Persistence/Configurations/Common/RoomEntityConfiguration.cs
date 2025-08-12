@@ -27,6 +27,26 @@ public class RoomEntityConfiguration : IEntityTypeConfiguration<Room>
         builder.HasMany(r => r.RoomChildren)
                    .WithOne(rc => rc.Room)
                    .HasForeignKey(rc => rc.RoomId);
+
+        builder.HasMany(r => r.RoomPricesByOccupancy)
+              .WithOne(p => p.Room);
+
+    }
+}
+public class RoomPriceByOccupancyEntityConfiguration : IEntityTypeConfiguration<RoomPriceByOccupancy>
+{
+    public void Configure(EntityTypeBuilder<RoomPriceByOccupancy> builder)
+    {
+        builder.HasKey(p => p.Id);
+
+        builder.Property(p => p.Occupancy).IsRequired();
+        builder.Property(p => p.Price).IsRequired();
+
+
+        builder.HasOne(p => p.Room)
+               .WithMany(r => r.RoomPricesByOccupancy)
+               .HasForeignKey(p => p.RoomId)
+               .OnDelete(DeleteBehavior.Cascade);
     }
 }
 

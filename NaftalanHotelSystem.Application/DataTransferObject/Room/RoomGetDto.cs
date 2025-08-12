@@ -15,4 +15,5 @@ public class RoomGetDto
     public List<int> EquipmentIds { get; set; } = new List<int>();
     public List<ChildGetDto> Children { get; set; }
     public List<string>? ImageUrls { get; set; }
+    public List<RoomPriceByOccupancyDto> PricesByOccupancy { get; set; } = new List<RoomPriceByOccupancyDto>();
 }

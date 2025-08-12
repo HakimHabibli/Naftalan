@@ -774,6 +774,9 @@
                   "YoutubeVideoLink": {
                     "type": "string"
                   },
+                  "PricesByOccupancy": {
+                    "type": "string"
+                  },
                   "Translations": {
                     "type": "string"
                   },
@@ -810,6 +813,9 @@
                   "style": "form"
                 },
                 "YoutubeVideoLink": {
+                  "style": "form"
+                },
+                "PricesByOccupancy": {
                   "style": "form"
                 },
                 "Translations": {
@@ -979,6 +985,9 @@
                   "Translations": {
                     "type": "string"
                   },
+                  "PricesByOccupancy": {
+                    "type": "string"
+                  },
                   "EquipmentIds": {
                     "type": "array",
                     "items": {
@@ -1022,6 +1031,9 @@
                   "style": "form"
                 },
                 "Translations": {
+                  "style": "form"
+                },
+                "PricesByOccupancy": {
                   "style": "form"
                 },
                 "EquipmentIds": {
@@ -1830,6 +1842,27 @@
               "type": "string"
             },
             "nullable": true
+          },
+          "pricesByOccupancy": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RoomPriceByOccupancyDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RoomPriceByOccupancyDto": {
+        "type": "object",
+        "properties": {
+          "occupancy": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

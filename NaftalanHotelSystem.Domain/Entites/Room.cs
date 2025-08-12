@@ -16,11 +16,21 @@ public class Room:BaseEntity
         public double Price { get; set; }
         public short Member { get; set; }
 
- 
+        public ICollection<RoomPriceByOccupancy> RoomPricesByOccupancy { get; set; }
         public ICollection<RoomEquipment> Equipments { get; set; }
         public ICollection<RoomTranslation> RoomTranslations { get; set; }
-    public ICollection<RoomChild> RoomChildren { get; set; } = new List<RoomChild>();
+        public ICollection<RoomChild> RoomChildren { get; set; } = new List<RoomChild>();
 
+}
+public class RoomPriceByOccupancy
+{
+    public int Id { get; set; }
+     
+    public short Occupancy { get; set; } 
+    public double Price { get; set; }
+
+    public int RoomId { get; set; }
+    public Room Room { get; set; }
 }
 public class RoomChild
 {

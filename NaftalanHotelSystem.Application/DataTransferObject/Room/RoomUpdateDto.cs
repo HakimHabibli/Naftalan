@@ -16,4 +16,5 @@ public class RoomUpdateDto
     public List<int>? ImageIdsToDelete { get; set; }
     public List<IFormFile>? NewImageFiles { get; set; }
     public List<int> ChildIds { get; set; }
+    public List<RoomPriceByOccupancyDto> PricesByOccupancy { get; set; } = new List<RoomPriceByOccupancyDto>();
 }

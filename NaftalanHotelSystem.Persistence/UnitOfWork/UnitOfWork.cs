@@ -25,6 +25,9 @@ public class UnitOfWork : IUnitOfWork
     public IWriteRepository<Equipment> EquipmentWriteRepository => new WriteRepository<Equipment>(_context);
     public IReadRepository<Equipment> EquipmentReadRepository => new ReadRepository<Equipment>(_context);
 
+    public IWriteRepository<RoomPriceByOccupancy> RoomPriceByOccupancyWriteRepository => new WriteRepository<RoomPriceByOccupancy>(_context);
+    public IReadRepository<RoomPriceByOccupancy> RoomPriceByOccupancyReadRepository => new ReadRepository<RoomPriceByOccupancy>(_context);
+
     public IReadRepository<TreatmentMethod> TreatmentMethodReadRepository => new ReadRepository<TreatmentMethod>(_context);
     public IWriteRepository<TreatmentMethod> TreatmentMethodWriteRepository => new WriteRepository<TreatmentMethod>(_context);
 

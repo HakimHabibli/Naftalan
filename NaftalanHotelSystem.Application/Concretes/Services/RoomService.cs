@@ -27,6 +27,7 @@ public class RoomService : IRoomService
             .Include(r => r.Equipments)
             .Include(r => r.RoomChildren)
                 .ThenInclude(rc => rc.Child)
+            .Include(r=>r.RoomPricesByOccupancy)
             .ToListAsync();
 
         var roomDtos = new List<RoomGetDto>();
@@ -63,7 +64,12 @@ public class RoomService : IRoomService
                     Price = rc.Child.Price,
                 }).ToList(),
                 EquipmentIds = room.Equipments.Select(re => re.EquipmentId).ToList(),
-                ImageUrls = roomImages.Select(img => img.Url).ToList()
+                ImageUrls = roomImages.Select(img => img.Url).ToList(),
+                PricesByOccupancy = room.RoomPricesByOccupancy.Select(p=> new RoomPriceByOccupancyDto
+                {
+                    Occupancy = p.Occupancy,
+                    Price = p.Price
+                }).ToList()
             });
         }
 
@@ -76,6 +82,7 @@ public class RoomService : IRoomService
             .Include(r => r.RoomTranslations)
             .Include(r => r.Equipments)
             .Include(r => r.RoomChildren).ThenInclude(rc => rc.Child)
+            .Include(r=>r.RoomPricesByOccupancy)
             .FirstOrDefaultAsync(r => r.Id == id);
 
         if (room == null)
@@ -111,7 +118,11 @@ public class RoomService : IRoomService
                 HasTreatment = rc.Child.HasTreatment,
                 Price = rc.Child.Price
             }).ToList(),
-
+            PricesByOccupancy = room.RoomPricesByOccupancy.Select(e => new RoomPriceByOccupancyDto
+            {
+                Occupancy = e.Occupancy,
+                Price = e.Price
+            }).ToList(),
             EquipmentIds = room.Equipments.Select(e => e.EquipmentId).ToList(),
             ImageUrls = roomImages.Select(img => img.Url).ToList()
         };
@@ -127,6 +138,11 @@ public class RoomService : IRoomService
             Member = dto.Member,
             Price = dto.Price,
             YoutubeVideoLink = dto.YoutubeVideoLink,
+            RoomPricesByOccupancy = dto.PricesByOccupancy?.Select(p => new RoomPriceByOccupancy
+            {
+                Occupancy = p.Occupancy,
+                Price = p.Price
+            }).ToList() ?? new List<RoomPriceByOccupancy>(),
             RoomTranslations = dto.Translations?.Select(t => new RoomTranslation
             {
                 Service = t.Service,
@@ -136,9 +152,10 @@ public class RoomService : IRoomService
                 Title = t.Title,
                 Language = t.Language
             }).ToList() ?? new List<RoomTranslation>()
+            
         };
 
-        // Avadanlıqlar
+        
         if (dto.EquipmentIds != null && dto.EquipmentIds.Any())
         {
             var existingEquipmentIds = await _unitOfWork.EquipmentReadRepository
@@ -157,7 +174,6 @@ public class RoomService : IRoomService
             }).ToList();
         }
 
-        // Uşaqlar
         if (dto.ChildIds != null && dto.ChildIds.Any())
         {
             var existingChildren = await _unitOfWork.ChildReadRepository
@@ -176,9 +192,9 @@ public class RoomService : IRoomService
         }
 
         await _unitOfWork.RoomWriteRepository.CreateAsync(room);
-        await _unitOfWork.SaveChangesAsync(); // İndi Room.Id və əlaqəli navigation propertilər hamısı EF tərəfindən idarə olunacaq
+        await _unitOfWork.SaveChangesAsync();
 
-        // Şəkillər
+       
         if (dto.ImageFiles != null && dto.ImageFiles.Any())
         {
             foreach (var file in dto.ImageFiles)
@@ -187,7 +203,7 @@ public class RoomService : IRoomService
                 {
                     File = file,
                     Entity = ImageEntity.Room,
-                    RelatedEntityId = room.Id // EF SaveChanges-dən sonra artıq ID mövcuddur
+                    RelatedEntityId = room.Id 
                 };
                 await _imageService.UploadImageAsync(imageCreateDto);
             }
@@ -204,6 +220,7 @@ public class RoomService : IRoomService
             .Include(r => r.RoomTranslations)
             .Include(r => r.Equipments)
             .Include(r => r.RoomChildren)
+            .Include(r => r.RoomPricesByOccupancy)
             .FirstOrDefaultAsync(r => r.Id == id);
 
         if (room == null)
@@ -218,6 +235,7 @@ public class RoomService : IRoomService
             await _imageService.DeleteImageAsync(image.Id);
         }
 
+
         if (room.RoomTranslations != null && room.RoomTranslations.Any())
             _unitOfWork.RoomTranslationWriteRepository.RemoveRange(room.RoomTranslations.ToList());
 
@@ -226,6 +244,10 @@ public class RoomService : IRoomService
 
         if (room.RoomChildren != null && room.RoomChildren.Any())
             _unitOfWork.RoomChildWriteRepository.RemoveRange(room.RoomChildren.ToList());
+
+        if (room.RoomPricesByOccupancy != null && room.RoomPricesByOccupancy.Any())
+            _unitOfWork.RoomPriceByOccupancyWriteRepository.RemoveRange(room.RoomPricesByOccupancy.ToList());
+
 
         _unitOfWork.RoomWriteRepository.Remove(room);
         await _unitOfWork.SaveChangesAsync();
@@ -238,19 +260,18 @@ public class RoomService : IRoomService
             .Include(r => r.RoomTranslations)
             .Include(r => r.Equipments)
             .Include(r => r.RoomChildren)
+            .Include(r=>r.RoomPricesByOccupancy)
             .FirstOrDefaultAsync(r => r.Id == id);
 
         if (roomToUpdate == null)
             throw new Exception("Otaq tapılmadı.");
 
-        // Əsas sahələr
         roomToUpdate.Category = dto.Category;
         roomToUpdate.Area = dto.Area;
         roomToUpdate.Price = dto.Price;
         roomToUpdate.Member = dto.Member;
         roomToUpdate.YoutubeVideoLink = dto.YoutubeVideoLink;
 
-        // Tərcümələr yenilənməsi
         var currentTranslations = roomToUpdate.RoomTranslations.ToList();
         var translationsToDelete = currentTranslations.Where(ct => !dto.Translations.Any(dt => dt.Id == ct.Id)).ToList();
         _unitOfWork.RoomTranslationWriteRepository.RemoveRange(translationsToDelete);
@@ -284,7 +305,7 @@ public class RoomService : IRoomService
             }
         }
 
-        // Avadanlıqlar yenilənməsi
+       
         var currentEquipments = roomToUpdate.Equipments.ToList();
         var equipmentsToDelete = currentEquipments.Where(ce => !dto.EquipmentIds.Contains(ce.EquipmentId)).ToList();
         _unitOfWork.RoomEquipmentWriteRepository.RemoveRange(equipmentsToDelete);
@@ -300,7 +321,7 @@ public class RoomService : IRoomService
             await _unitOfWork.RoomEquipmentWriteRepository.CreateAsync(newRoomEquipment);
         }
 
-        // Şəkillərin yenilənməsi
+       
         if (dto.NewImageFiles != null && dto.NewImageFiles.Any())
         {
             var existingImages = await _unitOfWork.ImageReadRepository.GetAll(asNoTracking: true)
@@ -324,12 +345,11 @@ public class RoomService : IRoomService
             }
         }
 
-        // Many-to-many (ara cədvəl) yenilənməsi
-        // Əvvəlcə köhnələri sil
+        
         var existingRoomChildren = roomToUpdate.RoomChildren.ToList();
         _unitOfWork.RoomChildWriteRepository.RemoveRange(existingRoomChildren);
 
-        // Sonra yeniləri əlavə et
+        
         if (dto.ChildIds != null && dto.ChildIds.Any())
         {
             var childrenToAdd = await _unitOfWork.ChildReadRepository
@@ -343,6 +363,23 @@ public class RoomService : IRoomService
                 ChildId = child.Id
             }).ToList();
         }
+        _unitOfWork.RoomPriceByOccupancyWriteRepository.RemoveRange(roomToUpdate.RoomPricesByOccupancy);
+
+        // Yeniləri əlavə edirik
+        if (dto.PricesByOccupancy != null && dto.PricesByOccupancy.Any())
+        {
+            foreach (var priceDto in dto.PricesByOccupancy)
+            {
+                var newPrice = new RoomPriceByOccupancy
+                {
+                    RoomId = roomToUpdate.Id,
+                    Occupancy = priceDto.Occupancy,
+                    Price = priceDto.Price
+                };
+                await _unitOfWork.RoomPriceByOccupancyWriteRepository.CreateAsync(newPrice);
+            }
+        }
+
 
         _unitOfWork.RoomWriteRepository.Update(roomToUpdate);
         await _unitOfWork.SaveChangesAsync();
