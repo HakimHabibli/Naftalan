@@ -1749,10 +1749,8 @@
             "type": "string"
           },
           "dayCount": {
-            "maximum": 365,
-            "minimum": 1,
-            "type": "integer",
-            "format": "int32"
+            "minLength": 1,
+            "type": "string"
           },
           "roomCount": {
             "maximum": 10,

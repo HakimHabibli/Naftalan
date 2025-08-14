@@ -35,8 +35,7 @@ public class ReservationConfirmationDto
     public string Date { get; set; } 
 
     [Required(ErrorMessage = "Gün sayı boş ola bilməz.")]
-    [Range(1, 365, ErrorMessage = "Gün sayı ən az 1 gün, ən çox 365 gün olmalıdır.")] 
-    public int DayCount { get; set; }
+    public string DayCount { get; set; }
 
     [Required(ErrorMessage = "Otaq sayı boş ola bilməz.")]
     [Range(1, 10, ErrorMessage = "Otaq sayı ən az 1, ən çox 10 olmalıdır.")]
